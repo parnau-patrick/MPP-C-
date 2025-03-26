@@ -1,28 +1,27 @@
-﻿namespace Laborator3.domain
+﻿using System;
+
+namespace Laborator3.domain
 {
-    public class Entity<ID>
+    public abstract class Entity<ID>
     {
         public ID Id { get; set; }
 
-        public Entity() { }
-
-        public Entity(ID id)
+        public override string ToString()
         {
-            Id = id;
+            return $"Entity{{id={Id}}}";
         }
 
         public override bool Equals(object obj)
         {
-            if (obj is Entity<ID> other)
-            {
-                return Equals(Id, other.Id);
-            }
-            return false;
+            if (this == obj) return true;
+            if (obj == null || GetType() != obj.GetType()) return false;
+            Entity<ID> entity = (Entity<ID>)obj;
+            return Id.Equals(entity.Id);
         }
 
         public override int GetHashCode()
         {
-            return Id == null ? 0 : Id.GetHashCode();
+            return Id.GetHashCode();
         }
     }
 }

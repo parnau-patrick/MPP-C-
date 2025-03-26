@@ -2,20 +2,16 @@
 
 namespace Laborator3.domain
 {
-    public class Participant : Entity<long>
+    public class Participant : Entity<int>
     {
         public string Name { get; set; }
         public int Age { get; set; }
-        public List<Proba> Probas { get; set; }
+        public List<Event> Events { get; set; } = new List<Event>();
 
-        public Participant() { }
-
-        public Participant(long id, string name, int age, List<Proba> probas)
+        public Participant(string name, int age)
         {
-            Id = id;
             Name = name;
             Age = age;
-            Probas = probas;
         }
     }
 }
