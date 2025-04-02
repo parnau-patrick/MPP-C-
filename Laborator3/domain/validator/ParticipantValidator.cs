@@ -1,14 +1,25 @@
-﻿namespace Laborator3.domain.validator;
+﻿using System;
+using Laborator3.exception;
 
-public class ParticipantValidator : IValidator<Participant>
+namespace Laborator3.domain.validator
 {
-        public bool Validate(Participant entity)
+    public class ParticipantValidator : IValidator<Participant>
+    {
+        public void Validate(Participant entity)
         {
-                if (entity == null)
-                {
-                        throw new ArgumentNullException(nameof(entity), "Participant cannot be null");
-                }
-
-                return true;
+            string errors = "";
+            
+            if (entity == null)
+                throw new ValidationException("Participant cannot be null");
+                
+            if (string.IsNullOrEmpty(entity.Name))
+                errors += "Participant name cannot be empty\n";
+                
+            if (entity.Age <= 0)
+                errors += "Participant age must be positive\n";
+                
+            if (!string.IsNullOrEmpty(errors))
+                throw new ValidationException(errors);
         }
+    }
 }

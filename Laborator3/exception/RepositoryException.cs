@@ -1,10 +1,10 @@
-﻿namespace SwimmingCompetition.exception;
+﻿using System;
 
-public class RepositoryException : Exception
+namespace Laborator3.exception
 {
-    public RepositoryException() { }
-    
-    public RepositoryException(string message) : base(message) { }
-    
-    public RepositoryException(string message, Exception cause) : base(message, cause) { }
+    public class RepositoryException : Exception
+    {
+        public RepositoryException(string message) : base(message) { }
+        public RepositoryException(string message, Exception innerException) : base(message, innerException) { }
+    }
 }

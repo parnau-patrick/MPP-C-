@@ -1,26 +1,31 @@
-﻿using System.Data;
-
-
+﻿using System;
+using System.Collections.Generic;
+using System.Data;
+using System.Data.SQLite;
+using log4net;
 
 namespace Laborator3.repository_utils
 {
     public class DBUtils
     {
-        private static IDbConnection _instance = null;
+        private static readonly ILog log = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+        private static IDbConnection instance = null;
 
         public static IDbConnection getConnection(IDictionary<string, string> props)
         {
-            if (_instance == null || _instance.State == System.Data.ConnectionState.Closed)
+            if (instance == null || instance.State == ConnectionState.Closed)
             {
-                _instance = getNewConnection(props);
-                _instance.Open();
+                instance = getNewConnection(props);
+                instance.Open();
             }
-            return _instance;
+            return instance;
         }
 
         private static IDbConnection getNewConnection(IDictionary<string, string> props)
         {
-            return Connection.ConnFactory.getInstance().createConnection(props);
+            string connectionString = props["ConnectionString"];
+            log.Info("Opening database connection with connection string: " + connectionString);
+            return new SQLiteConnection(connectionString);
         }
     }
 }

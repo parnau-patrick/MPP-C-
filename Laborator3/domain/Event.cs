@@ -1,4 +1,4 @@
-﻿using System.Collections.Generic;
+﻿using System;
 
 namespace Laborator3.domain
 {
@@ -6,12 +6,16 @@ namespace Laborator3.domain
     {
         public string Distance { get; set; }
         public string Style { get; set; }
-        public List<Participant> Participants { get; set; } = new List<Participant>();
 
         public Event(string distance, string style)
         {
             Distance = distance;
             Style = style;
+        }
+
+        public override string ToString()
+        {
+            return $"{Distance}m - {Style}";
         }
     }
 }

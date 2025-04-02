@@ -1,4 +1,4 @@
-﻿using System.Collections.Generic;
+﻿using System;
 
 namespace Laborator3.domain
 {
@@ -6,12 +6,16 @@ namespace Laborator3.domain
     {
         public string Name { get; set; }
         public int Age { get; set; }
-        public List<Event> Events { get; set; } = new List<Event>();
 
         public Participant(string name, int age)
         {
             Name = name;
             Age = age;
+        }
+
+        public override string ToString()
+        {
+            return $"{Name} ({Age} years)";
         }
     }
 }

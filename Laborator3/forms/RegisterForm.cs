@@ -1,0 +1,199 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+using Laborator3.domain;
+using Laborator3.service;
+using log4net;
+using Laborator3.exception;
+
+namespace Laborator3
+{
+    public partial class RegisterForm : Form
+    {
+        private static readonly ILog log = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+        private readonly EventService eventService;
+        private readonly ParticipantService participantService;
+        private readonly InscriereService inscriereService;
+
+        public RegisterForm(EventService eventService, ParticipantService participantService, InscriereService inscriereService)
+        {
+            InitializeComponent();
+            this.eventService = eventService;
+            this.participantService = participantService;
+            this.inscriereService = inscriereService;
+            
+            LoadEvents();
+        }
+
+        private void LoadEvents()
+        {
+            log.Info("Loading events for registration form");
+            try
+            {
+                var events = eventService.FindAllEvents();
+                checkedListEvents.Items.Clear();
+                
+                foreach (var evt in events)
+                {
+                    checkedListEvents.Items.Add(evt, false);
+                }
+            }
+            catch (RepositoryException ex)
+            {
+                log.Error("Error loading events", ex);
+                MessageBox.Show("Error loading events: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void btnRegister_Click(object sender, EventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(txtName.Text))
+            {
+                MessageBox.Show("Please enter participant name.", "Registration", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            if (!int.TryParse(txtAge.Text, out int age) || age <= 0)
+            {
+                MessageBox.Show("Please enter a valid age.", "Registration", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            if (checkedListEvents.CheckedItems.Count == 0)
+            {
+                MessageBox.Show("Please select at least one event.", "Registration", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            try
+            {
+                // Create new participant
+                Participant participant = new Participant(txtName.Text, age);
+                participant = participantService.SaveParticipant(participant);
+                
+                // Register for selected events
+                foreach (Event selectedEvent in checkedListEvents.CheckedItems)
+                {
+                    inscriereService.RegisterParticipant(participant.Id, selectedEvent.Id);
+                }
+                
+                MessageBox.Show($"Participant {participant.Name} has been registered successfully!", "Registration", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                
+                // Clear form for new registration
+                txtName.Text = "";
+                txtAge.Text = "";
+                for (int i = 0; i < checkedListEvents.Items.Count; i++)
+                {
+                    checkedListEvents.SetItemChecked(i, false);
+                }
+            }
+            catch (Exception ex)
+            {
+                log.Error("Error registering participant", ex);
+                MessageBox.Show("Error registering participant: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void InitializeComponent()
+        {
+            this.lblName = new System.Windows.Forms.Label();
+            this.txtName = new System.Windows.Forms.TextBox();
+            this.lblAge = new System.Windows.Forms.Label();
+            this.txtAge = new System.Windows.Forms.TextBox();
+            this.lblEvents = new System.Windows.Forms.Label();
+            this.checkedListEvents = new System.Windows.Forms.CheckedListBox();
+            this.btnRegister = new System.Windows.Forms.Button();
+            this.SuspendLayout();
+            // 
+            // lblName
+            // 
+            this.lblName.AutoSize = true;
+            this.lblName.Location = new System.Drawing.Point(12, 25);
+            this.lblName.Name = "lblName";
+            this.lblName.Size = new System.Drawing.Size(100, 13);
+            this.lblName.TabIndex = 0;
+            this.lblName.Text = "Participant Name:";
+            // 
+            // txtName
+            // 
+            this.txtName.Location = new System.Drawing.Point(125, 22);
+            this.txtName.Name = "txtName";
+            this.txtName.Size = new System.Drawing.Size(200, 20);
+            this.txtName.TabIndex = 1;
+            // 
+            // lblAge
+            // 
+            this.lblAge.AutoSize = true;
+            this.lblAge.Location = new System.Drawing.Point(12, 58);
+            this.lblAge.Name = "lblAge";
+            this.lblAge.Size = new System.Drawing.Size(90, 13);
+            this.lblAge.TabIndex = 2;
+            this.lblAge.Text = "Participant Age:";
+            // 
+            // txtAge
+            // 
+            this.txtAge.Location = new System.Drawing.Point(125, 55);
+            this.txtAge.Name = "txtAge";
+            this.txtAge.Size = new System.Drawing.Size(100, 20);
+            this.txtAge.TabIndex = 3;
+            // 
+            // lblEvents
+            // 
+            this.lblEvents.AutoSize = true;
+            this.lblEvents.Location = new System.Drawing.Point(12, 93);
+            this.lblEvents.Name = "lblEvents";
+            this.lblEvents.Size = new System.Drawing.Size(85, 13);
+            this.lblEvents.TabIndex = 4;
+            this.lblEvents.Text = "Select Events:";
+            // 
+            // checkedListEvents
+            // 
+            this.checkedListEvents.FormattingEnabled = true;
+            this.checkedListEvents.Location = new System.Drawing.Point(15, 116);
+            this.checkedListEvents.Name = "checkedListEvents";
+            this.checkedListEvents.Size = new System.Drawing.Size(310, 214);
+            this.checkedListEvents.TabIndex = 5;
+            // 
+            // btnRegister
+            // 
+            this.btnRegister.Location = new System.Drawing.Point(125, 350);
+            this.btnRegister.Name = "btnRegister";
+            this.btnRegister.Size = new System.Drawing.Size(100, 30);
+            this.btnRegister.TabIndex = 6;
+            this.btnRegister.Text = "Register";
+            this.btnRegister.UseVisualStyleBackColor = true;
+            this.btnRegister.Click += new System.EventHandler(this.btnRegister_Click);
+            // 
+            // RegisterForm
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(349, 400);
+            this.Controls.Add(this.btnRegister);
+            this.Controls.Add(this.checkedListEvents);
+            this.Controls.Add(this.lblEvents);
+            this.Controls.Add(this.txtAge);
+            this.Controls.Add(this.lblAge);
+            this.Controls.Add(this.txtName);
+            this.Controls.Add(this.lblName);
+            this.Name = "RegisterForm";
+            this.Text = "Register Participant";
+            this.ResumeLayout(false);
+            this.PerformLayout();
+        }
+
+        private System.Windows.Forms.Label lblName;
+        private System.Windows.Forms.TextBox txtName;
+        private System.Windows.Forms.Label lblAge;
+        private System.Windows.Forms.TextBox txtAge;
+        private System.Windows.Forms.Label lblEvents;
+        private System.Windows.Forms.CheckedListBox checkedListEvents;
+        private System.Windows.Forms.Button btnRegister;
+    }
+}

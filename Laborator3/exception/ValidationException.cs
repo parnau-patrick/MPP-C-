@@ -1,10 +1,9 @@
-﻿namespace Laborator3.domain.validator;
+﻿using System;
 
-public class ValidationException : Exception
+namespace Laborator3.exception
 {
-    public ValidationException() { }
-    
-    public ValidationException(string message) : base(message) { }
-    
-    public ValidationException(string message, Exception cause) : base(message, cause) { } 
+    public class ValidationException : Exception
+    {
+        public ValidationException(string message) : base(message) { }
+    }
 }

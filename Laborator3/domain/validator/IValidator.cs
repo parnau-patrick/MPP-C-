@@ -1,7 +1,9 @@
-﻿namespace Laborator3.domain.validator
+﻿using System;
+
+namespace Laborator3.domain.validator
 {
     public interface IValidator<T>
     {
-        bool Validate(T entity);
+        void Validate(T entity);
     }
 }

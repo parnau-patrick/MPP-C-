@@ -1,8 +1,10 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
+using Laborator3.domain;
 
-namespace Laborator3.repository
+namespace Laborator3.repository.Interface   
 {
-    public interface IRepository<ID, E>
+    public interface IRepository<ID, E> where E : Entity<ID>
     {
         E FindOne(ID id);
         IEnumerable<E> FindAll();

@@ -1,18 +1,21 @@
-﻿
-
-using System;
-using System.Collections.Generic;
+﻿using System;
 
 namespace Laborator3.domain
 {
     public class Inscriere : Entity<int>
     {
-        public Participant Participant { get; set; }
-        public List<Event> Events { get; set; } = new List<Event>();
+        public int EventId { get; set; }
+        public int ParticipantId { get; set; }
 
-        public Inscriere(Participant participant)
+        public Inscriere(int eventId, int participantId)
         {
-            Participant = participant;
+            EventId = eventId;
+            ParticipantId = participantId;
+        }
+
+        public override string ToString()
+        {
+            return $"Inscriere{{id={Id}, eventId={EventId}, participantId={ParticipantId}}}";
         }
     }
 }

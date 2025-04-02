@@ -1,23 +1,21 @@
-﻿namespace Laborator3.domain.validator;
+﻿using System;
 
-public class ValidatorFactory
+namespace Laborator3.domain.validator
 {
-    private static ValidatorFactory _instance;
-    
-    private ValidatorFactory() { }
-
-    public static ValidatorFactory GetInstance()
+    public class ValidatorFactory
     {
-        return _instance ??= new ValidatorFactory();
-    }
-
-    public IValidator<T> CreateValidator<T>(ValidatorStrategy strategy)
-    {
-        return strategy switch
+        public static IValidator<T> CreateValidator<T>() 
         {
-            ValidatorStrategy.Event => new EventValidator() as IValidator<T>,
-            ValidatorStrategy.Participant => new ParticipantValidator() as IValidator<T>,
-            _ => throw new NotImplementedException()
-        };
+            Type type = typeof(T);
+            
+            if (type == typeof(Event))
+                return (IValidator<T>)new EventValidator();
+            else if (type == typeof(Participant))
+                return (IValidator<T>)new ParticipantValidator();
+            else if (type == typeof(User))
+                return (IValidator<T>)new UserValidator();
+            else
+                throw new ArgumentException($"No validator available for type {type.Name}");
+        }
     }
 }

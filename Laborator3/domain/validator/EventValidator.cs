@@ -1,17 +1,25 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System;
+using Laborator3.exception;
 
-namespace Laborator3.domain.validator;
-
-public class EventValidator: IValidator<Event>
+namespace Laborator3.domain.validator
 {
-    public bool Validate(Event entity)
+    public class EventValidator : IValidator<Event>
     {
-        if (entity == null)
+        public void Validate(Event entity)
         {
-            throw new ArgumentNullException(nameof(entity), "Event cannot be null");
+            string errors = "";
+            
+            if (entity == null)
+                throw new ValidationException("Event cannot be null");
+                
+            if (string.IsNullOrEmpty(entity.Distance))
+                errors += "Event distance cannot be empty\n";
+                
+            if (string.IsNullOrEmpty(entity.Style))
+                errors += "Event style cannot be empty\n";
+                
+            if (!string.IsNullOrEmpty(errors))
+                throw new ValidationException(errors);
         }
-        return true; 
     }
-    
-
 }
