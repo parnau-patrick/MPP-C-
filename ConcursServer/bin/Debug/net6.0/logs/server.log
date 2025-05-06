@@ -1,0 +1,907 @@
+2025-05-06 17:46:40,646 [1] INFO  ConcursServer.StartServer - Starting server application
+2025-05-06 17:46:40,658 [1] INFO  ConcursPersistence.repository.impl.EventRepositoryImpl - Creating EventDatabaseRepository
+2025-05-06 17:46:40,658 [1] INFO  ConcursPersistence.repository.ParticipantRepositoryImpl - Creating ParticipantRepository
+2025-05-06 17:46:40,659 [1] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Creating InscriereRepository
+2025-05-06 17:46:40,659 [1] INFO  Laborator3.repository.UserRepositoryImpl - Creating UserRepositoryImpl
+2025-05-06 17:46:40,659 [1] INFO  ConcursServices.EventService - Creating EventService
+2025-05-06 17:46:40,660 [1] INFO  ConcursServices.ParticipantService - Creating ParticipantService
+2025-05-06 17:46:40,660 [1] INFO  ConcursServices.UserService - Creating UserService
+2025-05-06 17:46:40,660 [1] INFO  ConcursServices.InscriereService - Creating InscriereService
+2025-05-06 17:46:40,660 [1] INFO  ConcursServer.StartServer - Starting server on port 55555
+2025-05-06 17:46:40,667 [1] INFO  ConcursServer.StartServer - Server started
+2025-05-06 17:46:40,668 [1] INFO  ConcursServer.StartServer - Waiting for clients...
+2025-05-06 17:47:26,865 [1] INFO  ConcursServer.StartServer - Starting server application
+2025-05-06 17:47:26,875 [1] INFO  ConcursPersistence.repository.impl.EventRepositoryImpl - Creating EventDatabaseRepository
+2025-05-06 17:47:26,876 [1] INFO  ConcursPersistence.repository.ParticipantRepositoryImpl - Creating ParticipantRepository
+2025-05-06 17:47:26,876 [1] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Creating InscriereRepository
+2025-05-06 17:47:26,876 [1] INFO  Laborator3.repository.UserRepositoryImpl - Creating UserRepositoryImpl
+2025-05-06 17:47:26,876 [1] INFO  ConcursServices.EventService - Creating EventService
+2025-05-06 17:47:26,877 [1] INFO  ConcursServices.ParticipantService - Creating ParticipantService
+2025-05-06 17:47:26,877 [1] INFO  ConcursServices.UserService - Creating UserService
+2025-05-06 17:47:26,877 [1] INFO  ConcursServices.InscriereService - Creating InscriereService
+2025-05-06 17:47:26,877 [1] INFO  ConcursServer.StartServer - Starting server on port 55555
+2025-05-06 17:47:26,881 [1] INFO  ConcursServer.StartServer - Server started
+2025-05-06 17:47:26,881 [1] INFO  ConcursServer.StartServer - Waiting for clients...
+2025-05-06 17:47:40,325 [1] INFO  ConcursServer.StartServer - Client connected
+2025-05-06 17:47:40,326 [1] INFO  ConcursServer.StartServer - Waiting for clients...
+2025-05-06 17:47:40,534 [11] INFO  ConcursServer.ClientJsonWorker - Received request: LOGIN
+2025-05-06 17:47:40,535 [11] INFO  ConcursServer.ClientJsonWorker - Handling login request
+2025-05-06 17:47:40,537 [11] ERROR ConcursServer.ClientJsonWorker - Login error
+Newtonsoft.Json.JsonReaderException: Unexpected character encountered while parsing value: C. Path '', line 0, position 0.
+   at Newtonsoft.Json.JsonTextReader.ParseValue()
+   at Newtonsoft.Json.JsonReader.ReadAndMoveToContent()
+   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Deserialize(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value)
+   at ConcursServer.ClientJsonWorker.HandleLogin(Request request) in C:\ANUL II\SEMESTRUL II\MPP\mpp-proiect-csharp-parnau-patrick\Laborator3\ConcursServer\ClientJsonWorker.cs:line 117
+2025-05-06 17:47:52,785 [11] INFO  ConcursServer.ClientJsonWorker - Received request: REGISTER_USER
+2025-05-06 17:47:52,785 [11] INFO  ConcursServer.ClientJsonWorker - Handling register user request
+2025-05-06 17:47:52,786 [11] ERROR ConcursServer.ClientJsonWorker - Error registering user
+Newtonsoft.Json.JsonReaderException: Unexpected character encountered while parsing value: C. Path '', line 0, position 0.
+   at Newtonsoft.Json.JsonTextReader.ParseValue()
+   at Newtonsoft.Json.JsonReader.ReadAndMoveToContent()
+   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Deserialize(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value)
+   at ConcursServer.ClientJsonWorker.HandleRegisterUser(Request request) in C:\ANUL II\SEMESTRUL II\MPP\mpp-proiect-csharp-parnau-patrick\Laborator3\ConcursServer\ClientJsonWorker.cs:line 278
+2025-05-06 17:48:11,869 [11] INFO  ConcursServer.ClientJsonWorker - Received request: REGISTER_USER
+2025-05-06 17:48:11,869 [11] INFO  ConcursServer.ClientJsonWorker - Handling register user request
+2025-05-06 17:48:11,869 [11] ERROR ConcursServer.ClientJsonWorker - Error registering user
+Newtonsoft.Json.JsonReaderException: Unexpected character encountered while parsing value: C. Path '', line 0, position 0.
+   at Newtonsoft.Json.JsonTextReader.ParseValue()
+   at Newtonsoft.Json.JsonReader.ReadAndMoveToContent()
+   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Deserialize(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value)
+   at ConcursServer.ClientJsonWorker.HandleRegisterUser(Request request) in C:\ANUL II\SEMESTRUL II\MPP\mpp-proiect-csharp-parnau-patrick\Laborator3\ConcursServer\ClientJsonWorker.cs:line 278
+2025-05-06 17:48:23,274 [11] INFO  ConcursServer.ClientJsonWorker - Received request: LOGIN
+2025-05-06 17:48:23,274 [11] INFO  ConcursServer.ClientJsonWorker - Handling login request
+2025-05-06 17:48:23,274 [11] ERROR ConcursServer.ClientJsonWorker - Login error
+Newtonsoft.Json.JsonReaderException: Unexpected character encountered while parsing value: C. Path '', line 0, position 0.
+   at Newtonsoft.Json.JsonTextReader.ParseValue()
+   at Newtonsoft.Json.JsonReader.ReadAndMoveToContent()
+   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Deserialize(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value)
+   at ConcursServer.ClientJsonWorker.HandleLogin(Request request) in C:\ANUL II\SEMESTRUL II\MPP\mpp-proiect-csharp-parnau-patrick\Laborator3\ConcursServer\ClientJsonWorker.cs:line 117
+2025-05-06 17:48:25,087 [11] INFO  ConcursServer.ClientJsonWorker - Received request: LOGIN
+2025-05-06 17:48:25,088 [11] INFO  ConcursServer.ClientJsonWorker - Handling login request
+2025-05-06 17:48:25,088 [11] ERROR ConcursServer.ClientJsonWorker - Login error
+Newtonsoft.Json.JsonReaderException: Unexpected character encountered while parsing value: C. Path '', line 0, position 0.
+   at Newtonsoft.Json.JsonTextReader.ParseValue()
+   at Newtonsoft.Json.JsonReader.ReadAndMoveToContent()
+   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Deserialize(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value)
+   at ConcursServer.ClientJsonWorker.HandleLogin(Request request) in C:\ANUL II\SEMESTRUL II\MPP\mpp-proiect-csharp-parnau-patrick\Laborator3\ConcursServer\ClientJsonWorker.cs:line 117
+2025-05-06 17:48:28,307 [11] INFO  ConcursServer.ClientJsonWorker - Received request: LOGIN
+2025-05-06 17:48:28,307 [11] INFO  ConcursServer.ClientJsonWorker - Handling login request
+2025-05-06 17:48:28,307 [11] ERROR ConcursServer.ClientJsonWorker - Login error
+Newtonsoft.Json.JsonReaderException: Unexpected character encountered while parsing value: C. Path '', line 0, position 0.
+   at Newtonsoft.Json.JsonTextReader.ParseValue()
+   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Deserialize(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value)
+   at ConcursServer.ClientJsonWorker.HandleLogin(Request request) in C:\ANUL II\SEMESTRUL II\MPP\mpp-proiect-csharp-parnau-patrick\Laborator3\ConcursServer\ClientJsonWorker.cs:line 117
+2025-05-06 17:48:29,524 [11] ERROR ConcursNetworking.utils.JsonSerializerUtils - Error reading object from stream
+System.IO.IOException: Unable to read data from the transport connection: An existing connection was forcibly closed by the remote host..
+ ---> System.Net.Sockets.SocketException (10054): An existing connection was forcibly closed by the remote host.
+   at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 count)
+   --- End of inner exception stack trace ---
+   at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 count)
+   at ConcursNetworking.utils.JsonSerializerUtils.ReadFromStream[T](NetworkStream stream) in C:\ANUL II\SEMESTRUL II\MPP\mpp-proiect-csharp-parnau-patrick\Laborator3\ConcursNetworking\JsonSerializerUtils.cs:line 50
+2025-05-06 17:48:29,533 [11] ERROR ConcursServer.ClientJsonWorker - Error in client worker
+System.IO.IOException: Unable to read data from the transport connection: An existing connection was forcibly closed by the remote host..
+ ---> System.Net.Sockets.SocketException (10054): An existing connection was forcibly closed by the remote host.
+   at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 count)
+   --- End of inner exception stack trace ---
+   at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 count)
+   at ConcursNetworking.utils.JsonSerializerUtils.ReadFromStream[T](NetworkStream stream) in C:\ANUL II\SEMESTRUL II\MPP\mpp-proiect-csharp-parnau-patrick\Laborator3\ConcursNetworking\JsonSerializerUtils.cs:line 50
+   at ConcursServer.ClientJsonWorker.Run() in C:\ANUL II\SEMESTRUL II\MPP\mpp-proiect-csharp-parnau-patrick\Laborator3\ConcursServer\ClientJsonWorker.cs:line 49
+2025-05-06 18:00:48,313 [1] INFO  ConcursServer.StartServer - Starting server application
+2025-05-06 18:00:48,324 [1] INFO  ConcursPersistence.repository.impl.EventRepositoryImpl - Creating EventDatabaseRepository
+2025-05-06 18:00:48,325 [1] INFO  ConcursPersistence.repository.ParticipantRepositoryImpl - Creating ParticipantRepository
+2025-05-06 18:00:48,325 [1] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Creating InscriereRepository
+2025-05-06 18:00:48,325 [1] INFO  Laborator3.repository.UserRepositoryImpl - Creating UserRepositoryImpl
+2025-05-06 18:00:48,326 [1] INFO  ConcursServices.EventService - Creating EventService
+2025-05-06 18:00:48,326 [1] INFO  ConcursServices.ParticipantService - Creating ParticipantService
+2025-05-06 18:00:48,326 [1] INFO  ConcursServices.UserService - Creating UserService
+2025-05-06 18:00:48,326 [1] INFO  ConcursServices.InscriereService - Creating InscriereService
+2025-05-06 18:00:48,326 [1] INFO  ConcursServer.StartServer - Starting server on port 55555
+2025-05-06 18:00:48,331 [1] INFO  ConcursServer.StartServer - Server started
+2025-05-06 18:00:48,331 [1] INFO  ConcursServer.StartServer - Waiting for clients...
+2025-05-06 18:01:19,539 [1] INFO  ConcursServer.StartServer - Client connected
+2025-05-06 18:01:19,540 [1] INFO  ConcursServer.StartServer - Waiting for clients...
+2025-05-06 18:01:19,727 [3] INFO  ConcursServer.ClientJsonWorker - Received request: REGISTER_USER
+2025-05-06 18:01:19,729 [3] INFO  ConcursServer.ClientJsonWorker - Handling register user request
+2025-05-06 18:01:19,729 [3] INFO  ConcursServices.UserService - UserService - SaveUser: User{username=alex, officeName=Alex}
+2025-05-06 18:01:19,730 [3] INFO  Laborator3.repository.UserRepositoryImpl - UserRepository - Save user: alex
+2025-05-06 18:01:19,775 [3] ERROR Laborator3.repository.UserRepositoryImpl - Error saving user: unable to open database file
+code = CantOpen (14), message = System.Data.SQLite.SQLiteException (0x87AF03F3): unable to open database file
+   at System.Data.SQLite.SQLite3.Open(String strFilename, String vfsName, SQLiteConnectionFlags connectionFlags, SQLiteOpenFlagsEnum openFlags, Int32 maxPoolSize, Boolean usePool)
+   at System.Data.SQLite.SQLiteConnection.Open()
+   at ConcursPersistence.utils.DBUtils.GetConnection(IDictionary`2 props) in C:\ANUL II\SEMESTRUL II\MPP\mpp-proiect-csharp-parnau-patrick\Laborator3\ConcursPersistence\utils\DBUtils.cs:line 19
+   at Laborator3.repository.UserRepositoryImpl.Save(User user) in C:\ANUL II\SEMESTRUL II\MPP\mpp-proiect-csharp-parnau-patrick\Laborator3\ConcursPersistence\repository\impl\UserRepositoryImpl.cs:line 234
+2025-05-06 18:01:19,794 [3] ERROR ConcursServer.ClientJsonWorker - Error registering user
+ConcursPersistence.exception.RepositoryException: Error saving user 'alex': unable to open database file
+ ---> code = CantOpen (14), message = System.Data.SQLite.SQLiteException (0x87AF03F3): unable to open database file
+   at System.Data.SQLite.SQLite3.Open(String strFilename, String vfsName, SQLiteConnectionFlags connectionFlags, SQLiteOpenFlagsEnum openFlags, Int32 maxPoolSize, Boolean usePool)
+   at System.Data.SQLite.SQLiteConnection.Open()
+   at ConcursPersistence.utils.DBUtils.GetConnection(IDictionary`2 props) in C:\ANUL II\SEMESTRUL II\MPP\mpp-proiect-csharp-parnau-patrick\Laborator3\ConcursPersistence\utils\DBUtils.cs:line 19
+   at Laborator3.repository.UserRepositoryImpl.Save(User user) in C:\ANUL II\SEMESTRUL II\MPP\mpp-proiect-csharp-parnau-patrick\Laborator3\ConcursPersistence\repository\impl\UserRepositoryImpl.cs:line 234
+   --- End of inner exception stack trace ---
+   at Laborator3.repository.UserRepositoryImpl.Save(User user) in C:\ANUL II\SEMESTRUL II\MPP\mpp-proiect-csharp-parnau-patrick\Laborator3\ConcursPersistence\repository\impl\UserRepositoryImpl.cs:line 290
+   at ConcursServices.UserService.SaveUser(User user) in C:\ANUL II\SEMESTRUL II\MPP\mpp-proiect-csharp-parnau-patrick\Laborator3\ConcursServices\UserService.cs:line 64
+   at ConcursServer.ClientJsonWorker.HandleRegisterUser(Request request) in C:\ANUL II\SEMESTRUL II\MPP\mpp-proiect-csharp-parnau-patrick\Laborator3\ConcursServer\ClientJsonWorker.cs:line 398
+2025-05-06 18:03:13,004 [1] INFO  ConcursServer.StartServer - Starting server application
+2025-05-06 18:03:13,015 [1] INFO  ConcursPersistence.repository.impl.EventRepositoryImpl - Creating EventDatabaseRepository
+2025-05-06 18:03:13,016 [1] INFO  ConcursPersistence.repository.ParticipantRepositoryImpl - Creating ParticipantRepository
+2025-05-06 18:03:13,016 [1] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Creating InscriereRepository
+2025-05-06 18:03:13,016 [1] INFO  Laborator3.repository.UserRepositoryImpl - Creating UserRepositoryImpl
+2025-05-06 18:03:13,017 [1] INFO  ConcursServices.EventService - Creating EventService
+2025-05-06 18:03:13,017 [1] INFO  ConcursServices.ParticipantService - Creating ParticipantService
+2025-05-06 18:03:13,017 [1] INFO  ConcursServices.UserService - Creating UserService
+2025-05-06 18:03:13,018 [1] INFO  ConcursServices.InscriereService - Creating InscriereService
+2025-05-06 18:03:13,018 [1] INFO  ConcursServer.StartServer - Starting server on port 55555
+2025-05-06 18:03:13,023 [1] INFO  ConcursServer.StartServer - Server started
+2025-05-06 18:03:13,023 [1] INFO  ConcursServer.StartServer - Waiting for clients...
+2025-05-06 18:03:39,236 [1] INFO  ConcursServer.StartServer - Client connected
+2025-05-06 18:03:39,236 [1] INFO  ConcursServer.StartServer - Waiting for clients...
+2025-05-06 18:03:39,418 [3] INFO  ConcursServer.ClientJsonWorker - Received request: REGISTER_USER
+2025-05-06 18:03:39,420 [3] INFO  ConcursServer.ClientJsonWorker - Handling register user request
+2025-05-06 18:03:39,421 [3] INFO  ConcursServices.UserService - UserService - SaveUser: User{username=asda, officeName=asda}
+2025-05-06 18:03:39,421 [3] INFO  Laborator3.repository.UserRepositoryImpl - UserRepository - Save user: asda
+2025-05-06 18:03:39,462 [3] INFO  Laborator3.repository.UserRepositoryImpl - UserRepository - FindByUsername with username: asda
+2025-05-06 18:03:39,476 [3] INFO  Laborator3.repository.UserRepositoryImpl - No user found with username: asda
+2025-05-06 18:03:39,484 [3] INFO  Laborator3.repository.UserRepositoryImpl - User saved successfully with ID 7: asda (asda)
+2025-05-06 18:03:39,486 [3] INFO  ConcursServer.ClientJsonWorker - User asda registered successfully
+2025-05-06 18:03:44,004 [3] INFO  ConcursServer.ClientJsonWorker - Received request: LOGIN
+2025-05-06 18:03:44,005 [3] INFO  ConcursServer.ClientJsonWorker - Handling login request
+2025-05-06 18:03:44,005 [3] INFO  ConcursServices.UserService - UserService - Login attempt for user: asda
+2025-05-06 18:03:44,006 [3] INFO  Laborator3.repository.UserRepositoryImpl - UserRepository - FindByUsername with username: asda
+2025-05-06 18:03:44,007 [3] INFO  Laborator3.repository.UserRepositoryImpl - Found user with username asda: ID 7, office asda
+2025-05-06 18:03:44,007 [3] INFO  Laborator3.repository.UserRepositoryImpl - UserRepository - ValidateCredentials for username: asda
+2025-05-06 18:03:44,007 [3] INFO  Laborator3.repository.UserRepositoryImpl - UserRepository - FindByUsername with username: asda
+2025-05-06 18:03:44,008 [3] INFO  Laborator3.repository.UserRepositoryImpl - Found user with username asda: ID 7, office asda
+2025-05-06 18:03:44,008 [3] INFO  Laborator3.repository.UserRepositoryImpl - Credentials validated successfully for user: asda
+2025-05-06 18:03:44,008 [3] INFO  ConcursServices.UserService - UserService - Login successful for user: asda
+2025-05-06 18:03:44,008 [3] INFO  ConcursServer.ClientJsonWorker - Login successful for user: asda
+2025-05-06 18:03:45,094 [3] INFO  ConcursServer.ClientJsonWorker - Received request: GET_EVENTS_WITH_PARTICIPANT_COUNTS
+2025-05-06 18:03:45,094 [3] INFO  ConcursServer.ClientJsonWorker - Handling get events with counts request
+2025-05-06 18:03:45,095 [3] INFO  ConcursServices.EventService - EventService - FindAllEvents
+2025-05-06 18:03:45,095 [3] INFO  ConcursPersistence.repository.impl.EventRepositoryImpl - Finding All Events
+2025-05-06 18:03:45,096 [3] INFO  ConcursPersistence.repository.impl.EventRepositoryImpl - Exiting FindAll events with count: 19
+2025-05-06 18:03:45,096 [3] INFO  ConcursServices.EventService - EventService - GetParticipantCountForEvent with id: 1
+2025-05-06 18:03:45,097 [3] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Finding all participants by event: 1
+2025-05-06 18:03:45,098 [3] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Found 3 participants for event ID 1
+2025-05-06 18:03:45,098 [3] INFO  ConcursServices.EventService - EventService - GetParticipantCountForEvent with id: 2
+2025-05-06 18:03:45,098 [3] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Finding all participants by event: 2
+2025-05-06 18:03:45,099 [3] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Found 2 participants for event ID 2
+2025-05-06 18:03:45,099 [3] INFO  ConcursServices.EventService - EventService - GetParticipantCountForEvent with id: 3
+2025-05-06 18:03:45,099 [3] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Finding all participants by event: 3
+2025-05-06 18:03:45,099 [3] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Found 1 participants for event ID 3
+2025-05-06 18:03:45,099 [3] INFO  ConcursServices.EventService - EventService - GetParticipantCountForEvent with id: 4
+2025-05-06 18:03:45,099 [3] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Finding all participants by event: 4
+2025-05-06 18:03:45,099 [3] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Found 1 participants for event ID 4
+2025-05-06 18:03:45,099 [3] INFO  ConcursServices.EventService - EventService - GetParticipantCountForEvent with id: 5
+2025-05-06 18:03:45,099 [3] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Finding all participants by event: 5
+2025-05-06 18:03:45,099 [3] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Found 2 participants for event ID 5
+2025-05-06 18:03:45,099 [3] INFO  ConcursServices.EventService - EventService - GetParticipantCountForEvent with id: 6
+2025-05-06 18:03:45,099 [3] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Finding all participants by event: 6
+2025-05-06 18:03:45,099 [3] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Found 0 participants for event ID 6
+2025-05-06 18:03:45,100 [3] INFO  ConcursServices.EventService - EventService - GetParticipantCountForEvent with id: 7
+2025-05-06 18:03:45,100 [3] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Finding all participants by event: 7
+2025-05-06 18:03:45,100 [3] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Found 1 participants for event ID 7
+2025-05-06 18:03:45,100 [3] INFO  ConcursServices.EventService - EventService - GetParticipantCountForEvent with id: 8
+2025-05-06 18:03:45,100 [3] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Finding all participants by event: 8
+2025-05-06 18:03:45,100 [3] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Found 1 participants for event ID 8
+2025-05-06 18:03:45,100 [3] INFO  ConcursServices.EventService - EventService - GetParticipantCountForEvent with id: 9
+2025-05-06 18:03:45,100 [3] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Finding all participants by event: 9
+2025-05-06 18:03:45,100 [3] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Found 0 participants for event ID 9
+2025-05-06 18:03:45,100 [3] INFO  ConcursServices.EventService - EventService - GetParticipantCountForEvent with id: 10
+2025-05-06 18:03:45,100 [3] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Finding all participants by event: 10
+2025-05-06 18:03:45,100 [3] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Found 0 participants for event ID 10
+2025-05-06 18:03:45,100 [3] INFO  ConcursServices.EventService - EventService - GetParticipantCountForEvent with id: 11
+2025-05-06 18:03:45,100 [3] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Finding all participants by event: 11
+2025-05-06 18:03:45,101 [3] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Found 0 participants for event ID 11
+2025-05-06 18:03:45,101 [3] INFO  ConcursServices.EventService - EventService - GetParticipantCountForEvent with id: 12
+2025-05-06 18:03:45,101 [3] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Finding all participants by event: 12
+2025-05-06 18:03:45,101 [3] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Found 0 participants for event ID 12
+2025-05-06 18:03:45,101 [3] INFO  ConcursServices.EventService - EventService - GetParticipantCountForEvent with id: 13
+2025-05-06 18:03:45,101 [3] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Finding all participants by event: 13
+2025-05-06 18:03:45,101 [3] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Found 0 participants for event ID 13
+2025-05-06 18:03:45,101 [3] INFO  ConcursServices.EventService - EventService - GetParticipantCountForEvent with id: 14
+2025-05-06 18:03:45,101 [3] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Finding all participants by event: 14
+2025-05-06 18:03:45,101 [3] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Found 0 participants for event ID 14
+2025-05-06 18:03:45,101 [3] INFO  ConcursServices.EventService - EventService - GetParticipantCountForEvent with id: 15
+2025-05-06 18:03:45,101 [3] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Finding all participants by event: 15
+2025-05-06 18:03:45,102 [3] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Found 0 participants for event ID 15
+2025-05-06 18:03:45,102 [3] INFO  ConcursServices.EventService - EventService - GetParticipantCountForEvent with id: 16
+2025-05-06 18:03:45,102 [3] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Finding all participants by event: 16
+2025-05-06 18:03:45,102 [3] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Found 0 participants for event ID 16
+2025-05-06 18:03:45,102 [3] INFO  ConcursServices.EventService - EventService - GetParticipantCountForEvent with id: 17
+2025-05-06 18:03:45,102 [3] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Finding all participants by event: 17
+2025-05-06 18:03:45,102 [3] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Found 3 participants for event ID 17
+2025-05-06 18:03:45,102 [3] INFO  ConcursServices.EventService - EventService - GetParticipantCountForEvent with id: 18
+2025-05-06 18:03:45,102 [3] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Finding all participants by event: 18
+2025-05-06 18:03:45,102 [3] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Found 3 participants for event ID 18
+2025-05-06 18:03:45,102 [3] INFO  ConcursServices.EventService - EventService - GetParticipantCountForEvent with id: 19
+2025-05-06 18:03:45,102 [3] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Finding all participants by event: 19
+2025-05-06 18:03:45,102 [3] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Found 3 participants for event ID 19
+2025-05-06 18:03:45,842 [3] INFO  ConcursServer.ClientJsonWorker - Received request: GET_EVENTS
+2025-05-06 18:03:45,843 [3] INFO  ConcursServer.ClientJsonWorker - Handling get events request
+2025-05-06 18:03:45,843 [3] INFO  ConcursServices.EventService - EventService - FindAllEvents
+2025-05-06 18:03:45,843 [3] INFO  ConcursPersistence.repository.impl.EventRepositoryImpl - Finding All Events
+2025-05-06 18:03:45,843 [3] INFO  ConcursPersistence.repository.impl.EventRepositoryImpl - Exiting FindAll events with count: 19
+2025-05-06 18:03:45,844 [3] INFO  ConcursServices.EventService - EventService - GetParticipantCountForEvent with id: 1
+2025-05-06 18:03:45,844 [3] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Finding all participants by event: 1
+2025-05-06 18:03:45,844 [3] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Found 3 participants for event ID 1
+2025-05-06 18:03:45,844 [3] INFO  ConcursServices.EventService - EventService - GetParticipantCountForEvent with id: 2
+2025-05-06 18:03:45,844 [3] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Finding all participants by event: 2
+2025-05-06 18:03:45,844 [3] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Found 2 participants for event ID 2
+2025-05-06 18:03:45,844 [3] INFO  ConcursServices.EventService - EventService - GetParticipantCountForEvent with id: 3
+2025-05-06 18:03:45,844 [3] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Finding all participants by event: 3
+2025-05-06 18:03:45,844 [3] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Found 1 participants for event ID 3
+2025-05-06 18:03:45,844 [3] INFO  ConcursServices.EventService - EventService - GetParticipantCountForEvent with id: 4
+2025-05-06 18:03:45,844 [3] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Finding all participants by event: 4
+2025-05-06 18:03:45,845 [3] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Found 1 participants for event ID 4
+2025-05-06 18:03:45,845 [3] INFO  ConcursServices.EventService - EventService - GetParticipantCountForEvent with id: 5
+2025-05-06 18:03:45,845 [3] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Finding all participants by event: 5
+2025-05-06 18:03:45,845 [3] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Found 2 participants for event ID 5
+2025-05-06 18:03:45,845 [3] INFO  ConcursServices.EventService - EventService - GetParticipantCountForEvent with id: 6
+2025-05-06 18:03:45,845 [3] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Finding all participants by event: 6
+2025-05-06 18:03:45,845 [3] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Found 0 participants for event ID 6
+2025-05-06 18:03:45,845 [3] INFO  ConcursServices.EventService - EventService - GetParticipantCountForEvent with id: 7
+2025-05-06 18:03:45,845 [3] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Finding all participants by event: 7
+2025-05-06 18:03:45,845 [3] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Found 1 participants for event ID 7
+2025-05-06 18:03:45,845 [3] INFO  ConcursServices.EventService - EventService - GetParticipantCountForEvent with id: 8
+2025-05-06 18:03:45,845 [3] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Finding all participants by event: 8
+2025-05-06 18:03:45,845 [3] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Found 1 participants for event ID 8
+2025-05-06 18:03:45,845 [3] INFO  ConcursServices.EventService - EventService - GetParticipantCountForEvent with id: 9
+2025-05-06 18:03:45,845 [3] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Finding all participants by event: 9
+2025-05-06 18:03:45,845 [3] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Found 0 participants for event ID 9
+2025-05-06 18:03:45,846 [3] INFO  ConcursServices.EventService - EventService - GetParticipantCountForEvent with id: 10
+2025-05-06 18:03:45,846 [3] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Finding all participants by event: 10
+2025-05-06 18:03:45,846 [3] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Found 0 participants for event ID 10
+2025-05-06 18:03:45,846 [3] INFO  ConcursServices.EventService - EventService - GetParticipantCountForEvent with id: 11
+2025-05-06 18:03:45,846 [3] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Finding all participants by event: 11
+2025-05-06 18:03:45,846 [3] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Found 0 participants for event ID 11
+2025-05-06 18:03:45,846 [3] INFO  ConcursServices.EventService - EventService - GetParticipantCountForEvent with id: 12
+2025-05-06 18:03:45,846 [3] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Finding all participants by event: 12
+2025-05-06 18:03:45,846 [3] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Found 0 participants for event ID 12
+2025-05-06 18:03:45,846 [3] INFO  ConcursServices.EventService - EventService - GetParticipantCountForEvent with id: 13
+2025-05-06 18:03:45,846 [3] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Finding all participants by event: 13
+2025-05-06 18:03:45,846 [3] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Found 0 participants for event ID 13
+2025-05-06 18:03:45,846 [3] INFO  ConcursServices.EventService - EventService - GetParticipantCountForEvent with id: 14
+2025-05-06 18:03:45,846 [3] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Finding all participants by event: 14
+2025-05-06 18:03:45,846 [3] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Found 0 participants for event ID 14
+2025-05-06 18:03:45,846 [3] INFO  ConcursServices.EventService - EventService - GetParticipantCountForEvent with id: 15
+2025-05-06 18:03:45,846 [3] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Finding all participants by event: 15
+2025-05-06 18:03:45,847 [3] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Found 0 participants for event ID 15
+2025-05-06 18:03:45,847 [3] INFO  ConcursServices.EventService - EventService - GetParticipantCountForEvent with id: 16
+2025-05-06 18:03:45,847 [3] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Finding all participants by event: 16
+2025-05-06 18:03:45,847 [3] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Found 0 participants for event ID 16
+2025-05-06 18:03:45,847 [3] INFO  ConcursServices.EventService - EventService - GetParticipantCountForEvent with id: 17
+2025-05-06 18:03:45,847 [3] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Finding all participants by event: 17
+2025-05-06 18:03:45,847 [3] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Found 3 participants for event ID 17
+2025-05-06 18:03:45,847 [3] INFO  ConcursServices.EventService - EventService - GetParticipantCountForEvent with id: 18
+2025-05-06 18:03:45,847 [3] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Finding all participants by event: 18
+2025-05-06 18:03:45,847 [3] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Found 3 participants for event ID 18
+2025-05-06 18:03:45,847 [3] INFO  ConcursServices.EventService - EventService - GetParticipantCountForEvent with id: 19
+2025-05-06 18:03:45,847 [3] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Finding all participants by event: 19
+2025-05-06 18:03:45,847 [3] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Found 3 participants for event ID 19
+2025-05-06 18:03:46,317 [3] INFO  ConcursServer.ClientJsonWorker - Received request: GET_EVENTS
+2025-05-06 18:03:46,317 [3] INFO  ConcursServer.ClientJsonWorker - Handling get events request
+2025-05-06 18:03:46,317 [3] INFO  ConcursServices.EventService - EventService - FindAllEvents
+2025-05-06 18:03:46,317 [3] INFO  ConcursPersistence.repository.impl.EventRepositoryImpl - Finding All Events
+2025-05-06 18:03:46,317 [3] INFO  ConcursPersistence.repository.impl.EventRepositoryImpl - Exiting FindAll events with count: 19
+2025-05-06 18:03:46,318 [3] INFO  ConcursServices.EventService - EventService - GetParticipantCountForEvent with id: 1
+2025-05-06 18:03:46,318 [3] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Finding all participants by event: 1
+2025-05-06 18:03:46,318 [3] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Found 3 participants for event ID 1
+2025-05-06 18:03:46,318 [3] INFO  ConcursServices.EventService - EventService - GetParticipantCountForEvent with id: 2
+2025-05-06 18:03:46,318 [3] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Finding all participants by event: 2
+2025-05-06 18:03:46,318 [3] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Found 2 participants for event ID 2
+2025-05-06 18:03:46,318 [3] INFO  ConcursServices.EventService - EventService - GetParticipantCountForEvent with id: 3
+2025-05-06 18:03:46,318 [3] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Finding all participants by event: 3
+2025-05-06 18:03:46,318 [3] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Found 1 participants for event ID 3
+2025-05-06 18:03:46,318 [3] INFO  ConcursServices.EventService - EventService - GetParticipantCountForEvent with id: 4
+2025-05-06 18:03:46,318 [3] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Finding all participants by event: 4
+2025-05-06 18:03:46,318 [3] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Found 1 participants for event ID 4
+2025-05-06 18:03:46,319 [3] INFO  ConcursServices.EventService - EventService - GetParticipantCountForEvent with id: 5
+2025-05-06 18:03:46,319 [3] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Finding all participants by event: 5
+2025-05-06 18:03:46,319 [3] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Found 2 participants for event ID 5
+2025-05-06 18:03:46,319 [3] INFO  ConcursServices.EventService - EventService - GetParticipantCountForEvent with id: 6
+2025-05-06 18:03:46,319 [3] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Finding all participants by event: 6
+2025-05-06 18:03:46,319 [3] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Found 0 participants for event ID 6
+2025-05-06 18:03:46,319 [3] INFO  ConcursServices.EventService - EventService - GetParticipantCountForEvent with id: 7
+2025-05-06 18:03:46,319 [3] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Finding all participants by event: 7
+2025-05-06 18:03:46,319 [3] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Found 1 participants for event ID 7
+2025-05-06 18:03:46,319 [3] INFO  ConcursServices.EventService - EventService - GetParticipantCountForEvent with id: 8
+2025-05-06 18:03:46,319 [3] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Finding all participants by event: 8
+2025-05-06 18:03:46,319 [3] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Found 1 participants for event ID 8
+2025-05-06 18:03:46,319 [3] INFO  ConcursServices.EventService - EventService - GetParticipantCountForEvent with id: 9
+2025-05-06 18:03:46,319 [3] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Finding all participants by event: 9
+2025-05-06 18:03:46,319 [3] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Found 0 participants for event ID 9
+2025-05-06 18:03:46,320 [3] INFO  ConcursServices.EventService - EventService - GetParticipantCountForEvent with id: 10
+2025-05-06 18:03:46,320 [3] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Finding all participants by event: 10
+2025-05-06 18:03:46,320 [3] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Found 0 participants for event ID 10
+2025-05-06 18:03:46,320 [3] INFO  ConcursServices.EventService - EventService - GetParticipantCountForEvent with id: 11
+2025-05-06 18:03:46,320 [3] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Finding all participants by event: 11
+2025-05-06 18:03:46,320 [3] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Found 0 participants for event ID 11
+2025-05-06 18:03:46,320 [3] INFO  ConcursServices.EventService - EventService - GetParticipantCountForEvent with id: 12
+2025-05-06 18:03:46,320 [3] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Finding all participants by event: 12
+2025-05-06 18:03:46,320 [3] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Found 0 participants for event ID 12
+2025-05-06 18:03:46,320 [3] INFO  ConcursServices.EventService - EventService - GetParticipantCountForEvent with id: 13
+2025-05-06 18:03:46,320 [3] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Finding all participants by event: 13
+2025-05-06 18:03:46,320 [3] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Found 0 participants for event ID 13
+2025-05-06 18:03:46,320 [3] INFO  ConcursServices.EventService - EventService - GetParticipantCountForEvent with id: 14
+2025-05-06 18:03:46,320 [3] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Finding all participants by event: 14
+2025-05-06 18:03:46,321 [3] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Found 0 participants for event ID 14
+2025-05-06 18:03:46,321 [3] INFO  ConcursServices.EventService - EventService - GetParticipantCountForEvent with id: 15
+2025-05-06 18:03:46,321 [3] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Finding all participants by event: 15
+2025-05-06 18:03:46,321 [3] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Found 0 participants for event ID 15
+2025-05-06 18:03:46,321 [3] INFO  ConcursServices.EventService - EventService - GetParticipantCountForEvent with id: 16
+2025-05-06 18:03:46,321 [3] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Finding all participants by event: 16
+2025-05-06 18:03:46,321 [3] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Found 0 participants for event ID 16
+2025-05-06 18:03:46,321 [3] INFO  ConcursServices.EventService - EventService - GetParticipantCountForEvent with id: 17
+2025-05-06 18:03:46,321 [3] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Finding all participants by event: 17
+2025-05-06 18:03:46,321 [3] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Found 3 participants for event ID 17
+2025-05-06 18:03:46,321 [3] INFO  ConcursServices.EventService - EventService - GetParticipantCountForEvent with id: 18
+2025-05-06 18:03:46,321 [3] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Finding all participants by event: 18
+2025-05-06 18:03:46,322 [3] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Found 3 participants for event ID 18
+2025-05-06 18:03:46,322 [3] INFO  ConcursServices.EventService - EventService - GetParticipantCountForEvent with id: 19
+2025-05-06 18:03:46,322 [3] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Finding all participants by event: 19
+2025-05-06 18:03:46,322 [3] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Found 3 participants for event ID 19
+2025-05-06 18:04:03,829 [3] INFO  ConcursServer.ClientJsonWorker - Received request: GET_PARTICIPANTS_BY_EVENT
+2025-05-06 18:04:03,829 [3] INFO  ConcursServer.ClientJsonWorker - Handling get participants by event request
+2025-05-06 18:04:03,830 [3] INFO  ConcursServices.InscriereService - InscriereService - FindAllParticipantsByEvent with id: 1
+2025-05-06 18:04:03,830 [3] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Finding all participants by event: 1
+2025-05-06 18:04:03,830 [3] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Found 3 participants for event ID 1
+2025-05-06 18:04:03,831 [3] INFO  ConcursServices.InscriereService - InscriereService - CountEventsForParticipant with id: 1
+2025-05-06 18:04:03,831 [3] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Finding all events by participant: 1
+2025-05-06 18:04:03,831 [3] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Found 2 events for participant ID 1
+2025-05-06 18:04:03,832 [3] INFO  ConcursServices.InscriereService - InscriereService - CountEventsForParticipant with id: 13
+2025-05-06 18:04:03,832 [3] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Finding all events by participant: 13
+2025-05-06 18:04:03,832 [3] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Found 1 events for participant ID 13
+2025-05-06 18:04:03,832 [3] INFO  ConcursServices.InscriereService - InscriereService - CountEventsForParticipant with id: 16
+2025-05-06 18:04:03,832 [3] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Finding all events by participant: 16
+2025-05-06 18:04:03,832 [3] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Found 1 events for participant ID 16
+2025-05-06 18:04:06,183 [3] INFO  ConcursServer.ClientJsonWorker - Received request: GET_PARTICIPANTS_BY_EVENT
+2025-05-06 18:04:06,183 [3] INFO  ConcursServer.ClientJsonWorker - Handling get participants by event request
+2025-05-06 18:04:06,183 [3] INFO  ConcursServices.InscriereService - InscriereService - FindAllParticipantsByEvent with id: 5
+2025-05-06 18:04:06,183 [3] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Finding all participants by event: 5
+2025-05-06 18:04:06,183 [3] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Found 2 participants for event ID 5
+2025-05-06 18:04:06,183 [3] INFO  ConcursServices.InscriereService - InscriereService - CountEventsForParticipant with id: 18
+2025-05-06 18:04:06,183 [3] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Finding all events by participant: 18
+2025-05-06 18:04:06,184 [3] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Found 1 events for participant ID 18
+2025-05-06 18:04:06,184 [3] INFO  ConcursServices.InscriereService - InscriereService - CountEventsForParticipant with id: 19
+2025-05-06 18:04:06,184 [3] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Finding all events by participant: 19
+2025-05-06 18:04:06,184 [3] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Found 1 events for participant ID 19
+2025-05-06 18:04:31,056 [3] ERROR ConcursNetworking.utils.JsonSerializerUtils - Error reading object from stream
+System.IO.IOException: Unable to read data from the transport connection: An existing connection was forcibly closed by the remote host..
+ ---> System.Net.Sockets.SocketException (10054): An existing connection was forcibly closed by the remote host.
+   at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 count)
+   --- End of inner exception stack trace ---
+   at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 count)
+   at ConcursNetworking.utils.JsonSerializerUtils.ReadFromStream[T](NetworkStream stream) in C:\ANUL II\SEMESTRUL II\MPP\mpp-proiect-csharp-parnau-patrick\Laborator3\ConcursNetworking\JsonSerializerUtils.cs:line 55
+2025-05-06 18:04:31,075 [3] ERROR ConcursServer.ClientJsonWorker - Error in client worker
+System.IO.IOException: Unable to read data from the transport connection: An existing connection was forcibly closed by the remote host..
+ ---> System.Net.Sockets.SocketException (10054): An existing connection was forcibly closed by the remote host.
+   at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 count)
+   --- End of inner exception stack trace ---
+   at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 count)
+   at ConcursNetworking.utils.JsonSerializerUtils.ReadFromStream[T](NetworkStream stream) in C:\ANUL II\SEMESTRUL II\MPP\mpp-proiect-csharp-parnau-patrick\Laborator3\ConcursNetworking\JsonSerializerUtils.cs:line 55
+   at ConcursServer.ClientJsonWorker.Run() in C:\ANUL II\SEMESTRUL II\MPP\mpp-proiect-csharp-parnau-patrick\Laborator3\ConcursServer\ClientJsonWorker.cs:line 50
+2025-05-06 18:04:56,431 [1] INFO  ConcursServer.StartServer - Client connected
+2025-05-06 18:04:56,431 [1] INFO  ConcursServer.StartServer - Waiting for clients...
+2025-05-06 18:04:56,518 [9] INFO  ConcursServer.ClientJsonWorker - Received request: LOGIN
+2025-05-06 18:04:56,518 [9] INFO  ConcursServer.ClientJsonWorker - Handling login request
+2025-05-06 18:04:56,518 [9] INFO  ConcursServices.UserService - UserService - Login attempt for user: admin
+2025-05-06 18:04:56,519 [9] INFO  Laborator3.repository.UserRepositoryImpl - UserRepository - FindByUsername with username: admin
+2025-05-06 18:04:56,519 [9] INFO  Laborator3.repository.UserRepositoryImpl - Found user with username admin: ID 2, office MainOffice
+2025-05-06 18:04:56,519 [9] INFO  Laborator3.repository.UserRepositoryImpl - UserRepository - ValidateCredentials for username: admin
+2025-05-06 18:04:56,519 [9] INFO  Laborator3.repository.UserRepositoryImpl - UserRepository - FindByUsername with username: admin
+2025-05-06 18:04:56,520 [9] INFO  Laborator3.repository.UserRepositoryImpl - Found user with username admin: ID 2, office MainOffice
+2025-05-06 18:04:56,520 [9] INFO  Laborator3.repository.UserRepositoryImpl - Validation failed: Incorrect password for user: admin
+2025-05-06 18:04:56,520 [9] WARN  ConcursServices.UserService - UserService - Invalid password for user: admin
+2025-05-06 18:04:56,520 [9] ERROR ConcursServer.ClientJsonWorker - Login error
+ConcursModel.exception.ValidationException: Invalid username or password
+   at ConcursServices.UserService.Login(String username, String password) in C:\ANUL II\SEMESTRUL II\MPP\mpp-proiect-csharp-parnau-patrick\Laborator3\ConcursServices\UserService.cs:line 42
+   at ConcursServer.ClientJsonWorker.HandleLogin(Request request) in C:\ANUL II\SEMESTRUL II\MPP\mpp-proiect-csharp-parnau-patrick\Laborator3\ConcursServer\ClientJsonWorker.cs:line 156
+2025-05-06 18:04:58,639 [9] INFO  ConcursServer.ClientJsonWorker - Received request: LOGIN
+2025-05-06 18:04:58,639 [9] INFO  ConcursServer.ClientJsonWorker - Handling login request
+2025-05-06 18:04:58,639 [9] INFO  ConcursServices.UserService - UserService - Login attempt for user: admin
+2025-05-06 18:04:58,639 [9] INFO  Laborator3.repository.UserRepositoryImpl - UserRepository - FindByUsername with username: admin
+2025-05-06 18:04:58,640 [9] INFO  Laborator3.repository.UserRepositoryImpl - Found user with username admin: ID 2, office MainOffice
+2025-05-06 18:04:58,640 [9] INFO  Laborator3.repository.UserRepositoryImpl - UserRepository - ValidateCredentials for username: admin
+2025-05-06 18:04:58,640 [9] INFO  Laborator3.repository.UserRepositoryImpl - UserRepository - FindByUsername with username: admin
+2025-05-06 18:04:58,640 [9] INFO  Laborator3.repository.UserRepositoryImpl - Found user with username admin: ID 2, office MainOffice
+2025-05-06 18:04:58,640 [9] INFO  Laborator3.repository.UserRepositoryImpl - Validation failed: Incorrect password for user: admin
+2025-05-06 18:04:58,640 [9] WARN  ConcursServices.UserService - UserService - Invalid password for user: admin
+2025-05-06 18:04:58,640 [9] ERROR ConcursServer.ClientJsonWorker - Login error
+ConcursModel.exception.ValidationException: Invalid username or password
+   at ConcursServices.UserService.Login(String username, String password) in C:\ANUL II\SEMESTRUL II\MPP\mpp-proiect-csharp-parnau-patrick\Laborator3\ConcursServices\UserService.cs:line 42
+   at ConcursServer.ClientJsonWorker.HandleLogin(Request request) in C:\ANUL II\SEMESTRUL II\MPP\mpp-proiect-csharp-parnau-patrick\Laborator3\ConcursServer\ClientJsonWorker.cs:line 156
+2025-05-06 18:05:02,672 [9] INFO  ConcursServer.ClientJsonWorker - Received request: LOGIN
+2025-05-06 18:05:02,672 [9] INFO  ConcursServer.ClientJsonWorker - Handling login request
+2025-05-06 18:05:02,673 [9] INFO  ConcursServices.UserService - UserService - Login attempt for user: admin
+2025-05-06 18:05:02,673 [9] INFO  Laborator3.repository.UserRepositoryImpl - UserRepository - FindByUsername with username: admin
+2025-05-06 18:05:02,673 [9] INFO  Laborator3.repository.UserRepositoryImpl - Found user with username admin: ID 2, office MainOffice
+2025-05-06 18:05:02,673 [9] INFO  Laborator3.repository.UserRepositoryImpl - UserRepository - ValidateCredentials for username: admin
+2025-05-06 18:05:02,673 [9] INFO  Laborator3.repository.UserRepositoryImpl - UserRepository - FindByUsername with username: admin
+2025-05-06 18:05:02,673 [9] INFO  Laborator3.repository.UserRepositoryImpl - Found user with username admin: ID 2, office MainOffice
+2025-05-06 18:05:02,674 [9] INFO  Laborator3.repository.UserRepositoryImpl - Validation failed: Incorrect password for user: admin
+2025-05-06 18:05:02,674 [9] WARN  ConcursServices.UserService - UserService - Invalid password for user: admin
+2025-05-06 18:05:02,674 [9] ERROR ConcursServer.ClientJsonWorker - Login error
+ConcursModel.exception.ValidationException: Invalid username or password
+   at ConcursServices.UserService.Login(String username, String password) in C:\ANUL II\SEMESTRUL II\MPP\mpp-proiect-csharp-parnau-patrick\Laborator3\ConcursServices\UserService.cs:line 42
+   at ConcursServer.ClientJsonWorker.HandleLogin(Request request) in C:\ANUL II\SEMESTRUL II\MPP\mpp-proiect-csharp-parnau-patrick\Laborator3\ConcursServer\ClientJsonWorker.cs:line 156
+2025-05-06 18:05:13,202 [9] INFO  ConcursServer.ClientJsonWorker - Received request: REGISTER_USER
+2025-05-06 18:05:13,202 [9] INFO  ConcursServer.ClientJsonWorker - Handling register user request
+2025-05-06 18:05:13,202 [9] INFO  ConcursServices.UserService - UserService - SaveUser: User{username=patrick, officeName=Patrick}
+2025-05-06 18:05:13,202 [9] INFO  Laborator3.repository.UserRepositoryImpl - UserRepository - Save user: patrick
+2025-05-06 18:05:13,202 [9] INFO  Laborator3.repository.UserRepositoryImpl - UserRepository - FindByUsername with username: patrick
+2025-05-06 18:05:13,202 [9] INFO  Laborator3.repository.UserRepositoryImpl - Found user with username patrick: ID 3, office Patrick_Office
+2025-05-06 18:05:13,202 [9] INFO  Laborator3.repository.UserRepositoryImpl - User with username patrick already exists
+2025-05-06 18:05:13,203 [9] ERROR ConcursServer.ClientJsonWorker - Error registering user
+ConcursPersistence.exception.RepositoryException: User with username patrick already exists
+   at Laborator3.repository.UserRepositoryImpl.Save(User user) in C:\ANUL II\SEMESTRUL II\MPP\mpp-proiect-csharp-parnau-patrick\Laborator3\ConcursPersistence\repository\impl\UserRepositoryImpl.cs:line 243
+   at ConcursServices.UserService.SaveUser(User user) in C:\ANUL II\SEMESTRUL II\MPP\mpp-proiect-csharp-parnau-patrick\Laborator3\ConcursServices\UserService.cs:line 64
+   at ConcursServer.ClientJsonWorker.HandleRegisterUser(Request request) in C:\ANUL II\SEMESTRUL II\MPP\mpp-proiect-csharp-parnau-patrick\Laborator3\ConcursServer\ClientJsonWorker.cs:line 398
+2025-05-06 18:05:18,269 [9] INFO  ConcursServer.ClientJsonWorker - Received request: REGISTER_USER
+2025-05-06 18:05:18,269 [9] INFO  ConcursServer.ClientJsonWorker - Handling register user request
+2025-05-06 18:05:18,269 [9] INFO  ConcursServices.UserService - UserService - SaveUser: User{username=patrick1, officeName=Patrick}
+2025-05-06 18:05:18,269 [9] INFO  Laborator3.repository.UserRepositoryImpl - UserRepository - Save user: patrick1
+2025-05-06 18:05:18,269 [9] INFO  Laborator3.repository.UserRepositoryImpl - UserRepository - FindByUsername with username: patrick1
+2025-05-06 18:05:18,270 [9] INFO  Laborator3.repository.UserRepositoryImpl - No user found with username: patrick1
+2025-05-06 18:05:18,274 [9] INFO  Laborator3.repository.UserRepositoryImpl - User saved successfully with ID 8: patrick1 (Patrick)
+2025-05-06 18:05:18,274 [9] INFO  ConcursServer.ClientJsonWorker - User patrick1 registered successfully
+2025-05-06 18:05:23,302 [9] INFO  ConcursServer.ClientJsonWorker - Received request: LOGIN
+2025-05-06 18:05:23,302 [9] INFO  ConcursServer.ClientJsonWorker - Handling login request
+2025-05-06 18:05:23,302 [9] INFO  ConcursServices.UserService - UserService - Login attempt for user: patrick1
+2025-05-06 18:05:23,302 [9] INFO  Laborator3.repository.UserRepositoryImpl - UserRepository - FindByUsername with username: patrick1
+2025-05-06 18:05:23,302 [9] INFO  Laborator3.repository.UserRepositoryImpl - Found user with username patrick1: ID 8, office Patrick
+2025-05-06 18:05:23,302 [9] INFO  Laborator3.repository.UserRepositoryImpl - UserRepository - ValidateCredentials for username: patrick1
+2025-05-06 18:05:23,302 [9] INFO  Laborator3.repository.UserRepositoryImpl - UserRepository - FindByUsername with username: patrick1
+2025-05-06 18:05:23,302 [9] INFO  Laborator3.repository.UserRepositoryImpl - Found user with username patrick1: ID 8, office Patrick
+2025-05-06 18:05:23,302 [9] INFO  Laborator3.repository.UserRepositoryImpl - Credentials validated successfully for user: patrick1
+2025-05-06 18:05:23,303 [9] INFO  ConcursServices.UserService - UserService - Login successful for user: patrick1
+2025-05-06 18:05:23,303 [9] INFO  ConcursServer.ClientJsonWorker - Login successful for user: patrick1
+2025-05-06 18:05:25,318 [9] INFO  ConcursServer.ClientJsonWorker - Received request: GET_EVENTS_WITH_PARTICIPANT_COUNTS
+2025-05-06 18:05:25,318 [9] INFO  ConcursServer.ClientJsonWorker - Handling get events with counts request
+2025-05-06 18:05:25,318 [9] INFO  ConcursServices.EventService - EventService - FindAllEvents
+2025-05-06 18:05:25,318 [9] INFO  ConcursPersistence.repository.impl.EventRepositoryImpl - Finding All Events
+2025-05-06 18:05:25,318 [9] INFO  ConcursPersistence.repository.impl.EventRepositoryImpl - Exiting FindAll events with count: 19
+2025-05-06 18:05:25,318 [9] INFO  ConcursServices.EventService - EventService - GetParticipantCountForEvent with id: 1
+2025-05-06 18:05:25,318 [9] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Finding all participants by event: 1
+2025-05-06 18:05:25,318 [9] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Found 3 participants for event ID 1
+2025-05-06 18:05:25,318 [9] INFO  ConcursServices.EventService - EventService - GetParticipantCountForEvent with id: 2
+2025-05-06 18:05:25,318 [9] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Finding all participants by event: 2
+2025-05-06 18:05:25,319 [9] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Found 2 participants for event ID 2
+2025-05-06 18:05:25,319 [9] INFO  ConcursServices.EventService - EventService - GetParticipantCountForEvent with id: 3
+2025-05-06 18:05:25,319 [9] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Finding all participants by event: 3
+2025-05-06 18:05:25,319 [9] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Found 1 participants for event ID 3
+2025-05-06 18:05:25,319 [9] INFO  ConcursServices.EventService - EventService - GetParticipantCountForEvent with id: 4
+2025-05-06 18:05:25,319 [9] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Finding all participants by event: 4
+2025-05-06 18:05:25,319 [9] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Found 1 participants for event ID 4
+2025-05-06 18:05:25,319 [9] INFO  ConcursServices.EventService - EventService - GetParticipantCountForEvent with id: 5
+2025-05-06 18:05:25,319 [9] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Finding all participants by event: 5
+2025-05-06 18:05:25,319 [9] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Found 2 participants for event ID 5
+2025-05-06 18:05:25,319 [9] INFO  ConcursServices.EventService - EventService - GetParticipantCountForEvent with id: 6
+2025-05-06 18:05:25,319 [9] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Finding all participants by event: 6
+2025-05-06 18:05:25,319 [9] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Found 0 participants for event ID 6
+2025-05-06 18:05:25,319 [9] INFO  ConcursServices.EventService - EventService - GetParticipantCountForEvent with id: 7
+2025-05-06 18:05:25,319 [9] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Finding all participants by event: 7
+2025-05-06 18:05:25,320 [9] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Found 1 participants for event ID 7
+2025-05-06 18:05:25,320 [9] INFO  ConcursServices.EventService - EventService - GetParticipantCountForEvent with id: 8
+2025-05-06 18:05:25,320 [9] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Finding all participants by event: 8
+2025-05-06 18:05:25,320 [9] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Found 1 participants for event ID 8
+2025-05-06 18:05:25,320 [9] INFO  ConcursServices.EventService - EventService - GetParticipantCountForEvent with id: 9
+2025-05-06 18:05:25,320 [9] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Finding all participants by event: 9
+2025-05-06 18:05:25,320 [9] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Found 0 participants for event ID 9
+2025-05-06 18:05:25,320 [9] INFO  ConcursServices.EventService - EventService - GetParticipantCountForEvent with id: 10
+2025-05-06 18:05:25,320 [9] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Finding all participants by event: 10
+2025-05-06 18:05:25,320 [9] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Found 0 participants for event ID 10
+2025-05-06 18:05:25,320 [9] INFO  ConcursServices.EventService - EventService - GetParticipantCountForEvent with id: 11
+2025-05-06 18:05:25,320 [9] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Finding all participants by event: 11
+2025-05-06 18:05:25,320 [9] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Found 0 participants for event ID 11
+2025-05-06 18:05:25,320 [9] INFO  ConcursServices.EventService - EventService - GetParticipantCountForEvent with id: 12
+2025-05-06 18:05:25,320 [9] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Finding all participants by event: 12
+2025-05-06 18:05:25,320 [9] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Found 0 participants for event ID 12
+2025-05-06 18:05:25,320 [9] INFO  ConcursServices.EventService - EventService - GetParticipantCountForEvent with id: 13
+2025-05-06 18:05:25,320 [9] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Finding all participants by event: 13
+2025-05-06 18:05:25,321 [9] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Found 0 participants for event ID 13
+2025-05-06 18:05:25,321 [9] INFO  ConcursServices.EventService - EventService - GetParticipantCountForEvent with id: 14
+2025-05-06 18:05:25,321 [9] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Finding all participants by event: 14
+2025-05-06 18:05:25,321 [9] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Found 0 participants for event ID 14
+2025-05-06 18:05:25,321 [9] INFO  ConcursServices.EventService - EventService - GetParticipantCountForEvent with id: 15
+2025-05-06 18:05:25,321 [9] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Finding all participants by event: 15
+2025-05-06 18:05:25,321 [9] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Found 0 participants for event ID 15
+2025-05-06 18:05:25,321 [9] INFO  ConcursServices.EventService - EventService - GetParticipantCountForEvent with id: 16
+2025-05-06 18:05:25,321 [9] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Finding all participants by event: 16
+2025-05-06 18:05:25,321 [9] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Found 0 participants for event ID 16
+2025-05-06 18:05:25,321 [9] INFO  ConcursServices.EventService - EventService - GetParticipantCountForEvent with id: 17
+2025-05-06 18:05:25,321 [9] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Finding all participants by event: 17
+2025-05-06 18:05:25,321 [9] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Found 3 participants for event ID 17
+2025-05-06 18:05:25,321 [9] INFO  ConcursServices.EventService - EventService - GetParticipantCountForEvent with id: 18
+2025-05-06 18:05:25,321 [9] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Finding all participants by event: 18
+2025-05-06 18:05:25,321 [9] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Found 3 participants for event ID 18
+2025-05-06 18:05:25,321 [9] INFO  ConcursServices.EventService - EventService - GetParticipantCountForEvent with id: 19
+2025-05-06 18:05:25,321 [9] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Finding all participants by event: 19
+2025-05-06 18:05:25,322 [9] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Found 3 participants for event ID 19
+2025-05-06 18:05:25,671 [9] INFO  ConcursServer.ClientJsonWorker - Received request: GET_EVENTS
+2025-05-06 18:05:25,672 [9] INFO  ConcursServer.ClientJsonWorker - Handling get events request
+2025-05-06 18:05:25,672 [9] INFO  ConcursServices.EventService - EventService - FindAllEvents
+2025-05-06 18:05:25,672 [9] INFO  ConcursPersistence.repository.impl.EventRepositoryImpl - Finding All Events
+2025-05-06 18:05:25,672 [9] INFO  ConcursPersistence.repository.impl.EventRepositoryImpl - Exiting FindAll events with count: 19
+2025-05-06 18:05:25,672 [9] INFO  ConcursServices.EventService - EventService - GetParticipantCountForEvent with id: 1
+2025-05-06 18:05:25,672 [9] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Finding all participants by event: 1
+2025-05-06 18:05:25,672 [9] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Found 3 participants for event ID 1
+2025-05-06 18:05:25,672 [9] INFO  ConcursServices.EventService - EventService - GetParticipantCountForEvent with id: 2
+2025-05-06 18:05:25,672 [9] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Finding all participants by event: 2
+2025-05-06 18:05:25,672 [9] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Found 2 participants for event ID 2
+2025-05-06 18:05:25,673 [9] INFO  ConcursServices.EventService - EventService - GetParticipantCountForEvent with id: 3
+2025-05-06 18:05:25,673 [9] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Finding all participants by event: 3
+2025-05-06 18:05:25,673 [9] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Found 1 participants for event ID 3
+2025-05-06 18:05:25,673 [9] INFO  ConcursServices.EventService - EventService - GetParticipantCountForEvent with id: 4
+2025-05-06 18:05:25,673 [9] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Finding all participants by event: 4
+2025-05-06 18:05:25,673 [9] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Found 1 participants for event ID 4
+2025-05-06 18:05:25,673 [9] INFO  ConcursServices.EventService - EventService - GetParticipantCountForEvent with id: 5
+2025-05-06 18:05:25,673 [9] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Finding all participants by event: 5
+2025-05-06 18:05:25,673 [9] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Found 2 participants for event ID 5
+2025-05-06 18:05:25,673 [9] INFO  ConcursServices.EventService - EventService - GetParticipantCountForEvent with id: 6
+2025-05-06 18:05:25,673 [9] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Finding all participants by event: 6
+2025-05-06 18:05:25,673 [9] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Found 0 participants for event ID 6
+2025-05-06 18:05:25,673 [9] INFO  ConcursServices.EventService - EventService - GetParticipantCountForEvent with id: 7
+2025-05-06 18:05:25,674 [9] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Finding all participants by event: 7
+2025-05-06 18:05:25,674 [9] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Found 1 participants for event ID 7
+2025-05-06 18:05:25,674 [9] INFO  ConcursServices.EventService - EventService - GetParticipantCountForEvent with id: 8
+2025-05-06 18:05:25,674 [9] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Finding all participants by event: 8
+2025-05-06 18:05:25,674 [9] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Found 1 participants for event ID 8
+2025-05-06 18:05:25,674 [9] INFO  ConcursServices.EventService - EventService - GetParticipantCountForEvent with id: 9
+2025-05-06 18:05:25,674 [9] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Finding all participants by event: 9
+2025-05-06 18:05:25,674 [9] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Found 0 participants for event ID 9
+2025-05-06 18:05:25,674 [9] INFO  ConcursServices.EventService - EventService - GetParticipantCountForEvent with id: 10
+2025-05-06 18:05:25,674 [9] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Finding all participants by event: 10
+2025-05-06 18:05:25,674 [9] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Found 0 participants for event ID 10
+2025-05-06 18:05:25,674 [9] INFO  ConcursServices.EventService - EventService - GetParticipantCountForEvent with id: 11
+2025-05-06 18:05:25,674 [9] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Finding all participants by event: 11
+2025-05-06 18:05:25,674 [9] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Found 0 participants for event ID 11
+2025-05-06 18:05:25,674 [9] INFO  ConcursServices.EventService - EventService - GetParticipantCountForEvent with id: 12
+2025-05-06 18:05:25,674 [9] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Finding all participants by event: 12
+2025-05-06 18:05:25,675 [9] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Found 0 participants for event ID 12
+2025-05-06 18:05:25,675 [9] INFO  ConcursServices.EventService - EventService - GetParticipantCountForEvent with id: 13
+2025-05-06 18:05:25,675 [9] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Finding all participants by event: 13
+2025-05-06 18:05:25,675 [9] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Found 0 participants for event ID 13
+2025-05-06 18:05:25,675 [9] INFO  ConcursServices.EventService - EventService - GetParticipantCountForEvent with id: 14
+2025-05-06 18:05:25,675 [9] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Finding all participants by event: 14
+2025-05-06 18:05:25,675 [9] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Found 0 participants for event ID 14
+2025-05-06 18:05:25,675 [9] INFO  ConcursServices.EventService - EventService - GetParticipantCountForEvent with id: 15
+2025-05-06 18:05:25,675 [9] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Finding all participants by event: 15
+2025-05-06 18:05:25,675 [9] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Found 0 participants for event ID 15
+2025-05-06 18:05:25,675 [9] INFO  ConcursServices.EventService - EventService - GetParticipantCountForEvent with id: 16
+2025-05-06 18:05:25,675 [9] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Finding all participants by event: 16
+2025-05-06 18:05:25,675 [9] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Found 0 participants for event ID 16
+2025-05-06 18:05:25,675 [9] INFO  ConcursServices.EventService - EventService - GetParticipantCountForEvent with id: 17
+2025-05-06 18:05:25,675 [9] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Finding all participants by event: 17
+2025-05-06 18:05:25,675 [9] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Found 3 participants for event ID 17
+2025-05-06 18:05:25,676 [9] INFO  ConcursServices.EventService - EventService - GetParticipantCountForEvent with id: 18
+2025-05-06 18:05:25,676 [9] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Finding all participants by event: 18
+2025-05-06 18:05:25,676 [9] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Found 3 participants for event ID 18
+2025-05-06 18:05:25,676 [9] INFO  ConcursServices.EventService - EventService - GetParticipantCountForEvent with id: 19
+2025-05-06 18:05:25,676 [9] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Finding all participants by event: 19
+2025-05-06 18:05:25,676 [9] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Found 3 participants for event ID 19
+2025-05-06 18:05:26,059 [9] INFO  ConcursServer.ClientJsonWorker - Received request: GET_EVENTS
+2025-05-06 18:05:26,059 [9] INFO  ConcursServer.ClientJsonWorker - Handling get events request
+2025-05-06 18:05:26,059 [9] INFO  ConcursServices.EventService - EventService - FindAllEvents
+2025-05-06 18:05:26,059 [9] INFO  ConcursPersistence.repository.impl.EventRepositoryImpl - Finding All Events
+2025-05-06 18:05:26,059 [9] INFO  ConcursPersistence.repository.impl.EventRepositoryImpl - Exiting FindAll events with count: 19
+2025-05-06 18:05:26,060 [9] INFO  ConcursServices.EventService - EventService - GetParticipantCountForEvent with id: 1
+2025-05-06 18:05:26,060 [9] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Finding all participants by event: 1
+2025-05-06 18:05:26,060 [9] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Found 3 participants for event ID 1
+2025-05-06 18:05:26,060 [9] INFO  ConcursServices.EventService - EventService - GetParticipantCountForEvent with id: 2
+2025-05-06 18:05:26,060 [9] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Finding all participants by event: 2
+2025-05-06 18:05:26,060 [9] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Found 2 participants for event ID 2
+2025-05-06 18:05:26,060 [9] INFO  ConcursServices.EventService - EventService - GetParticipantCountForEvent with id: 3
+2025-05-06 18:05:26,060 [9] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Finding all participants by event: 3
+2025-05-06 18:05:26,060 [9] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Found 1 participants for event ID 3
+2025-05-06 18:05:26,060 [9] INFO  ConcursServices.EventService - EventService - GetParticipantCountForEvent with id: 4
+2025-05-06 18:05:26,060 [9] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Finding all participants by event: 4
+2025-05-06 18:05:26,061 [9] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Found 1 participants for event ID 4
+2025-05-06 18:05:26,061 [9] INFO  ConcursServices.EventService - EventService - GetParticipantCountForEvent with id: 5
+2025-05-06 18:05:26,061 [9] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Finding all participants by event: 5
+2025-05-06 18:05:26,061 [9] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Found 2 participants for event ID 5
+2025-05-06 18:05:26,061 [9] INFO  ConcursServices.EventService - EventService - GetParticipantCountForEvent with id: 6
+2025-05-06 18:05:26,061 [9] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Finding all participants by event: 6
+2025-05-06 18:05:26,061 [9] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Found 0 participants for event ID 6
+2025-05-06 18:05:26,061 [9] INFO  ConcursServices.EventService - EventService - GetParticipantCountForEvent with id: 7
+2025-05-06 18:05:26,061 [9] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Finding all participants by event: 7
+2025-05-06 18:05:26,061 [9] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Found 1 participants for event ID 7
+2025-05-06 18:05:26,061 [9] INFO  ConcursServices.EventService - EventService - GetParticipantCountForEvent with id: 8
+2025-05-06 18:05:26,061 [9] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Finding all participants by event: 8
+2025-05-06 18:05:26,062 [9] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Found 1 participants for event ID 8
+2025-05-06 18:05:26,062 [9] INFO  ConcursServices.EventService - EventService - GetParticipantCountForEvent with id: 9
+2025-05-06 18:05:26,062 [9] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Finding all participants by event: 9
+2025-05-06 18:05:26,062 [9] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Found 0 participants for event ID 9
+2025-05-06 18:05:26,062 [9] INFO  ConcursServices.EventService - EventService - GetParticipantCountForEvent with id: 10
+2025-05-06 18:05:26,062 [9] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Finding all participants by event: 10
+2025-05-06 18:05:26,062 [9] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Found 0 participants for event ID 10
+2025-05-06 18:05:26,062 [9] INFO  ConcursServices.EventService - EventService - GetParticipantCountForEvent with id: 11
+2025-05-06 18:05:26,062 [9] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Finding all participants by event: 11
+2025-05-06 18:05:26,062 [9] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Found 0 participants for event ID 11
+2025-05-06 18:05:26,062 [9] INFO  ConcursServices.EventService - EventService - GetParticipantCountForEvent with id: 12
+2025-05-06 18:05:26,062 [9] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Finding all participants by event: 12
+2025-05-06 18:05:26,063 [9] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Found 0 participants for event ID 12
+2025-05-06 18:05:26,063 [9] INFO  ConcursServices.EventService - EventService - GetParticipantCountForEvent with id: 13
+2025-05-06 18:05:26,063 [9] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Finding all participants by event: 13
+2025-05-06 18:05:26,063 [9] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Found 0 participants for event ID 13
+2025-05-06 18:05:26,063 [9] INFO  ConcursServices.EventService - EventService - GetParticipantCountForEvent with id: 14
+2025-05-06 18:05:26,063 [9] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Finding all participants by event: 14
+2025-05-06 18:05:26,063 [9] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Found 0 participants for event ID 14
+2025-05-06 18:05:26,063 [9] INFO  ConcursServices.EventService - EventService - GetParticipantCountForEvent with id: 15
+2025-05-06 18:05:26,063 [9] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Finding all participants by event: 15
+2025-05-06 18:05:26,063 [9] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Found 0 participants for event ID 15
+2025-05-06 18:05:26,063 [9] INFO  ConcursServices.EventService - EventService - GetParticipantCountForEvent with id: 16
+2025-05-06 18:05:26,063 [9] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Finding all participants by event: 16
+2025-05-06 18:05:26,063 [9] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Found 0 participants for event ID 16
+2025-05-06 18:05:26,063 [9] INFO  ConcursServices.EventService - EventService - GetParticipantCountForEvent with id: 17
+2025-05-06 18:05:26,064 [9] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Finding all participants by event: 17
+2025-05-06 18:05:26,064 [9] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Found 3 participants for event ID 17
+2025-05-06 18:05:26,064 [9] INFO  ConcursServices.EventService - EventService - GetParticipantCountForEvent with id: 18
+2025-05-06 18:05:26,064 [9] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Finding all participants by event: 18
+2025-05-06 18:05:26,064 [9] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Found 3 participants for event ID 18
+2025-05-06 18:05:26,064 [9] INFO  ConcursServices.EventService - EventService - GetParticipantCountForEvent with id: 19
+2025-05-06 18:05:26,064 [9] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Finding all participants by event: 19
+2025-05-06 18:05:26,064 [9] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Found 3 participants for event ID 19
+2025-05-06 18:05:33,129 [1] INFO  ConcursServer.StartServer - Client connected
+2025-05-06 18:05:33,130 [1] INFO  ConcursServer.StartServer - Waiting for clients...
+2025-05-06 18:05:33,216 [11] INFO  ConcursServer.ClientJsonWorker - Received request: LOGIN
+2025-05-06 18:05:33,216 [11] INFO  ConcursServer.ClientJsonWorker - Handling login request
+2025-05-06 18:05:33,216 [11] INFO  ConcursServices.UserService - UserService - Login attempt for user: asda
+2025-05-06 18:05:33,216 [11] INFO  Laborator3.repository.UserRepositoryImpl - UserRepository - FindByUsername with username: asda
+2025-05-06 18:05:33,216 [11] INFO  Laborator3.repository.UserRepositoryImpl - Found user with username asda: ID 7, office asda
+2025-05-06 18:05:33,216 [11] INFO  Laborator3.repository.UserRepositoryImpl - UserRepository - ValidateCredentials for username: asda
+2025-05-06 18:05:33,216 [11] INFO  Laborator3.repository.UserRepositoryImpl - UserRepository - FindByUsername with username: asda
+2025-05-06 18:05:33,217 [11] INFO  Laborator3.repository.UserRepositoryImpl - Found user with username asda: ID 7, office asda
+2025-05-06 18:05:33,217 [11] INFO  Laborator3.repository.UserRepositoryImpl - Credentials validated successfully for user: asda
+2025-05-06 18:05:33,217 [11] INFO  ConcursServices.UserService - UserService - Login successful for user: asda
+2025-05-06 18:05:33,217 [11] INFO  ConcursServer.ClientJsonWorker - Login successful for user: asda
+2025-05-06 18:05:35,261 [11] INFO  ConcursServer.ClientJsonWorker - Received request: GET_EVENTS_WITH_PARTICIPANT_COUNTS
+2025-05-06 18:05:35,261 [11] INFO  ConcursServer.ClientJsonWorker - Handling get events with counts request
+2025-05-06 18:05:35,261 [11] INFO  ConcursServices.EventService - EventService - FindAllEvents
+2025-05-06 18:05:35,262 [11] INFO  ConcursPersistence.repository.impl.EventRepositoryImpl - Finding All Events
+2025-05-06 18:05:35,262 [11] INFO  ConcursPersistence.repository.impl.EventRepositoryImpl - Exiting FindAll events with count: 19
+2025-05-06 18:05:35,262 [11] INFO  ConcursServices.EventService - EventService - GetParticipantCountForEvent with id: 1
+2025-05-06 18:05:35,262 [11] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Finding all participants by event: 1
+2025-05-06 18:05:35,262 [11] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Found 3 participants for event ID 1
+2025-05-06 18:05:35,262 [11] INFO  ConcursServices.EventService - EventService - GetParticipantCountForEvent with id: 2
+2025-05-06 18:05:35,262 [11] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Finding all participants by event: 2
+2025-05-06 18:05:35,262 [11] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Found 2 participants for event ID 2
+2025-05-06 18:05:35,263 [11] INFO  ConcursServices.EventService - EventService - GetParticipantCountForEvent with id: 3
+2025-05-06 18:05:35,263 [11] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Finding all participants by event: 3
+2025-05-06 18:05:35,263 [11] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Found 1 participants for event ID 3
+2025-05-06 18:05:35,263 [11] INFO  ConcursServices.EventService - EventService - GetParticipantCountForEvent with id: 4
+2025-05-06 18:05:35,263 [11] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Finding all participants by event: 4
+2025-05-06 18:05:35,263 [11] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Found 1 participants for event ID 4
+2025-05-06 18:05:35,263 [11] INFO  ConcursServices.EventService - EventService - GetParticipantCountForEvent with id: 5
+2025-05-06 18:05:35,263 [11] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Finding all participants by event: 5
+2025-05-06 18:05:35,263 [11] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Found 2 participants for event ID 5
+2025-05-06 18:05:35,263 [11] INFO  ConcursServices.EventService - EventService - GetParticipantCountForEvent with id: 6
+2025-05-06 18:05:35,263 [11] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Finding all participants by event: 6
+2025-05-06 18:05:35,263 [11] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Found 0 participants for event ID 6
+2025-05-06 18:05:35,263 [11] INFO  ConcursServices.EventService - EventService - GetParticipantCountForEvent with id: 7
+2025-05-06 18:05:35,263 [11] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Finding all participants by event: 7
+2025-05-06 18:05:35,263 [11] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Found 1 participants for event ID 7
+2025-05-06 18:05:35,263 [11] INFO  ConcursServices.EventService - EventService - GetParticipantCountForEvent with id: 8
+2025-05-06 18:05:35,263 [11] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Finding all participants by event: 8
+2025-05-06 18:05:35,263 [11] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Found 1 participants for event ID 8
+2025-05-06 18:05:35,264 [11] INFO  ConcursServices.EventService - EventService - GetParticipantCountForEvent with id: 9
+2025-05-06 18:05:35,264 [11] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Finding all participants by event: 9
+2025-05-06 18:05:35,264 [11] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Found 0 participants for event ID 9
+2025-05-06 18:05:35,264 [11] INFO  ConcursServices.EventService - EventService - GetParticipantCountForEvent with id: 10
+2025-05-06 18:05:35,264 [11] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Finding all participants by event: 10
+2025-05-06 18:05:35,264 [11] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Found 0 participants for event ID 10
+2025-05-06 18:05:35,264 [11] INFO  ConcursServices.EventService - EventService - GetParticipantCountForEvent with id: 11
+2025-05-06 18:05:35,264 [11] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Finding all participants by event: 11
+2025-05-06 18:05:35,264 [11] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Found 0 participants for event ID 11
+2025-05-06 18:05:35,264 [11] INFO  ConcursServices.EventService - EventService - GetParticipantCountForEvent with id: 12
+2025-05-06 18:05:35,264 [11] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Finding all participants by event: 12
+2025-05-06 18:05:35,264 [11] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Found 0 participants for event ID 12
+2025-05-06 18:05:35,264 [11] INFO  ConcursServices.EventService - EventService - GetParticipantCountForEvent with id: 13
+2025-05-06 18:05:35,264 [11] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Finding all participants by event: 13
+2025-05-06 18:05:35,265 [11] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Found 0 participants for event ID 13
+2025-05-06 18:05:35,265 [11] INFO  ConcursServices.EventService - EventService - GetParticipantCountForEvent with id: 14
+2025-05-06 18:05:35,265 [11] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Finding all participants by event: 14
+2025-05-06 18:05:35,265 [11] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Found 0 participants for event ID 14
+2025-05-06 18:05:35,265 [11] INFO  ConcursServices.EventService - EventService - GetParticipantCountForEvent with id: 15
+2025-05-06 18:05:35,265 [11] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Finding all participants by event: 15
+2025-05-06 18:05:35,265 [11] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Found 0 participants for event ID 15
+2025-05-06 18:05:35,265 [11] INFO  ConcursServices.EventService - EventService - GetParticipantCountForEvent with id: 16
+2025-05-06 18:05:35,265 [11] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Finding all participants by event: 16
+2025-05-06 18:05:35,265 [11] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Found 0 participants for event ID 16
+2025-05-06 18:05:35,265 [11] INFO  ConcursServices.EventService - EventService - GetParticipantCountForEvent with id: 17
+2025-05-06 18:05:35,265 [11] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Finding all participants by event: 17
+2025-05-06 18:05:35,266 [11] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Found 3 participants for event ID 17
+2025-05-06 18:05:35,266 [11] INFO  ConcursServices.EventService - EventService - GetParticipantCountForEvent with id: 18
+2025-05-06 18:05:35,266 [11] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Finding all participants by event: 18
+2025-05-06 18:05:35,266 [11] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Found 3 participants for event ID 18
+2025-05-06 18:05:35,266 [11] INFO  ConcursServices.EventService - EventService - GetParticipantCountForEvent with id: 19
+2025-05-06 18:05:35,266 [11] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Finding all participants by event: 19
+2025-05-06 18:05:35,266 [11] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Found 3 participants for event ID 19
+2025-05-06 18:05:47,009 [9] INFO  ConcursServer.ClientJsonWorker - Received request: REGISTER_PARTICIPANT
+2025-05-06 18:05:47,010 [9] INFO  ConcursServer.ClientJsonWorker - Handling register participant request
+2025-05-06 18:05:47,011 [9] INFO  ConcursServices.ParticipantService - ParticipantService - SaveParticipant: Mark (20 years)
+2025-05-06 18:05:47,011 [9] INFO  ConcursPersistence.repository.ParticipantRepositoryImpl - Saving Participant: Mark
+2025-05-06 18:05:47,015 [9] INFO  ConcursPersistence.repository.ParticipantRepositoryImpl - Participant saved successfully with ID 20: Mark, 20 years
+2025-05-06 18:05:47,016 [9] INFO  ConcursServices.InscriereService - InscriereService - RegisterParticipant with participantId: 20 and eventId: 1
+2025-05-06 18:05:47,016 [9] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Saving Event Participant - Event ID: 1, Participant ID: 20
+2025-05-06 18:05:47,020 [9] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Event Participant saved successfully with eventId: 1 and participantId: 20
+2025-05-06 18:05:47,021 [9] INFO  ConcursServices.EventService - EventService - Notifying observers
+2025-05-06 18:05:47,021 [9] INFO  ConcursServer.ClientJsonWorker - Participant Mark registered successfully for 1 events
+2025-05-06 18:05:51,985 [11] INFO  ConcursServer.ClientJsonWorker - Received request: GET_EVENTS
+2025-05-06 18:05:51,985 [11] INFO  ConcursServer.ClientJsonWorker - Handling get events request
+2025-05-06 18:05:51,986 [11] INFO  ConcursServices.EventService - EventService - FindAllEvents
+2025-05-06 18:05:51,986 [11] INFO  ConcursPersistence.repository.impl.EventRepositoryImpl - Finding All Events
+2025-05-06 18:05:51,986 [11] INFO  ConcursPersistence.repository.impl.EventRepositoryImpl - Exiting FindAll events with count: 19
+2025-05-06 18:05:51,986 [11] INFO  ConcursServices.EventService - EventService - GetParticipantCountForEvent with id: 1
+2025-05-06 18:05:51,986 [11] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Finding all participants by event: 1
+2025-05-06 18:05:51,986 [11] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Found 4 participants for event ID 1
+2025-05-06 18:05:51,986 [11] INFO  ConcursServices.EventService - EventService - GetParticipantCountForEvent with id: 2
+2025-05-06 18:05:51,986 [11] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Finding all participants by event: 2
+2025-05-06 18:05:51,987 [11] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Found 2 participants for event ID 2
+2025-05-06 18:05:51,987 [11] INFO  ConcursServices.EventService - EventService - GetParticipantCountForEvent with id: 3
+2025-05-06 18:05:51,987 [11] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Finding all participants by event: 3
+2025-05-06 18:05:51,987 [11] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Found 1 participants for event ID 3
+2025-05-06 18:05:51,987 [11] INFO  ConcursServices.EventService - EventService - GetParticipantCountForEvent with id: 4
+2025-05-06 18:05:51,987 [11] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Finding all participants by event: 4
+2025-05-06 18:05:51,987 [11] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Found 1 participants for event ID 4
+2025-05-06 18:05:51,987 [11] INFO  ConcursServices.EventService - EventService - GetParticipantCountForEvent with id: 5
+2025-05-06 18:05:51,987 [11] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Finding all participants by event: 5
+2025-05-06 18:05:51,988 [11] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Found 2 participants for event ID 5
+2025-05-06 18:05:51,988 [11] INFO  ConcursServices.EventService - EventService - GetParticipantCountForEvent with id: 6
+2025-05-06 18:05:51,988 [11] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Finding all participants by event: 6
+2025-05-06 18:05:51,988 [11] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Found 0 participants for event ID 6
+2025-05-06 18:05:51,988 [11] INFO  ConcursServices.EventService - EventService - GetParticipantCountForEvent with id: 7
+2025-05-06 18:05:51,988 [11] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Finding all participants by event: 7
+2025-05-06 18:05:51,988 [11] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Found 1 participants for event ID 7
+2025-05-06 18:05:51,988 [11] INFO  ConcursServices.EventService - EventService - GetParticipantCountForEvent with id: 8
+2025-05-06 18:05:51,988 [11] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Finding all participants by event: 8
+2025-05-06 18:05:51,988 [11] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Found 1 participants for event ID 8
+2025-05-06 18:05:51,988 [11] INFO  ConcursServices.EventService - EventService - GetParticipantCountForEvent with id: 9
+2025-05-06 18:05:51,988 [11] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Finding all participants by event: 9
+2025-05-06 18:05:51,989 [11] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Found 0 participants for event ID 9
+2025-05-06 18:05:51,989 [11] INFO  ConcursServices.EventService - EventService - GetParticipantCountForEvent with id: 10
+2025-05-06 18:05:51,989 [11] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Finding all participants by event: 10
+2025-05-06 18:05:51,989 [11] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Found 0 participants for event ID 10
+2025-05-06 18:05:51,989 [11] INFO  ConcursServices.EventService - EventService - GetParticipantCountForEvent with id: 11
+2025-05-06 18:05:51,989 [11] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Finding all participants by event: 11
+2025-05-06 18:05:51,989 [11] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Found 0 participants for event ID 11
+2025-05-06 18:05:51,989 [11] INFO  ConcursServices.EventService - EventService - GetParticipantCountForEvent with id: 12
+2025-05-06 18:05:51,989 [11] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Finding all participants by event: 12
+2025-05-06 18:05:51,989 [11] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Found 0 participants for event ID 12
+2025-05-06 18:05:51,989 [11] INFO  ConcursServices.EventService - EventService - GetParticipantCountForEvent with id: 13
+2025-05-06 18:05:51,989 [11] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Finding all participants by event: 13
+2025-05-06 18:05:51,989 [11] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Found 0 participants for event ID 13
+2025-05-06 18:05:51,989 [11] INFO  ConcursServices.EventService - EventService - GetParticipantCountForEvent with id: 14
+2025-05-06 18:05:51,989 [11] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Finding all participants by event: 14
+2025-05-06 18:05:51,989 [11] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Found 0 participants for event ID 14
+2025-05-06 18:05:51,989 [11] INFO  ConcursServices.EventService - EventService - GetParticipantCountForEvent with id: 15
+2025-05-06 18:05:51,989 [11] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Finding all participants by event: 15
+2025-05-06 18:05:51,989 [11] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Found 0 participants for event ID 15
+2025-05-06 18:05:51,990 [11] INFO  ConcursServices.EventService - EventService - GetParticipantCountForEvent with id: 16
+2025-05-06 18:05:51,990 [11] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Finding all participants by event: 16
+2025-05-06 18:05:51,990 [11] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Found 0 participants for event ID 16
+2025-05-06 18:05:51,990 [11] INFO  ConcursServices.EventService - EventService - GetParticipantCountForEvent with id: 17
+2025-05-06 18:05:51,990 [11] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Finding all participants by event: 17
+2025-05-06 18:05:51,990 [11] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Found 3 participants for event ID 17
+2025-05-06 18:05:51,990 [11] INFO  ConcursServices.EventService - EventService - GetParticipantCountForEvent with id: 18
+2025-05-06 18:05:51,990 [11] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Finding all participants by event: 18
+2025-05-06 18:05:51,990 [11] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Found 3 participants for event ID 18
+2025-05-06 18:05:51,990 [11] INFO  ConcursServices.EventService - EventService - GetParticipantCountForEvent with id: 19
+2025-05-06 18:05:51,990 [11] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Finding all participants by event: 19
+2025-05-06 18:05:51,990 [11] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Found 3 participants for event ID 19
+2025-05-06 18:06:37,127 [9] INFO  ConcursServer.ClientJsonWorker - Received request: LOGOUT
+2025-05-06 18:06:37,127 [9] INFO  ConcursServer.ClientJsonWorker - Handling logout request
+2025-05-06 18:06:43,582 [1] INFO  ConcursServer.StartServer - Client connected
+2025-05-06 18:06:43,582 [1] INFO  ConcursServer.StartServer - Waiting for clients...
+2025-05-06 18:06:43,582 [10] INFO  ConcursServer.ClientJsonWorker - Received request: LOGIN
+2025-05-06 18:06:43,583 [10] INFO  ConcursServer.ClientJsonWorker - Handling login request
+2025-05-06 18:06:43,583 [10] INFO  ConcursServices.UserService - UserService - Login attempt for user: patrick1
+2025-05-06 18:06:43,583 [10] INFO  Laborator3.repository.UserRepositoryImpl - UserRepository - FindByUsername with username: patrick1
+2025-05-06 18:06:43,583 [10] INFO  Laborator3.repository.UserRepositoryImpl - Found user with username patrick1: ID 8, office Patrick
+2025-05-06 18:06:43,583 [10] INFO  Laborator3.repository.UserRepositoryImpl - UserRepository - ValidateCredentials for username: patrick1
+2025-05-06 18:06:43,583 [10] INFO  Laborator3.repository.UserRepositoryImpl - UserRepository - FindByUsername with username: patrick1
+2025-05-06 18:06:43,583 [10] INFO  Laborator3.repository.UserRepositoryImpl - Found user with username patrick1: ID 8, office Patrick
+2025-05-06 18:06:43,583 [10] INFO  Laborator3.repository.UserRepositoryImpl - Credentials validated successfully for user: patrick1
+2025-05-06 18:06:43,583 [10] INFO  ConcursServices.UserService - UserService - Login successful for user: patrick1
+2025-05-06 18:06:43,583 [10] INFO  ConcursServer.ClientJsonWorker - Login successful for user: patrick1
+2025-05-06 18:06:44,731 [10] INFO  ConcursServer.ClientJsonWorker - Received request: GET_EVENTS_WITH_PARTICIPANT_COUNTS
+2025-05-06 18:06:44,731 [10] INFO  ConcursServer.ClientJsonWorker - Handling get events with counts request
+2025-05-06 18:06:44,731 [10] INFO  ConcursServices.EventService - EventService - FindAllEvents
+2025-05-06 18:06:44,731 [10] INFO  ConcursPersistence.repository.impl.EventRepositoryImpl - Finding All Events
+2025-05-06 18:06:44,731 [10] INFO  ConcursPersistence.repository.impl.EventRepositoryImpl - Exiting FindAll events with count: 19
+2025-05-06 18:06:44,731 [10] INFO  ConcursServices.EventService - EventService - GetParticipantCountForEvent with id: 1
+2025-05-06 18:06:44,732 [10] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Finding all participants by event: 1
+2025-05-06 18:06:44,732 [10] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Found 4 participants for event ID 1
+2025-05-06 18:06:44,732 [10] INFO  ConcursServices.EventService - EventService - GetParticipantCountForEvent with id: 2
+2025-05-06 18:06:44,732 [10] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Finding all participants by event: 2
+2025-05-06 18:06:44,732 [10] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Found 2 participants for event ID 2
+2025-05-06 18:06:44,732 [10] INFO  ConcursServices.EventService - EventService - GetParticipantCountForEvent with id: 3
+2025-05-06 18:06:44,732 [10] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Finding all participants by event: 3
+2025-05-06 18:06:44,733 [10] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Found 1 participants for event ID 3
+2025-05-06 18:06:44,733 [10] INFO  ConcursServices.EventService - EventService - GetParticipantCountForEvent with id: 4
+2025-05-06 18:06:44,733 [10] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Finding all participants by event: 4
+2025-05-06 18:06:44,733 [10] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Found 1 participants for event ID 4
+2025-05-06 18:06:44,733 [10] INFO  ConcursServices.EventService - EventService - GetParticipantCountForEvent with id: 5
+2025-05-06 18:06:44,733 [10] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Finding all participants by event: 5
+2025-05-06 18:06:44,733 [10] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Found 2 participants for event ID 5
+2025-05-06 18:06:44,733 [10] INFO  ConcursServices.EventService - EventService - GetParticipantCountForEvent with id: 6
+2025-05-06 18:06:44,733 [10] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Finding all participants by event: 6
+2025-05-06 18:06:44,733 [10] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Found 0 participants for event ID 6
+2025-05-06 18:06:44,734 [10] INFO  ConcursServices.EventService - EventService - GetParticipantCountForEvent with id: 7
+2025-05-06 18:06:44,734 [10] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Finding all participants by event: 7
+2025-05-06 18:06:44,734 [10] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Found 1 participants for event ID 7
+2025-05-06 18:06:44,734 [10] INFO  ConcursServices.EventService - EventService - GetParticipantCountForEvent with id: 8
+2025-05-06 18:06:44,734 [10] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Finding all participants by event: 8
+2025-05-06 18:06:44,734 [10] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Found 1 participants for event ID 8
+2025-05-06 18:06:44,734 [10] INFO  ConcursServices.EventService - EventService - GetParticipantCountForEvent with id: 9
+2025-05-06 18:06:44,734 [10] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Finding all participants by event: 9
+2025-05-06 18:06:44,734 [10] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Found 0 participants for event ID 9
+2025-05-06 18:06:44,734 [10] INFO  ConcursServices.EventService - EventService - GetParticipantCountForEvent with id: 10
+2025-05-06 18:06:44,734 [10] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Finding all participants by event: 10
+2025-05-06 18:06:44,735 [10] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Found 0 participants for event ID 10
+2025-05-06 18:06:44,735 [10] INFO  ConcursServices.EventService - EventService - GetParticipantCountForEvent with id: 11
+2025-05-06 18:06:44,735 [10] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Finding all participants by event: 11
+2025-05-06 18:06:44,735 [10] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Found 0 participants for event ID 11
+2025-05-06 18:06:44,735 [10] INFO  ConcursServices.EventService - EventService - GetParticipantCountForEvent with id: 12
+2025-05-06 18:06:44,735 [10] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Finding all participants by event: 12
+2025-05-06 18:06:44,735 [10] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Found 0 participants for event ID 12
+2025-05-06 18:06:44,735 [10] INFO  ConcursServices.EventService - EventService - GetParticipantCountForEvent with id: 13
+2025-05-06 18:06:44,735 [10] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Finding all participants by event: 13
+2025-05-06 18:06:44,735 [10] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Found 0 participants for event ID 13
+2025-05-06 18:06:44,736 [10] INFO  ConcursServices.EventService - EventService - GetParticipantCountForEvent with id: 14
+2025-05-06 18:06:44,736 [10] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Finding all participants by event: 14
+2025-05-06 18:06:44,736 [10] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Found 0 participants for event ID 14
+2025-05-06 18:06:44,736 [10] INFO  ConcursServices.EventService - EventService - GetParticipantCountForEvent with id: 15
+2025-05-06 18:06:44,736 [10] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Finding all participants by event: 15
+2025-05-06 18:06:44,736 [10] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Found 0 participants for event ID 15
+2025-05-06 18:06:44,736 [10] INFO  ConcursServices.EventService - EventService - GetParticipantCountForEvent with id: 16
+2025-05-06 18:06:44,736 [10] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Finding all participants by event: 16
+2025-05-06 18:06:44,736 [10] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Found 0 participants for event ID 16
+2025-05-06 18:06:44,736 [10] INFO  ConcursServices.EventService - EventService - GetParticipantCountForEvent with id: 17
+2025-05-06 18:06:44,736 [10] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Finding all participants by event: 17
+2025-05-06 18:06:44,737 [10] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Found 3 participants for event ID 17
+2025-05-06 18:06:44,737 [10] INFO  ConcursServices.EventService - EventService - GetParticipantCountForEvent with id: 18
+2025-05-06 18:06:44,737 [10] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Finding all participants by event: 18
+2025-05-06 18:06:44,737 [10] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Found 3 participants for event ID 18
+2025-05-06 18:06:44,737 [10] INFO  ConcursServices.EventService - EventService - GetParticipantCountForEvent with id: 19
+2025-05-06 18:06:44,737 [10] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Finding all participants by event: 19
+2025-05-06 18:06:44,737 [10] INFO  ConcursPersistence.repository.InscriereRepositoryImpl - Found 3 participants for event ID 19
+2025-05-06 18:06:46,235 [10] INFO  ConcursServer.ClientJsonWorker - Received request: LOGOUT
+2025-05-06 18:06:46,236 [10] INFO  ConcursServer.ClientJsonWorker - Handling logout request
+2025-05-06 18:06:48,520 [11] INFO  ConcursServer.ClientJsonWorker - Received request: LOGOUT
+2025-05-06 18:06:48,520 [11] INFO  ConcursServer.ClientJsonWorker - Handling logout request
