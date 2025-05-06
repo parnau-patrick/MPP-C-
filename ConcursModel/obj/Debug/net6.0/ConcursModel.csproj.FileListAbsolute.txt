@@ -1,0 +1,13 @@
+C:\ANUL II\SEMESTRUL II\MPP\mpp-proiect-csharp-parnau-patrick\Laborator3\ConcursModel\bin\Debug\net6.0\ConcursModel.deps.json
+C:\ANUL II\SEMESTRUL II\MPP\mpp-proiect-csharp-parnau-patrick\Laborator3\ConcursModel\bin\Debug\net6.0\ConcursModel.dll
+C:\ANUL II\SEMESTRUL II\MPP\mpp-proiect-csharp-parnau-patrick\Laborator3\ConcursModel\bin\Debug\net6.0\ConcursModel.pdb
+C:\ANUL II\SEMESTRUL II\MPP\mpp-proiect-csharp-parnau-patrick\Laborator3\ConcursModel\obj\Debug\net6.0\ConcursModel.csproj.AssemblyReference.cache
+C:\ANUL II\SEMESTRUL II\MPP\mpp-proiect-csharp-parnau-patrick\Laborator3\ConcursModel\obj\Debug\net6.0\ConcursModel.GeneratedMSBuildEditorConfig.editorconfig
+C:\ANUL II\SEMESTRUL II\MPP\mpp-proiect-csharp-parnau-patrick\Laborator3\ConcursModel\obj\Debug\net6.0\ConcursModel.AssemblyInfoInputs.cache
+C:\ANUL II\SEMESTRUL II\MPP\mpp-proiect-csharp-parnau-patrick\Laborator3\ConcursModel\obj\Debug\net6.0\ConcursModel.AssemblyInfo.cs
+C:\ANUL II\SEMESTRUL II\MPP\mpp-proiect-csharp-parnau-patrick\Laborator3\ConcursModel\obj\Debug\net6.0\ConcursModel.csproj.CoreCompileInputs.cache
+C:\ANUL II\SEMESTRUL II\MPP\mpp-proiect-csharp-parnau-patrick\Laborator3\ConcursModel\obj\Debug\net6.0\ConcursModel.sourcelink.json
+C:\ANUL II\SEMESTRUL II\MPP\mpp-proiect-csharp-parnau-patrick\Laborator3\ConcursModel\obj\Debug\net6.0\ConcursModel.dll
+C:\ANUL II\SEMESTRUL II\MPP\mpp-proiect-csharp-parnau-patrick\Laborator3\ConcursModel\obj\Debug\net6.0\refint\ConcursModel.dll
+C:\ANUL II\SEMESTRUL II\MPP\mpp-proiect-csharp-parnau-patrick\Laborator3\ConcursModel\obj\Debug\net6.0\ConcursModel.pdb
+C:\ANUL II\SEMESTRUL II\MPP\mpp-proiect-csharp-parnau-patrick\Laborator3\ConcursModel\obj\Debug\net6.0\ref\ConcursModel.dll
