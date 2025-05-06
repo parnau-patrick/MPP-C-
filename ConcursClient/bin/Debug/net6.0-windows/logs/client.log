@@ -1,0 +1,143 @@
+2025-05-06 17:47:31,420 [1] INFO  ConcursClient.StartClient - Starting client application
+2025-05-06 17:47:31,438 [1] INFO  ConcursClient.StartClient - Connecting to server localhost:55555
+2025-05-06 17:47:38,276 [1] INFO  ConcursClient.service.ConcursServicesJsonProxy - Login attempt for user: admin
+2025-05-06 17:47:40,617 [1] ERROR ConcursClient.service.ConcursServicesJsonProxy - Error sending request
+System.Exception: Server error: Unexpected character encountered while parsing value: C. Path '', line 0, position 0.
+   at ConcursClient.service.ConcursServicesJsonProxy.SendAndReceive(Request request) in C:\ANUL II\SEMESTRUL II\MPP\mpp-proiect-csharp-parnau-patrick\Laborator3\ConcursClient\service\ConcursServicesJsonProxy.cs:line 124
+2025-05-06 17:47:40,637 [1] ERROR ConcursClient.controller.LoginForm - Login failed for user: admin
+System.Exception: Error communicating with server: Server error: Unexpected character encountered while parsing value: C. Path '', line 0, position 0.
+ ---> System.Exception: Server error: Unexpected character encountered while parsing value: C. Path '', line 0, position 0.
+   at ConcursClient.service.ConcursServicesJsonProxy.SendAndReceive(Request request) in C:\ANUL II\SEMESTRUL II\MPP\mpp-proiect-csharp-parnau-patrick\Laborator3\ConcursClient\service\ConcursServicesJsonProxy.cs:line 124
+   --- End of inner exception stack trace ---
+   at ConcursClient.service.ConcursServicesJsonProxy.SendAndReceive(Request request) in C:\ANUL II\SEMESTRUL II\MPP\mpp-proiect-csharp-parnau-patrick\Laborator3\ConcursClient\service\ConcursServicesJsonProxy.cs:line 132
+   at ConcursClient.service.ConcursServicesJsonProxy.Login(String username, String password) in C:\ANUL II\SEMESTRUL II\MPP\mpp-proiect-csharp-parnau-patrick\Laborator3\ConcursClient\service\ConcursServicesJsonProxy.cs:line 176
+   at ConcursClient.controller.LoginForm.btnLogin_Click(Object sender, EventArgs e) in C:\ANUL II\SEMESTRUL II\MPP\mpp-proiect-csharp-parnau-patrick\Laborator3\ConcursClient\controller\LoginForm.cs:line 27
+2025-05-06 17:47:42,711 [1] INFO  ConcursClient.controller.LoginForm - Opening Sign-Up form
+2025-05-06 17:47:52,784 [1] INFO  ConcursClient.service.ConcursServicesJsonProxy - Registering new user: patrick123
+2025-05-06 17:47:52,787 [1] ERROR ConcursClient.service.ConcursServicesJsonProxy - Error sending request
+System.Exception: Server error: Unexpected character encountered while parsing value: C. Path '', line 0, position 0.
+   at ConcursClient.service.ConcursServicesJsonProxy.SendAndReceive(Request request) in C:\ANUL II\SEMESTRUL II\MPP\mpp-proiect-csharp-parnau-patrick\Laborator3\ConcursClient\service\ConcursServicesJsonProxy.cs:line 124
+2025-05-06 17:47:52,787 [1] ERROR ConcursClient.controller.SignUpForm - Error during user sign-up: Error communicating with server: Server error: Unexpected character encountered while parsing value: C. Path '', line 0, position 0.
+System.Exception: Error communicating with server: Server error: Unexpected character encountered while parsing value: C. Path '', line 0, position 0.
+ ---> System.Exception: Server error: Unexpected character encountered while parsing value: C. Path '', line 0, position 0.
+   at ConcursClient.service.ConcursServicesJsonProxy.SendAndReceive(Request request) in C:\ANUL II\SEMESTRUL II\MPP\mpp-proiect-csharp-parnau-patrick\Laborator3\ConcursClient\service\ConcursServicesJsonProxy.cs:line 124
+   --- End of inner exception stack trace ---
+   at ConcursClient.service.ConcursServicesJsonProxy.SendAndReceive(Request request) in C:\ANUL II\SEMESTRUL II\MPP\mpp-proiect-csharp-parnau-patrick\Laborator3\ConcursClient\service\ConcursServicesJsonProxy.cs:line 132
+   at ConcursClient.service.ConcursServicesJsonProxy.RegisterUser(String username, String password, String officeName) in C:\ANUL II\SEMESTRUL II\MPP\mpp-proiect-csharp-parnau-patrick\Laborator3\ConcursClient\service\ConcursServicesJsonProxy.cs:line 197
+   at ConcursClient.controller.SignUpForm.btnSignUp_Click(Object sender, EventArgs e) in C:\ANUL II\SEMESTRUL II\MPP\mpp-proiect-csharp-parnau-patrick\Laborator3\ConcursClient\controller\SignUpForm.cs:line 51
+2025-05-06 17:48:11,869 [1] INFO  ConcursClient.service.ConcursServicesJsonProxy - Registering new user: patrick1234
+2025-05-06 17:48:11,870 [1] ERROR ConcursClient.service.ConcursServicesJsonProxy - Error sending request
+System.Exception: Server error: Unexpected character encountered while parsing value: C. Path '', line 0, position 0.
+   at ConcursClient.service.ConcursServicesJsonProxy.SendAndReceive(Request request) in C:\ANUL II\SEMESTRUL II\MPP\mpp-proiect-csharp-parnau-patrick\Laborator3\ConcursClient\service\ConcursServicesJsonProxy.cs:line 124
+2025-05-06 17:48:11,870 [1] ERROR ConcursClient.controller.SignUpForm - Error during user sign-up: Error communicating with server: Server error: Unexpected character encountered while parsing value: C. Path '', line 0, position 0.
+System.Exception: Error communicating with server: Server error: Unexpected character encountered while parsing value: C. Path '', line 0, position 0.
+ ---> System.Exception: Server error: Unexpected character encountered while parsing value: C. Path '', line 0, position 0.
+   at ConcursClient.service.ConcursServicesJsonProxy.SendAndReceive(Request request) in C:\ANUL II\SEMESTRUL II\MPP\mpp-proiect-csharp-parnau-patrick\Laborator3\ConcursClient\service\ConcursServicesJsonProxy.cs:line 124
+   --- End of inner exception stack trace ---
+   at ConcursClient.service.ConcursServicesJsonProxy.SendAndReceive(Request request) in C:\ANUL II\SEMESTRUL II\MPP\mpp-proiect-csharp-parnau-patrick\Laborator3\ConcursClient\service\ConcursServicesJsonProxy.cs:line 132
+   at ConcursClient.service.ConcursServicesJsonProxy.RegisterUser(String username, String password, String officeName) in C:\ANUL II\SEMESTRUL II\MPP\mpp-proiect-csharp-parnau-patrick\Laborator3\ConcursClient\service\ConcursServicesJsonProxy.cs:line 197
+   at ConcursClient.controller.SignUpForm.btnSignUp_Click(Object sender, EventArgs e) in C:\ANUL II\SEMESTRUL II\MPP\mpp-proiect-csharp-parnau-patrick\Laborator3\ConcursClient\controller\SignUpForm.cs:line 51
+2025-05-06 17:48:23,273 [1] INFO  ConcursClient.service.ConcursServicesJsonProxy - Login attempt for user: patrick12
+2025-05-06 17:48:23,275 [1] ERROR ConcursClient.service.ConcursServicesJsonProxy - Error sending request
+System.Exception: Server error: Unexpected character encountered while parsing value: C. Path '', line 0, position 0.
+   at ConcursClient.service.ConcursServicesJsonProxy.SendAndReceive(Request request) in C:\ANUL II\SEMESTRUL II\MPP\mpp-proiect-csharp-parnau-patrick\Laborator3\ConcursClient\service\ConcursServicesJsonProxy.cs:line 124
+2025-05-06 17:48:23,275 [1] ERROR ConcursClient.controller.LoginForm - Login failed for user: patrick12
+System.Exception: Error communicating with server: Server error: Unexpected character encountered while parsing value: C. Path '', line 0, position 0.
+ ---> System.Exception: Server error: Unexpected character encountered while parsing value: C. Path '', line 0, position 0.
+   at ConcursClient.service.ConcursServicesJsonProxy.SendAndReceive(Request request) in C:\ANUL II\SEMESTRUL II\MPP\mpp-proiect-csharp-parnau-patrick\Laborator3\ConcursClient\service\ConcursServicesJsonProxy.cs:line 124
+   --- End of inner exception stack trace ---
+   at ConcursClient.service.ConcursServicesJsonProxy.SendAndReceive(Request request) in C:\ANUL II\SEMESTRUL II\MPP\mpp-proiect-csharp-parnau-patrick\Laborator3\ConcursClient\service\ConcursServicesJsonProxy.cs:line 132
+   at ConcursClient.service.ConcursServicesJsonProxy.Login(String username, String password) in C:\ANUL II\SEMESTRUL II\MPP\mpp-proiect-csharp-parnau-patrick\Laborator3\ConcursClient\service\ConcursServicesJsonProxy.cs:line 176
+   at ConcursClient.controller.LoginForm.btnLogin_Click(Object sender, EventArgs e) in C:\ANUL II\SEMESTRUL II\MPP\mpp-proiect-csharp-parnau-patrick\Laborator3\ConcursClient\controller\LoginForm.cs:line 27
+2025-05-06 17:48:25,087 [1] INFO  ConcursClient.service.ConcursServicesJsonProxy - Login attempt for user: patrick12
+2025-05-06 17:48:25,088 [1] ERROR ConcursClient.service.ConcursServicesJsonProxy - Error sending request
+System.Exception: Server error: Unexpected character encountered while parsing value: C. Path '', line 0, position 0.
+   at ConcursClient.service.ConcursServicesJsonProxy.SendAndReceive(Request request) in C:\ANUL II\SEMESTRUL II\MPP\mpp-proiect-csharp-parnau-patrick\Laborator3\ConcursClient\service\ConcursServicesJsonProxy.cs:line 124
+2025-05-06 17:48:25,089 [1] ERROR ConcursClient.controller.LoginForm - Login failed for user: patrick12
+System.Exception: Error communicating with server: Server error: Unexpected character encountered while parsing value: C. Path '', line 0, position 0.
+ ---> System.Exception: Server error: Unexpected character encountered while parsing value: C. Path '', line 0, position 0.
+   at ConcursClient.service.ConcursServicesJsonProxy.SendAndReceive(Request request) in C:\ANUL II\SEMESTRUL II\MPP\mpp-proiect-csharp-parnau-patrick\Laborator3\ConcursClient\service\ConcursServicesJsonProxy.cs:line 124
+   --- End of inner exception stack trace ---
+   at ConcursClient.service.ConcursServicesJsonProxy.SendAndReceive(Request request) in C:\ANUL II\SEMESTRUL II\MPP\mpp-proiect-csharp-parnau-patrick\Laborator3\ConcursClient\service\ConcursServicesJsonProxy.cs:line 132
+   at ConcursClient.service.ConcursServicesJsonProxy.Login(String username, String password) in C:\ANUL II\SEMESTRUL II\MPP\mpp-proiect-csharp-parnau-patrick\Laborator3\ConcursClient\service\ConcursServicesJsonProxy.cs:line 176
+   at ConcursClient.controller.LoginForm.btnLogin_Click(Object sender, EventArgs e) in C:\ANUL II\SEMESTRUL II\MPP\mpp-proiect-csharp-parnau-patrick\Laborator3\ConcursClient\controller\LoginForm.cs:line 27
+2025-05-06 17:48:28,306 [1] INFO  ConcursClient.service.ConcursServicesJsonProxy - Login attempt for user: patrick
+2025-05-06 17:48:28,308 [1] ERROR ConcursClient.service.ConcursServicesJsonProxy - Error sending request
+System.Exception: Server error: Unexpected character encountered while parsing value: C. Path '', line 0, position 0.
+   at ConcursClient.service.ConcursServicesJsonProxy.SendAndReceive(Request request) in C:\ANUL II\SEMESTRUL II\MPP\mpp-proiect-csharp-parnau-patrick\Laborator3\ConcursClient\service\ConcursServicesJsonProxy.cs:line 124
+2025-05-06 17:48:28,308 [1] ERROR ConcursClient.controller.LoginForm - Login failed for user: patrick
+System.Exception: Error communicating with server: Server error: Unexpected character encountered while parsing value: C. Path '', line 0, position 0.
+ ---> System.Exception: Server error: Unexpected character encountered while parsing value: C. Path '', line 0, position 0.
+   at ConcursClient.service.ConcursServicesJsonProxy.SendAndReceive(Request request) in C:\ANUL II\SEMESTRUL II\MPP\mpp-proiect-csharp-parnau-patrick\Laborator3\ConcursClient\service\ConcursServicesJsonProxy.cs:line 124
+   --- End of inner exception stack trace ---
+   at ConcursClient.service.ConcursServicesJsonProxy.SendAndReceive(Request request) in C:\ANUL II\SEMESTRUL II\MPP\mpp-proiect-csharp-parnau-patrick\Laborator3\ConcursClient\service\ConcursServicesJsonProxy.cs:line 132
+   at ConcursClient.service.ConcursServicesJsonProxy.Login(String username, String password) in C:\ANUL II\SEMESTRUL II\MPP\mpp-proiect-csharp-parnau-patrick\Laborator3\ConcursClient\service\ConcursServicesJsonProxy.cs:line 176
+   at ConcursClient.controller.LoginForm.btnLogin_Click(Object sender, EventArgs e) in C:\ANUL II\SEMESTRUL II\MPP\mpp-proiect-csharp-parnau-patrick\Laborator3\ConcursClient\controller\LoginForm.cs:line 27
+2025-05-06 18:00:51,284 [1] INFO  ConcursClient.StartClient - Starting client application
+2025-05-06 18:00:51,293 [1] INFO  ConcursClient.StartClient - Connecting to server localhost:55555
+2025-05-06 18:01:03,557 [1] INFO  ConcursClient.controller.LoginForm - Opening Sign-Up form
+2025-05-06 18:01:17,493 [1] INFO  ConcursClient.service.ConcursServicesJsonProxy - Registering new user: alex
+2025-05-06 18:01:19,539 [1] INFO  ConcursClient.service.ConcursServicesJsonProxy - Connected to server localhost:55555
+2025-05-06 18:01:19,855 [1] ERROR ConcursClient.service.ConcursServicesJsonProxy - Server returned error: Error saving user 'alex': unable to open database file
+2025-05-06 18:01:19,855 [1] ERROR ConcursClient.service.ConcursServicesJsonProxy - Error sending request
+System.Exception: Server error: Error saving user 'alex': unable to open database file
+   at ConcursClient.service.ConcursServicesJsonProxy.SendAndReceive(Request request) in C:\ANUL II\SEMESTRUL II\MPP\mpp-proiect-csharp-parnau-patrick\Laborator3\ConcursClient\service\ConcursServicesJsonProxy.cs:line 141
+2025-05-06 18:01:19,874 [1] ERROR ConcursClient.controller.SignUpForm - Error during user sign-up: Error communicating with server: Server error: Error saving user 'alex': unable to open database file
+System.Exception: Error communicating with server: Server error: Error saving user 'alex': unable to open database file
+ ---> System.Exception: Server error: Error saving user 'alex': unable to open database file
+   at ConcursClient.service.ConcursServicesJsonProxy.SendAndReceive(Request request) in C:\ANUL II\SEMESTRUL II\MPP\mpp-proiect-csharp-parnau-patrick\Laborator3\ConcursClient\service\ConcursServicesJsonProxy.cs:line 141
+   --- End of inner exception stack trace ---
+   at ConcursClient.service.ConcursServicesJsonProxy.SendAndReceive(Request request) in C:\ANUL II\SEMESTRUL II\MPP\mpp-proiect-csharp-parnau-patrick\Laborator3\ConcursClient\service\ConcursServicesJsonProxy.cs:line 149
+   at ConcursClient.service.ConcursServicesJsonProxy.RegisterUser(String username, String password, String officeName) in C:\ANUL II\SEMESTRUL II\MPP\mpp-proiect-csharp-parnau-patrick\Laborator3\ConcursClient\service\ConcursServicesJsonProxy.cs:line 245
+   at ConcursClient.controller.SignUpForm.btnSignUp_Click(Object sender, EventArgs e) in C:\ANUL II\SEMESTRUL II\MPP\mpp-proiect-csharp-parnau-patrick\Laborator3\ConcursClient\controller\SignUpForm.cs:line 51
+2025-05-06 18:03:16,750 [1] INFO  ConcursClient.StartClient - Starting client application
+2025-05-06 18:03:16,759 [1] INFO  ConcursClient.StartClient - Connecting to server localhost:55555
+2025-05-06 18:03:18,458 [1] INFO  ConcursClient.controller.LoginForm - Opening Sign-Up form
+2025-05-06 18:03:37,175 [1] INFO  ConcursClient.service.ConcursServicesJsonProxy - Registering new user: asda
+2025-05-06 18:03:39,236 [1] INFO  ConcursClient.service.ConcursServicesJsonProxy - Connected to server localhost:55555
+2025-05-06 18:03:39,535 [1] INFO  ConcursClient.service.ConcursServicesJsonProxy - User registered successfully: asda
+2025-05-06 18:03:39,535 [1] INFO  ConcursClient.controller.SignUpForm - User asda signed up successfully
+2025-05-06 18:03:44,004 [1] INFO  ConcursClient.service.ConcursServicesJsonProxy - Login attempt for user: asda
+2025-05-06 18:03:44,008 [1] INFO  ConcursClient.service.ConcursServicesJsonProxy - Login successful for user: asda
+2025-05-06 18:03:44,008 [1] INFO  ConcursClient.controller.LoginForm - Login successful for user: asda
+2025-05-06 18:03:45,083 [1] INFO  ConcursClient.controller.MainForm - Opening Events form
+2025-05-06 18:03:45,091 [1] INFO  ConcursClient.controller.EventsForm - Loading events with participant counts
+2025-05-06 18:03:45,091 [1] INFO  ConcursClient.service.ConcursServicesJsonProxy - Getting all events with participant counts
+2025-05-06 18:03:45,119 [1] INFO  ConcursClient.service.ConcursServicesJsonProxy - Got 19 events with participant counts
+2025-05-06 18:03:45,839 [1] INFO  ConcursClient.controller.MainForm - Opening Search form
+2025-05-06 18:03:45,842 [1] INFO  ConcursClient.controller.ParticipantSearchForm - Loading events for search form
+2025-05-06 18:03:45,842 [1] INFO  ConcursClient.service.ConcursServicesJsonProxy - Getting all events
+2025-05-06 18:03:45,848 [1] INFO  ConcursClient.service.ConcursServicesJsonProxy - Got 19 events
+2025-05-06 18:03:46,314 [1] INFO  ConcursClient.controller.MainForm - Opening Registration form
+2025-05-06 18:03:46,316 [1] INFO  ConcursClient.controller.RegisterForm - Loading events for registration form
+2025-05-06 18:03:46,316 [1] INFO  ConcursClient.service.ConcursServicesJsonProxy - Getting all events
+2025-05-06 18:03:46,322 [1] INFO  ConcursClient.service.ConcursServicesJsonProxy - Got 19 events
+2025-05-06 18:04:03,828 [1] INFO  ConcursClient.controller.ParticipantSearchForm - Searching participants for selected event
+2025-05-06 18:04:03,828 [1] INFO  ConcursClient.service.ConcursServicesJsonProxy - Getting participants for event: 1
+2025-05-06 18:04:03,837 [1] INFO  ConcursClient.service.ConcursServicesJsonProxy - Got 3 participants for event 1
+2025-05-06 18:04:06,182 [1] INFO  ConcursClient.controller.ParticipantSearchForm - Searching participants for selected event
+2025-05-06 18:04:06,183 [1] INFO  ConcursClient.service.ConcursServicesJsonProxy - Getting participants for event: 5
+2025-05-06 18:04:06,184 [1] INFO  ConcursClient.service.ConcursServicesJsonProxy - Got 2 participants for event 5
+2025-05-06 18:04:33,989 [1] INFO  ConcursClient.StartClient - Starting client application
+2025-05-06 18:04:33,998 [1] INFO  ConcursClient.StartClient - Connecting to server localhost:55555
+2025-05-06 18:04:39,636 [1] INFO  ConcursClient.StartClient - Starting client application
+2025-05-06 18:04:39,645 [1] INFO  ConcursClient.StartClient - Connecting to server localhost:55555
+2025-05-06 18:05:31,078 [1] INFO  ConcursClient.service.ConcursServicesJsonProxy - Login attempt for user: asda
+2025-05-06 18:05:33,129 [1] INFO  ConcursClient.service.ConcursServicesJsonProxy - Connected to server localhost:55555
+2025-05-06 18:05:33,249 [1] INFO  ConcursClient.service.ConcursServicesJsonProxy - Login successful for user: asda
+2025-05-06 18:05:33,249 [1] INFO  ConcursClient.controller.LoginForm - Login successful for user: asda
+2025-05-06 18:05:35,256 [1] INFO  ConcursClient.controller.MainForm - Opening Events form
+2025-05-06 18:05:35,260 [1] INFO  ConcursClient.controller.EventsForm - Loading events with participant counts
+2025-05-06 18:05:35,260 [1] INFO  ConcursClient.service.ConcursServicesJsonProxy - Getting all events with participant counts
+2025-05-06 18:05:35,276 [1] INFO  ConcursClient.service.ConcursServicesJsonProxy - Got 19 events with participant counts
+2025-05-06 18:05:51,983 [1] INFO  ConcursClient.controller.MainForm - Opening Search form
+2025-05-06 18:05:51,985 [1] INFO  ConcursClient.controller.ParticipantSearchForm - Loading events for search form
+2025-05-06 18:05:51,985 [1] INFO  ConcursClient.service.ConcursServicesJsonProxy - Getting all events
+2025-05-06 18:05:51,991 [1] INFO  ConcursClient.service.ConcursServicesJsonProxy - Got 19 events
+2025-05-06 18:05:52,439 [1] INFO  ConcursClient.controller.MainForm - Opening Events form
+2025-05-06 18:05:52,987 [1] INFO  ConcursClient.controller.MainForm - Opening Events form
+2025-05-06 18:05:53,114 [1] INFO  ConcursClient.controller.MainForm - Opening Events form
+2025-05-06 18:06:48,519 [1] INFO  ConcursClient.controller.MainForm - Application closing
+2025-05-06 18:06:48,522 [1] INFO  ConcursClient.service.ConcursServicesJsonProxy - Connection closed
+2025-05-06 18:06:48,522 [1] INFO  ConcursClient.controller.MainForm - Application closing
+2025-05-06 18:06:48,522 [1] INFO  ConcursClient.service.ConcursServicesJsonProxy - Connection closed
