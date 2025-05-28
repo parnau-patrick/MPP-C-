@@ -1,0 +1,16 @@
+C:\ANUL II\SEMESTRUL II\MPP\mpp-proiect-csharp-parnau-patrick\Laborator3\ConcursNetworking\bin\Debug\net6.0\ConcursNetworking.deps.json
+C:\ANUL II\SEMESTRUL II\MPP\mpp-proiect-csharp-parnau-patrick\Laborator3\ConcursNetworking\bin\Debug\net6.0\ConcursNetworking.dll
+C:\ANUL II\SEMESTRUL II\MPP\mpp-proiect-csharp-parnau-patrick\Laborator3\ConcursNetworking\bin\Debug\net6.0\ConcursNetworking.pdb
+C:\ANUL II\SEMESTRUL II\MPP\mpp-proiect-csharp-parnau-patrick\Laborator3\ConcursNetworking\bin\Debug\net6.0\ConcursModel.dll
+C:\ANUL II\SEMESTRUL II\MPP\mpp-proiect-csharp-parnau-patrick\Laborator3\ConcursNetworking\bin\Debug\net6.0\ConcursModel.pdb
+C:\ANUL II\SEMESTRUL II\MPP\mpp-proiect-csharp-parnau-patrick\Laborator3\ConcursNetworking\obj\Debug\net6.0\ConcursNetworking.csproj.AssemblyReference.cache
+C:\ANUL II\SEMESTRUL II\MPP\mpp-proiect-csharp-parnau-patrick\Laborator3\ConcursNetworking\obj\Debug\net6.0\ConcursNetworking.GeneratedMSBuildEditorConfig.editorconfig
+C:\ANUL II\SEMESTRUL II\MPP\mpp-proiect-csharp-parnau-patrick\Laborator3\ConcursNetworking\obj\Debug\net6.0\ConcursNetworking.AssemblyInfoInputs.cache
+C:\ANUL II\SEMESTRUL II\MPP\mpp-proiect-csharp-parnau-patrick\Laborator3\ConcursNetworking\obj\Debug\net6.0\ConcursNetworking.AssemblyInfo.cs
+C:\ANUL II\SEMESTRUL II\MPP\mpp-proiect-csharp-parnau-patrick\Laborator3\ConcursNetworking\obj\Debug\net6.0\ConcursNetworking.csproj.CoreCompileInputs.cache
+C:\ANUL II\SEMESTRUL II\MPP\mpp-proiect-csharp-parnau-patrick\Laborator3\ConcursNetworking\obj\Debug\net6.0\ConcursNetworking.sourcelink.json
+C:\ANUL II\SEMESTRUL II\MPP\mpp-proiect-csharp-parnau-patrick\Laborator3\ConcursNetworking\obj\Debug\net6.0\ConcursN.C75DC480.Up2Date
+C:\ANUL II\SEMESTRUL II\MPP\mpp-proiect-csharp-parnau-patrick\Laborator3\ConcursNetworking\obj\Debug\net6.0\ConcursNetworking.dll
+C:\ANUL II\SEMESTRUL II\MPP\mpp-proiect-csharp-parnau-patrick\Laborator3\ConcursNetworking\obj\Debug\net6.0\refint\ConcursNetworking.dll
+C:\ANUL II\SEMESTRUL II\MPP\mpp-proiect-csharp-parnau-patrick\Laborator3\ConcursNetworking\obj\Debug\net6.0\ConcursNetworking.pdb
+C:\ANUL II\SEMESTRUL II\MPP\mpp-proiect-csharp-parnau-patrick\Laborator3\ConcursNetworking\obj\Debug\net6.0\ref\ConcursNetworking.dll
