@@ -1,0 +1,713 @@
+2025-05-06 17:47:31,420 [1] INFO  ConcursClient.StartClient - Starting client application
+2025-05-06 17:47:31,438 [1] INFO  ConcursClient.StartClient - Connecting to server localhost:55555
+2025-05-06 17:47:38,276 [1] INFO  ConcursClient.service.ConcursServicesJsonProxy - Login attempt for user: admin
+2025-05-06 17:47:40,617 [1] ERROR ConcursClient.service.ConcursServicesJsonProxy - Error sending request
+System.Exception: Server error: Unexpected character encountered while parsing value: C. Path '', line 0, position 0.
+   at ConcursClient.service.ConcursServicesJsonProxy.SendAndReceive(Request request) in C:\ANUL II\SEMESTRUL II\MPP\mpp-proiect-csharp-parnau-patrick\Laborator3\ConcursClient\service\ConcursServicesJsonProxy.cs:line 124
+2025-05-06 17:47:40,637 [1] ERROR ConcursClient.controller.LoginForm - Login failed for user: admin
+System.Exception: Error communicating with server: Server error: Unexpected character encountered while parsing value: C. Path '', line 0, position 0.
+ ---> System.Exception: Server error: Unexpected character encountered while parsing value: C. Path '', line 0, position 0.
+   at ConcursClient.service.ConcursServicesJsonProxy.SendAndReceive(Request request) in C:\ANUL II\SEMESTRUL II\MPP\mpp-proiect-csharp-parnau-patrick\Laborator3\ConcursClient\service\ConcursServicesJsonProxy.cs:line 124
+   --- End of inner exception stack trace ---
+   at ConcursClient.service.ConcursServicesJsonProxy.SendAndReceive(Request request) in C:\ANUL II\SEMESTRUL II\MPP\mpp-proiect-csharp-parnau-patrick\Laborator3\ConcursClient\service\ConcursServicesJsonProxy.cs:line 132
+   at ConcursClient.service.ConcursServicesJsonProxy.Login(String username, String password) in C:\ANUL II\SEMESTRUL II\MPP\mpp-proiect-csharp-parnau-patrick\Laborator3\ConcursClient\service\ConcursServicesJsonProxy.cs:line 176
+   at ConcursClient.controller.LoginForm.btnLogin_Click(Object sender, EventArgs e) in C:\ANUL II\SEMESTRUL II\MPP\mpp-proiect-csharp-parnau-patrick\Laborator3\ConcursClient\controller\LoginForm.cs:line 27
+2025-05-06 17:47:42,711 [1] INFO  ConcursClient.controller.LoginForm - Opening Sign-Up form
+2025-05-06 17:47:52,784 [1] INFO  ConcursClient.service.ConcursServicesJsonProxy - Registering new user: patrick123
+2025-05-06 17:47:52,787 [1] ERROR ConcursClient.service.ConcursServicesJsonProxy - Error sending request
+System.Exception: Server error: Unexpected character encountered while parsing value: C. Path '', line 0, position 0.
+   at ConcursClient.service.ConcursServicesJsonProxy.SendAndReceive(Request request) in C:\ANUL II\SEMESTRUL II\MPP\mpp-proiect-csharp-parnau-patrick\Laborator3\ConcursClient\service\ConcursServicesJsonProxy.cs:line 124
+2025-05-06 17:47:52,787 [1] ERROR ConcursClient.controller.SignUpForm - Error during user sign-up: Error communicating with server: Server error: Unexpected character encountered while parsing value: C. Path '', line 0, position 0.
+System.Exception: Error communicating with server: Server error: Unexpected character encountered while parsing value: C. Path '', line 0, position 0.
+ ---> System.Exception: Server error: Unexpected character encountered while parsing value: C. Path '', line 0, position 0.
+   at ConcursClient.service.ConcursServicesJsonProxy.SendAndReceive(Request request) in C:\ANUL II\SEMESTRUL II\MPP\mpp-proiect-csharp-parnau-patrick\Laborator3\ConcursClient\service\ConcursServicesJsonProxy.cs:line 124
+   --- End of inner exception stack trace ---
+   at ConcursClient.service.ConcursServicesJsonProxy.SendAndReceive(Request request) in C:\ANUL II\SEMESTRUL II\MPP\mpp-proiect-csharp-parnau-patrick\Laborator3\ConcursClient\service\ConcursServicesJsonProxy.cs:line 132
+   at ConcursClient.service.ConcursServicesJsonProxy.RegisterUser(String username, String password, String officeName) in C:\ANUL II\SEMESTRUL II\MPP\mpp-proiect-csharp-parnau-patrick\Laborator3\ConcursClient\service\ConcursServicesJsonProxy.cs:line 197
+   at ConcursClient.controller.SignUpForm.btnSignUp_Click(Object sender, EventArgs e) in C:\ANUL II\SEMESTRUL II\MPP\mpp-proiect-csharp-parnau-patrick\Laborator3\ConcursClient\controller\SignUpForm.cs:line 51
+2025-05-06 17:48:11,869 [1] INFO  ConcursClient.service.ConcursServicesJsonProxy - Registering new user: patrick1234
+2025-05-06 17:48:11,870 [1] ERROR ConcursClient.service.ConcursServicesJsonProxy - Error sending request
+System.Exception: Server error: Unexpected character encountered while parsing value: C. Path '', line 0, position 0.
+   at ConcursClient.service.ConcursServicesJsonProxy.SendAndReceive(Request request) in C:\ANUL II\SEMESTRUL II\MPP\mpp-proiect-csharp-parnau-patrick\Laborator3\ConcursClient\service\ConcursServicesJsonProxy.cs:line 124
+2025-05-06 17:48:11,870 [1] ERROR ConcursClient.controller.SignUpForm - Error during user sign-up: Error communicating with server: Server error: Unexpected character encountered while parsing value: C. Path '', line 0, position 0.
+System.Exception: Error communicating with server: Server error: Unexpected character encountered while parsing value: C. Path '', line 0, position 0.
+ ---> System.Exception: Server error: Unexpected character encountered while parsing value: C. Path '', line 0, position 0.
+   at ConcursClient.service.ConcursServicesJsonProxy.SendAndReceive(Request request) in C:\ANUL II\SEMESTRUL II\MPP\mpp-proiect-csharp-parnau-patrick\Laborator3\ConcursClient\service\ConcursServicesJsonProxy.cs:line 124
+   --- End of inner exception stack trace ---
+   at ConcursClient.service.ConcursServicesJsonProxy.SendAndReceive(Request request) in C:\ANUL II\SEMESTRUL II\MPP\mpp-proiect-csharp-parnau-patrick\Laborator3\ConcursClient\service\ConcursServicesJsonProxy.cs:line 132
+   at ConcursClient.service.ConcursServicesJsonProxy.RegisterUser(String username, String password, String officeName) in C:\ANUL II\SEMESTRUL II\MPP\mpp-proiect-csharp-parnau-patrick\Laborator3\ConcursClient\service\ConcursServicesJsonProxy.cs:line 197
+   at ConcursClient.controller.SignUpForm.btnSignUp_Click(Object sender, EventArgs e) in C:\ANUL II\SEMESTRUL II\MPP\mpp-proiect-csharp-parnau-patrick\Laborator3\ConcursClient\controller\SignUpForm.cs:line 51
+2025-05-06 17:48:23,273 [1] INFO  ConcursClient.service.ConcursServicesJsonProxy - Login attempt for user: patrick12
+2025-05-06 17:48:23,275 [1] ERROR ConcursClient.service.ConcursServicesJsonProxy - Error sending request
+System.Exception: Server error: Unexpected character encountered while parsing value: C. Path '', line 0, position 0.
+   at ConcursClient.service.ConcursServicesJsonProxy.SendAndReceive(Request request) in C:\ANUL II\SEMESTRUL II\MPP\mpp-proiect-csharp-parnau-patrick\Laborator3\ConcursClient\service\ConcursServicesJsonProxy.cs:line 124
+2025-05-06 17:48:23,275 [1] ERROR ConcursClient.controller.LoginForm - Login failed for user: patrick12
+System.Exception: Error communicating with server: Server error: Unexpected character encountered while parsing value: C. Path '', line 0, position 0.
+ ---> System.Exception: Server error: Unexpected character encountered while parsing value: C. Path '', line 0, position 0.
+   at ConcursClient.service.ConcursServicesJsonProxy.SendAndReceive(Request request) in C:\ANUL II\SEMESTRUL II\MPP\mpp-proiect-csharp-parnau-patrick\Laborator3\ConcursClient\service\ConcursServicesJsonProxy.cs:line 124
+   --- End of inner exception stack trace ---
+   at ConcursClient.service.ConcursServicesJsonProxy.SendAndReceive(Request request) in C:\ANUL II\SEMESTRUL II\MPP\mpp-proiect-csharp-parnau-patrick\Laborator3\ConcursClient\service\ConcursServicesJsonProxy.cs:line 132
+   at ConcursClient.service.ConcursServicesJsonProxy.Login(String username, String password) in C:\ANUL II\SEMESTRUL II\MPP\mpp-proiect-csharp-parnau-patrick\Laborator3\ConcursClient\service\ConcursServicesJsonProxy.cs:line 176
+   at ConcursClient.controller.LoginForm.btnLogin_Click(Object sender, EventArgs e) in C:\ANUL II\SEMESTRUL II\MPP\mpp-proiect-csharp-parnau-patrick\Laborator3\ConcursClient\controller\LoginForm.cs:line 27
+2025-05-06 17:48:25,087 [1] INFO  ConcursClient.service.ConcursServicesJsonProxy - Login attempt for user: patrick12
+2025-05-06 17:48:25,088 [1] ERROR ConcursClient.service.ConcursServicesJsonProxy - Error sending request
+System.Exception: Server error: Unexpected character encountered while parsing value: C. Path '', line 0, position 0.
+   at ConcursClient.service.ConcursServicesJsonProxy.SendAndReceive(Request request) in C:\ANUL II\SEMESTRUL II\MPP\mpp-proiect-csharp-parnau-patrick\Laborator3\ConcursClient\service\ConcursServicesJsonProxy.cs:line 124
+2025-05-06 17:48:25,089 [1] ERROR ConcursClient.controller.LoginForm - Login failed for user: patrick12
+System.Exception: Error communicating with server: Server error: Unexpected character encountered while parsing value: C. Path '', line 0, position 0.
+ ---> System.Exception: Server error: Unexpected character encountered while parsing value: C. Path '', line 0, position 0.
+   at ConcursClient.service.ConcursServicesJsonProxy.SendAndReceive(Request request) in C:\ANUL II\SEMESTRUL II\MPP\mpp-proiect-csharp-parnau-patrick\Laborator3\ConcursClient\service\ConcursServicesJsonProxy.cs:line 124
+   --- End of inner exception stack trace ---
+   at ConcursClient.service.ConcursServicesJsonProxy.SendAndReceive(Request request) in C:\ANUL II\SEMESTRUL II\MPP\mpp-proiect-csharp-parnau-patrick\Laborator3\ConcursClient\service\ConcursServicesJsonProxy.cs:line 132
+   at ConcursClient.service.ConcursServicesJsonProxy.Login(String username, String password) in C:\ANUL II\SEMESTRUL II\MPP\mpp-proiect-csharp-parnau-patrick\Laborator3\ConcursClient\service\ConcursServicesJsonProxy.cs:line 176
+   at ConcursClient.controller.LoginForm.btnLogin_Click(Object sender, EventArgs e) in C:\ANUL II\SEMESTRUL II\MPP\mpp-proiect-csharp-parnau-patrick\Laborator3\ConcursClient\controller\LoginForm.cs:line 27
+2025-05-06 17:48:28,306 [1] INFO  ConcursClient.service.ConcursServicesJsonProxy - Login attempt for user: patrick
+2025-05-06 17:48:28,308 [1] ERROR ConcursClient.service.ConcursServicesJsonProxy - Error sending request
+System.Exception: Server error: Unexpected character encountered while parsing value: C. Path '', line 0, position 0.
+   at ConcursClient.service.ConcursServicesJsonProxy.SendAndReceive(Request request) in C:\ANUL II\SEMESTRUL II\MPP\mpp-proiect-csharp-parnau-patrick\Laborator3\ConcursClient\service\ConcursServicesJsonProxy.cs:line 124
+2025-05-06 17:48:28,308 [1] ERROR ConcursClient.controller.LoginForm - Login failed for user: patrick
+System.Exception: Error communicating with server: Server error: Unexpected character encountered while parsing value: C. Path '', line 0, position 0.
+ ---> System.Exception: Server error: Unexpected character encountered while parsing value: C. Path '', line 0, position 0.
+   at ConcursClient.service.ConcursServicesJsonProxy.SendAndReceive(Request request) in C:\ANUL II\SEMESTRUL II\MPP\mpp-proiect-csharp-parnau-patrick\Laborator3\ConcursClient\service\ConcursServicesJsonProxy.cs:line 124
+   --- End of inner exception stack trace ---
+   at ConcursClient.service.ConcursServicesJsonProxy.SendAndReceive(Request request) in C:\ANUL II\SEMESTRUL II\MPP\mpp-proiect-csharp-parnau-patrick\Laborator3\ConcursClient\service\ConcursServicesJsonProxy.cs:line 132
+   at ConcursClient.service.ConcursServicesJsonProxy.Login(String username, String password) in C:\ANUL II\SEMESTRUL II\MPP\mpp-proiect-csharp-parnau-patrick\Laborator3\ConcursClient\service\ConcursServicesJsonProxy.cs:line 176
+   at ConcursClient.controller.LoginForm.btnLogin_Click(Object sender, EventArgs e) in C:\ANUL II\SEMESTRUL II\MPP\mpp-proiect-csharp-parnau-patrick\Laborator3\ConcursClient\controller\LoginForm.cs:line 27
+2025-05-06 18:00:51,284 [1] INFO  ConcursClient.StartClient - Starting client application
+2025-05-06 18:00:51,293 [1] INFO  ConcursClient.StartClient - Connecting to server localhost:55555
+2025-05-06 18:01:03,557 [1] INFO  ConcursClient.controller.LoginForm - Opening Sign-Up form
+2025-05-06 18:01:17,493 [1] INFO  ConcursClient.service.ConcursServicesJsonProxy - Registering new user: alex
+2025-05-06 18:01:19,539 [1] INFO  ConcursClient.service.ConcursServicesJsonProxy - Connected to server localhost:55555
+2025-05-06 18:01:19,855 [1] ERROR ConcursClient.service.ConcursServicesJsonProxy - Server returned error: Error saving user 'alex': unable to open database file
+2025-05-06 18:01:19,855 [1] ERROR ConcursClient.service.ConcursServicesJsonProxy - Error sending request
+System.Exception: Server error: Error saving user 'alex': unable to open database file
+   at ConcursClient.service.ConcursServicesJsonProxy.SendAndReceive(Request request) in C:\ANUL II\SEMESTRUL II\MPP\mpp-proiect-csharp-parnau-patrick\Laborator3\ConcursClient\service\ConcursServicesJsonProxy.cs:line 141
+2025-05-06 18:01:19,874 [1] ERROR ConcursClient.controller.SignUpForm - Error during user sign-up: Error communicating with server: Server error: Error saving user 'alex': unable to open database file
+System.Exception: Error communicating with server: Server error: Error saving user 'alex': unable to open database file
+ ---> System.Exception: Server error: Error saving user 'alex': unable to open database file
+   at ConcursClient.service.ConcursServicesJsonProxy.SendAndReceive(Request request) in C:\ANUL II\SEMESTRUL II\MPP\mpp-proiect-csharp-parnau-patrick\Laborator3\ConcursClient\service\ConcursServicesJsonProxy.cs:line 141
+   --- End of inner exception stack trace ---
+   at ConcursClient.service.ConcursServicesJsonProxy.SendAndReceive(Request request) in C:\ANUL II\SEMESTRUL II\MPP\mpp-proiect-csharp-parnau-patrick\Laborator3\ConcursClient\service\ConcursServicesJsonProxy.cs:line 149
+   at ConcursClient.service.ConcursServicesJsonProxy.RegisterUser(String username, String password, String officeName) in C:\ANUL II\SEMESTRUL II\MPP\mpp-proiect-csharp-parnau-patrick\Laborator3\ConcursClient\service\ConcursServicesJsonProxy.cs:line 245
+   at ConcursClient.controller.SignUpForm.btnSignUp_Click(Object sender, EventArgs e) in C:\ANUL II\SEMESTRUL II\MPP\mpp-proiect-csharp-parnau-patrick\Laborator3\ConcursClient\controller\SignUpForm.cs:line 51
+2025-05-06 18:03:16,750 [1] INFO  ConcursClient.StartClient - Starting client application
+2025-05-06 18:03:16,759 [1] INFO  ConcursClient.StartClient - Connecting to server localhost:55555
+2025-05-06 18:03:18,458 [1] INFO  ConcursClient.controller.LoginForm - Opening Sign-Up form
+2025-05-06 18:03:37,175 [1] INFO  ConcursClient.service.ConcursServicesJsonProxy - Registering new user: asda
+2025-05-06 18:03:39,236 [1] INFO  ConcursClient.service.ConcursServicesJsonProxy - Connected to server localhost:55555
+2025-05-06 18:03:39,535 [1] INFO  ConcursClient.service.ConcursServicesJsonProxy - User registered successfully: asda
+2025-05-06 18:03:39,535 [1] INFO  ConcursClient.controller.SignUpForm - User asda signed up successfully
+2025-05-06 18:03:44,004 [1] INFO  ConcursClient.service.ConcursServicesJsonProxy - Login attempt for user: asda
+2025-05-06 18:03:44,008 [1] INFO  ConcursClient.service.ConcursServicesJsonProxy - Login successful for user: asda
+2025-05-06 18:03:44,008 [1] INFO  ConcursClient.controller.LoginForm - Login successful for user: asda
+2025-05-06 18:03:45,083 [1] INFO  ConcursClient.controller.MainForm - Opening Events form
+2025-05-06 18:03:45,091 [1] INFO  ConcursClient.controller.EventsForm - Loading events with participant counts
+2025-05-06 18:03:45,091 [1] INFO  ConcursClient.service.ConcursServicesJsonProxy - Getting all events with participant counts
+2025-05-06 18:03:45,119 [1] INFO  ConcursClient.service.ConcursServicesJsonProxy - Got 19 events with participant counts
+2025-05-06 18:03:45,839 [1] INFO  ConcursClient.controller.MainForm - Opening Search form
+2025-05-06 18:03:45,842 [1] INFO  ConcursClient.controller.ParticipantSearchForm - Loading events for search form
+2025-05-06 18:03:45,842 [1] INFO  ConcursClient.service.ConcursServicesJsonProxy - Getting all events
+2025-05-06 18:03:45,848 [1] INFO  ConcursClient.service.ConcursServicesJsonProxy - Got 19 events
+2025-05-06 18:03:46,314 [1] INFO  ConcursClient.controller.MainForm - Opening Registration form
+2025-05-06 18:03:46,316 [1] INFO  ConcursClient.controller.RegisterForm - Loading events for registration form
+2025-05-06 18:03:46,316 [1] INFO  ConcursClient.service.ConcursServicesJsonProxy - Getting all events
+2025-05-06 18:03:46,322 [1] INFO  ConcursClient.service.ConcursServicesJsonProxy - Got 19 events
+2025-05-06 18:04:03,828 [1] INFO  ConcursClient.controller.ParticipantSearchForm - Searching participants for selected event
+2025-05-06 18:04:03,828 [1] INFO  ConcursClient.service.ConcursServicesJsonProxy - Getting participants for event: 1
+2025-05-06 18:04:03,837 [1] INFO  ConcursClient.service.ConcursServicesJsonProxy - Got 3 participants for event 1
+2025-05-06 18:04:06,182 [1] INFO  ConcursClient.controller.ParticipantSearchForm - Searching participants for selected event
+2025-05-06 18:04:06,183 [1] INFO  ConcursClient.service.ConcursServicesJsonProxy - Getting participants for event: 5
+2025-05-06 18:04:06,184 [1] INFO  ConcursClient.service.ConcursServicesJsonProxy - Got 2 participants for event 5
+2025-05-06 18:04:33,989 [1] INFO  ConcursClient.StartClient - Starting client application
+2025-05-06 18:04:33,998 [1] INFO  ConcursClient.StartClient - Connecting to server localhost:55555
+2025-05-06 18:04:39,636 [1] INFO  ConcursClient.StartClient - Starting client application
+2025-05-06 18:04:39,645 [1] INFO  ConcursClient.StartClient - Connecting to server localhost:55555
+2025-05-06 18:05:31,078 [1] INFO  ConcursClient.service.ConcursServicesJsonProxy - Login attempt for user: asda
+2025-05-06 18:05:33,129 [1] INFO  ConcursClient.service.ConcursServicesJsonProxy - Connected to server localhost:55555
+2025-05-06 18:05:33,249 [1] INFO  ConcursClient.service.ConcursServicesJsonProxy - Login successful for user: asda
+2025-05-06 18:05:33,249 [1] INFO  ConcursClient.controller.LoginForm - Login successful for user: asda
+2025-05-06 18:05:35,256 [1] INFO  ConcursClient.controller.MainForm - Opening Events form
+2025-05-06 18:05:35,260 [1] INFO  ConcursClient.controller.EventsForm - Loading events with participant counts
+2025-05-06 18:05:35,260 [1] INFO  ConcursClient.service.ConcursServicesJsonProxy - Getting all events with participant counts
+2025-05-06 18:05:35,276 [1] INFO  ConcursClient.service.ConcursServicesJsonProxy - Got 19 events with participant counts
+2025-05-06 18:05:51,983 [1] INFO  ConcursClient.controller.MainForm - Opening Search form
+2025-05-06 18:05:51,985 [1] INFO  ConcursClient.controller.ParticipantSearchForm - Loading events for search form
+2025-05-06 18:05:51,985 [1] INFO  ConcursClient.service.ConcursServicesJsonProxy - Getting all events
+2025-05-06 18:05:51,991 [1] INFO  ConcursClient.service.ConcursServicesJsonProxy - Got 19 events
+2025-05-06 18:05:52,439 [1] INFO  ConcursClient.controller.MainForm - Opening Events form
+2025-05-06 18:05:52,987 [1] INFO  ConcursClient.controller.MainForm - Opening Events form
+2025-05-06 18:05:53,114 [1] INFO  ConcursClient.controller.MainForm - Opening Events form
+2025-05-06 18:06:48,519 [1] INFO  ConcursClient.controller.MainForm - Application closing
+2025-05-06 18:06:48,522 [1] INFO  ConcursClient.service.ConcursServicesJsonProxy - Connection closed
+2025-05-06 18:06:48,522 [1] INFO  ConcursClient.controller.MainForm - Application closing
+2025-05-06 18:06:48,522 [1] INFO  ConcursClient.service.ConcursServicesJsonProxy - Connection closed
+2025-05-06 18:44:15,331 [1] INFO  ConcursClient.StartClient - Starting client application
+2025-05-06 18:44:15,340 [1] INFO  ConcursClient.StartClient - Connecting to server localhost:55555
+2025-05-06 18:44:38,943 [1] INFO  ConcursClient.StartClient - Starting client application
+2025-05-06 18:44:38,952 [1] INFO  ConcursClient.StartClient - Connecting to server localhost:55555
+2025-05-06 18:44:49,061 [1] INFO  ConcursClient.service.ConcursServicesJsonProxy - Login attempt for user: asda
+2025-05-06 18:44:51,106 [1] INFO  ConcursClient.service.ConcursServicesJsonProxy - Connected to server localhost:55555
+2025-05-06 18:44:51,420 [1] INFO  ConcursClient.service.ConcursServicesJsonProxy - Login successful for user: asda
+2025-05-06 18:44:51,421 [1] INFO  ConcursClient.controller.LoginForm - Login successful for user: asda
+2025-05-06 18:44:53,778 [1] INFO  ConcursClient.controller.MainForm - Opening Registration form
+2025-05-06 18:44:53,780 [1] INFO  ConcursClient.controller.RegisterForm - Loading events for registration form
+2025-05-06 18:44:53,781 [1] INFO  ConcursClient.service.ConcursServicesJsonProxy - Getting all events
+2025-05-06 18:44:53,809 [1] INFO  ConcursClient.service.ConcursServicesJsonProxy - Got 19 events
+2025-05-06 18:45:23,270 [1] INFO  ConcursClient.service.ConcursServicesJsonProxy - Registering participant: G for 1 events
+2025-05-06 18:45:23,291 [1] INFO  ConcursClient.service.ConcursServicesJsonProxy - Participant G registered successfully
+2025-05-06 18:45:29,619 [1] INFO  ConcursClient.controller.MainForm - Opening Events form
+2025-05-06 18:45:29,623 [1] INFO  ConcursClient.controller.EventsForm - Loading events with participant counts
+2025-05-06 18:45:29,623 [1] INFO  ConcursClient.service.ConcursServicesJsonProxy - Getting all events with participant counts
+2025-05-06 18:45:29,629 [1] INFO  ConcursClient.service.ConcursServicesJsonProxy - Got 19 events with participant counts
+2025-05-06 18:46:42,596 [1] INFO  ConcursClient.controller.MainForm - Application closing
+2025-05-06 18:46:42,599 [1] INFO  ConcursClient.service.ConcursServicesJsonProxy - Connection closed
+2025-05-06 18:46:42,599 [1] INFO  ConcursClient.controller.MainForm - Application closing
+2025-05-06 18:46:42,599 [1] INFO  ConcursClient.service.ConcursServicesJsonProxy - Connection closed
+2025-05-06 18:46:44,560 [1] INFO  ConcursClient.controller.MainForm - Application closing
+2025-05-06 18:46:44,563 [1] INFO  ConcursClient.service.ConcursServicesJsonProxy - Connection closed
+2025-05-06 18:46:44,563 [1] INFO  ConcursClient.controller.MainForm - Application closing
+2025-05-06 18:46:44,563 [1] INFO  ConcursClient.service.ConcursServicesJsonProxy - Connection closed
+2025-05-07 14:40:18,323 [1] INFO  ConcursClient.StartClient - Starting client application
+2025-05-07 14:40:18,332 [1] INFO  ConcursClient.StartClient - Connecting to server localhost:55555
+2025-05-07 14:40:25,991 [1] INFO  ConcursClient.service.ConcursServicesJsonProxy - Login attempt for user: patrick1
+2025-05-07 14:40:28,027 [1] INFO  ConcursClient.service.ConcursServicesJsonProxy - Connected to server localhost:55555
+2025-05-07 14:40:28,509 [1] INFO  ConcursClient.service.ConcursServicesJsonProxy - Login successful for user: patrick1
+2025-05-07 14:40:28,509 [1] INFO  ConcursClient.controller.LoginForm - Login successful for user: patrick1
+2025-05-07 14:40:30,299 [1] INFO  ConcursClient.controller.MainForm - Opening Events form
+2025-05-07 14:40:30,310 [1] INFO  ConcursClient.controller.EventsForm - Loading events with participant counts
+2025-05-07 14:40:30,310 [1] INFO  ConcursClient.service.ConcursServicesJsonProxy - Getting all events with participant counts
+2025-05-07 14:40:30,342 [1] INFO  ConcursClient.service.ConcursServicesJsonProxy - Got 19 events with participant counts
+2025-05-07 14:40:48,524 [9] INFO  ConcursClient.service.ConcursServicesJsonProxy - Received notification of type: NEW_REGISTRATION
+2025-05-07 14:40:48,524 [1] INFO  ConcursClient.controller.EventsForm - Loading events with participant counts
+2025-05-07 14:40:48,524 [1] INFO  ConcursClient.service.ConcursServicesJsonProxy - Getting all events with participant counts
+2025-05-07 14:40:48,530 [1] INFO  ConcursClient.service.ConcursServicesJsonProxy - Got 19 events with participant counts
+2025-05-07 14:40:59,284 [1] INFO  ConcursClient.controller.MainForm - Application closing
+2025-05-07 14:40:59,287 [1] INFO  ConcursClient.service.ConcursServicesJsonProxy - Connection closed
+2025-05-07 14:40:59,287 [1] INFO  ConcursClient.controller.MainForm - Application closing
+2025-05-07 14:40:59,287 [1] INFO  ConcursClient.service.ConcursServicesJsonProxy - Connection closed
+2025-05-07 14:48:53,197 [1] INFO  ConcursClient.StartClient - Starting client application
+2025-05-07 14:48:53,206 [1] INFO  ConcursClient.StartClient - Connecting to server localhost:55555
+2025-05-07 14:48:58,726 [1] INFO  ConcursClient.service.ConcursServicesJsonProxy - Login attempt for user: asda
+2025-05-07 14:49:00,770 [1] INFO  ConcursClient.service.ConcursServicesJsonProxy - Connected to server localhost:55555
+2025-05-07 14:49:01,057 [1] INFO  ConcursClient.service.ConcursServicesJsonProxy - Login successful for user: asda
+2025-05-07 14:49:01,058 [1] INFO  ConcursClient.controller.LoginForm - Login successful for user: asda
+2025-05-07 14:49:03,133 [1] INFO  ConcursClient.controller.MainForm - Opening Events form
+2025-05-07 14:49:03,137 [1] INFO  ConcursClient.controller.EventsForm - Loading events with participant counts
+2025-05-07 14:49:03,137 [1] INFO  ConcursClient.service.ConcursServicesJsonProxy - Getting all events with participant counts
+2025-05-07 14:49:03,170 [1] INFO  ConcursClient.service.ConcursServicesJsonProxy - Got 19 events with participant counts
+2025-05-07 14:49:03,569 [1] INFO  ConcursClient.controller.MainForm - Opening Search form
+2025-05-07 14:49:03,571 [1] INFO  ConcursClient.controller.ParticipantSearchForm - Loading events for search form
+2025-05-07 14:49:03,571 [1] INFO  ConcursClient.service.ConcursServicesJsonProxy - Getting all events
+2025-05-07 14:49:03,578 [1] INFO  ConcursClient.service.ConcursServicesJsonProxy - Got 19 events
+2025-05-07 14:49:03,949 [1] INFO  ConcursClient.controller.MainForm - Opening Registration form
+2025-05-07 14:49:03,951 [1] INFO  ConcursClient.controller.RegisterForm - Loading events for registration form
+2025-05-07 14:49:03,951 [1] INFO  ConcursClient.service.ConcursServicesJsonProxy - Getting all events
+2025-05-07 14:49:03,958 [1] INFO  ConcursClient.service.ConcursServicesJsonProxy - Got 19 events
+2025-05-07 14:49:05,209 [1] INFO  ConcursClient.controller.MainForm - Application closing
+2025-05-07 14:49:05,212 [1] INFO  ConcursClient.service.ConcursServicesJsonProxy - Connection closed
+2025-05-07 14:49:05,212 [1] INFO  ConcursClient.controller.MainForm - Application closing
+2025-05-07 14:49:05,212 [1] INFO  ConcursClient.service.ConcursServicesJsonProxy - Connection closed
+2025-05-07 16:06:46,763 [1] INFO  ConcursClient.StartClient - Starting client application
+2025-05-07 16:06:46,771 [1] INFO  ConcursClient.StartClient - Connecting to server localhost:55555
+2025-05-07 16:06:59,078 [1] INFO  ConcursClient.service.ConcursServicesJsonProxy - Login attempt for user: patrick1
+2025-05-07 16:07:01,106 [1] INFO  ConcursClient.service.ConcursServicesJsonProxy - Connected to server localhost:55555
+2025-05-07 16:07:01,442 [1] INFO  ConcursClient.service.ConcursServicesJsonProxy - Login successful for user: patrick1
+2025-05-07 16:07:01,442 [1] INFO  ConcursClient.controller.LoginForm - Login successful for user: patrick1
+2025-05-07 16:07:02,601 [1] INFO  ConcursClient.controller.MainForm - Opening Events form
+2025-05-07 16:07:02,611 [1] INFO  ConcursClient.controller.EventsForm - Loading events with participant counts
+2025-05-07 16:07:02,611 [1] INFO  ConcursClient.service.ConcursServicesJsonProxy - Getting all events with participant counts
+2025-05-07 16:07:02,643 [1] INFO  ConcursClient.service.ConcursServicesJsonProxy - Got 19 events with participant counts
+2025-05-07 16:09:19,215 [12] INFO  ConcursClient.service.ConcursServicesJsonProxy - Received notification of type: NEW_REGISTRATION
+2025-05-07 16:09:19,216 [1] INFO  ConcursClient.controller.EventsForm - Loading events with participant counts
+2025-05-07 16:09:19,216 [1] INFO  ConcursClient.service.ConcursServicesJsonProxy - Getting all events with participant counts
+2025-05-07 16:09:19,223 [1] INFO  ConcursClient.service.ConcursServicesJsonProxy - Got 19 events with participant counts
+2025-05-07 16:09:37,410 [12] INFO  ConcursClient.service.ConcursServicesJsonProxy - Received notification of type: NEW_REGISTRATION
+2025-05-07 16:09:37,410 [1] INFO  ConcursClient.controller.EventsForm - Loading events with participant counts
+2025-05-07 16:09:37,410 [1] INFO  ConcursClient.service.ConcursServicesJsonProxy - Getting all events with participant counts
+2025-05-07 16:09:37,418 [1] INFO  ConcursClient.service.ConcursServicesJsonProxy - Got 19 events with participant counts
+2025-05-07 16:10:11,354 [12] INFO  ConcursClient.service.ConcursServicesJsonProxy - Received notification of type: NEW_REGISTRATION
+2025-05-07 16:10:11,354 [1] INFO  ConcursClient.controller.EventsForm - Loading events with participant counts
+2025-05-07 16:10:11,354 [1] INFO  ConcursClient.service.ConcursServicesJsonProxy - Getting all events with participant counts
+2025-05-07 16:10:11,361 [1] INFO  ConcursClient.service.ConcursServicesJsonProxy - Got 19 events with participant counts
+2025-05-07 16:10:57,612 [1] INFO  ConcursClient.controller.MainForm - Application closing
+2025-05-07 16:10:57,614 [1] INFO  ConcursClient.service.ConcursServicesJsonProxy - Connection closed
+2025-05-07 16:10:57,614 [1] INFO  ConcursClient.controller.MainForm - Application closing
+2025-05-07 16:10:57,614 [1] INFO  ConcursClient.service.ConcursServicesJsonProxy - Connection closed
+2025-05-07 16:11:27,061 [1] INFO  ConcursClient.StartClient - Starting client application
+2025-05-07 16:11:27,070 [1] INFO  ConcursClient.StartClient - Connecting to server localhost:55555
+2025-05-07 16:11:36,352 [1] INFO  ConcursClient.service.ConcursServicesJsonProxy - Login attempt for user: asda
+2025-05-07 16:11:38,401 [1] INFO  ConcursClient.service.ConcursServicesJsonProxy - Connected to server localhost:55555
+2025-05-07 16:11:38,697 [1] INFO  ConcursClient.service.ConcursServicesJsonProxy - Login successful for user: asda
+2025-05-07 16:11:38,697 [1] INFO  ConcursClient.controller.LoginForm - Login successful for user: asda
+2025-05-07 16:11:41,556 [1] INFO  ConcursClient.controller.MainForm - Opening Events form
+2025-05-07 16:11:41,563 [1] INFO  ConcursClient.controller.EventsForm - Loading events with participant counts
+2025-05-07 16:11:41,563 [1] INFO  ConcursClient.service.ConcursServicesJsonProxy - Getting all events with participant counts
+2025-05-07 16:11:41,594 [1] INFO  ConcursClient.service.ConcursServicesJsonProxy - Got 19 events with participant counts
+2025-05-07 16:12:07,510 [12] INFO  ConcursClient.service.ConcursServicesJsonProxy - Received notification of type: NEW_REGISTRATION
+2025-05-07 16:12:07,510 [1] INFO  ConcursClient.controller.EventsForm - Loading events with participant counts
+2025-05-07 16:12:07,510 [1] INFO  ConcursClient.service.ConcursServicesJsonProxy - Getting all events with participant counts
+2025-05-07 16:12:07,516 [1] INFO  ConcursClient.service.ConcursServicesJsonProxy - Got 19 events with participant counts
+2025-05-07 16:12:42,566 [1] INFO  ConcursClient.controller.MainForm - Application closing
+2025-05-07 16:12:42,568 [1] INFO  ConcursClient.service.ConcursServicesJsonProxy - Connection closed
+2025-05-07 16:12:42,568 [1] INFO  ConcursClient.controller.MainForm - Application closing
+2025-05-07 16:12:42,568 [1] INFO  ConcursClient.service.ConcursServicesJsonProxy - Connection closed
+2025-05-14 10:27:13,761 [1] INFO  ConcursClient.StartClient - Starting client application
+2025-05-14 10:27:13,773 [1] INFO  ConcursClient.StartClient - Connecting to server localhost:55555
+2025-05-14 10:27:38,060 [1] INFO  ConcursClient.service.ConcursServicesJsonProxy - Login attempt for user: asda
+2025-05-14 10:27:40,114 [1] INFO  ConcursClient.service.ConcursServicesJsonProxy - Connected to server localhost:55555
+2025-05-14 10:27:40,231 [1] INFO  ConcursClient.service.ConcursServicesJsonProxy - Login successful for user: asda
+2025-05-14 10:27:40,231 [1] INFO  ConcursClient.controller.LoginForm - Login successful for user: asda
+2025-05-14 10:27:42,815 [1] INFO  ConcursClient.controller.MainForm - Opening Events form
+2025-05-14 10:27:42,822 [1] INFO  ConcursClient.controller.EventsForm - Loading events with participant counts
+2025-05-14 10:27:42,822 [1] INFO  ConcursClient.service.ConcursServicesJsonProxy - Getting all events with participant counts
+2025-05-14 10:27:42,850 [1] INFO  ConcursClient.service.ConcursServicesJsonProxy - Got 19 events with participant counts
+2025-05-14 10:27:45,044 [1] INFO  ConcursClient.controller.MainForm - Opening Registration form
+2025-05-14 10:27:45,047 [1] INFO  ConcursClient.controller.RegisterForm - Loading events for registration form
+2025-05-14 10:27:45,047 [1] INFO  ConcursClient.service.ConcursServicesJsonProxy - Getting all events
+2025-05-14 10:27:45,053 [1] INFO  ConcursClient.service.ConcursServicesJsonProxy - Got 19 events
+2025-05-14 10:28:01,999 [1] INFO  ConcursClient.service.ConcursServicesJsonProxy - Registering participant: Patrick for 1 events
+2025-05-14 10:28:02,020 [1] INFO  ConcursClient.service.ConcursServicesJsonProxy - Participant Patrick registered successfully
+2025-05-14 10:28:02,020 [1] INFO  ConcursClient.controller.EventsForm - Loading events with participant counts
+2025-05-14 10:28:02,020 [1] INFO  ConcursClient.service.ConcursServicesJsonProxy - Getting all events with participant counts
+2025-05-14 10:28:02,020 [1] INFO  ConcursClient.service.ConcursServicesJsonProxy - Got 0 events with participant counts
+2025-05-14 10:28:11,617 [1] INFO  ConcursClient.controller.MainForm - Opening Events form
+2025-05-14 10:28:12,108 [1] INFO  ConcursClient.controller.MainForm - Opening Events form
+2025-05-14 10:28:12,281 [1] INFO  ConcursClient.controller.MainForm - Opening Events form
+2025-05-14 10:28:13,623 [1] INFO  ConcursClient.controller.MainForm - Opening Events form
+2025-05-14 10:28:13,623 [1] INFO  ConcursClient.controller.EventsForm - Loading events with participant counts
+2025-05-14 10:28:13,623 [1] INFO  ConcursClient.service.ConcursServicesJsonProxy - Getting all events with participant counts
+2025-05-14 10:28:13,629 [1] INFO  ConcursClient.service.ConcursServicesJsonProxy - Got 19 events with participant counts
+2025-05-14 10:28:30,710 [1] INFO  ConcursClient.service.ConcursServicesJsonProxy - Registering participant: Alex for 1 events
+2025-05-14 10:28:30,720 [1] INFO  ConcursClient.service.ConcursServicesJsonProxy - Participant Alex registered successfully
+2025-05-14 10:28:30,720 [1] INFO  ConcursClient.controller.EventsForm - Loading events with participant counts
+2025-05-14 10:28:30,720 [1] INFO  ConcursClient.service.ConcursServicesJsonProxy - Getting all events with participant counts
+2025-05-14 10:28:30,720 [1] INFO  ConcursClient.service.ConcursServicesJsonProxy - Got 0 events with participant counts
+2025-05-14 10:31:52,092 [1] INFO  ConcursClient.controller.MainForm - Opening Events form
+2025-05-14 10:31:52,092 [1] INFO  ConcursClient.controller.EventsForm - Loading events with participant counts
+2025-05-14 10:31:52,092 [1] INFO  ConcursClient.service.ConcursServicesJsonProxy - Getting all events with participant counts
+2025-05-14 10:31:52,098 [1] INFO  ConcursClient.service.ConcursServicesJsonProxy - Got 19 events with participant counts
+2025-05-14 10:35:38,540 [1] INFO  ConcursClient.service.ConcursServicesJsonProxy - Registering participant: pATRICK for 1 events
+2025-05-14 10:35:38,549 [1] INFO  ConcursClient.service.ConcursServicesJsonProxy - Participant pATRICK registered successfully
+2025-05-14 10:35:38,549 [1] INFO  ConcursClient.controller.EventsForm - Loading events with participant counts
+2025-05-14 10:35:38,549 [1] INFO  ConcursClient.service.ConcursServicesJsonProxy - Getting all events with participant counts
+2025-05-14 10:35:38,549 [1] INFO  ConcursClient.service.ConcursServicesJsonProxy - Got 0 events with participant counts
+2025-05-14 10:35:43,012 [1] INFO  ConcursClient.controller.MainForm - Application closing
+2025-05-14 10:35:43,014 [1] INFO  ConcursClient.service.ConcursServicesJsonProxy - Connection closed
+2025-05-14 10:35:43,014 [1] INFO  ConcursClient.controller.MainForm - Application closing
+2025-05-14 10:35:43,014 [1] INFO  ConcursClient.service.ConcursServicesJsonProxy - Connection closed
+2025-05-14 10:35:43,844 [1] INFO  ConcursClient.controller.MainForm - Application closing
+2025-05-14 10:35:43,848 [1] INFO  ConcursClient.service.ConcursServicesJsonProxy - Connection closed
+2025-05-14 10:35:43,848 [1] INFO  ConcursClient.controller.MainForm - Application closing
+2025-05-14 10:35:43,848 [1] INFO  ConcursClient.service.ConcursServicesJsonProxy - Connection closed
+2025-05-14 10:35:55,521 [1] INFO  ConcursClient.StartClient - Starting client application
+2025-05-14 10:35:55,530 [1] INFO  ConcursClient.StartClient - Connecting to server localhost:55555
+2025-05-14 10:36:20,366 [1] INFO  ConcursClient.service.ConcursServicesJsonProxy - Login attempt for user: asda
+2025-05-14 10:36:22,418 [1] INFO  ConcursClient.service.ConcursServicesJsonProxy - Connected to server localhost:55555
+2025-05-14 10:36:22,535 [1] INFO  ConcursClient.service.ConcursServicesJsonProxy - Login successful for user: asda
+2025-05-14 10:36:22,535 [1] INFO  ConcursClient.controller.LoginForm - Login successful for user: asda
+2025-05-14 10:36:26,101 [1] INFO  ConcursClient.controller.MainForm - Opening Events form
+2025-05-14 10:36:26,106 [1] INFO  ConcursClient.controller.EventsForm - Loading events with participant counts
+2025-05-14 10:36:26,106 [1] INFO  ConcursClient.service.ConcursServicesJsonProxy - Getting all events with participant counts
+2025-05-14 10:36:26,123 [1] INFO  ConcursClient.service.ConcursServicesJsonProxy - Got 19 events with participant counts
+2025-05-14 10:36:26,847 [1] INFO  ConcursClient.controller.MainForm - Opening Registration form
+2025-05-14 10:36:26,849 [1] INFO  ConcursClient.controller.RegisterForm - Loading events for registration form
+2025-05-14 10:36:26,850 [1] INFO  ConcursClient.service.ConcursServicesJsonProxy - Getting all events
+2025-05-14 10:36:26,856 [1] INFO  ConcursClient.service.ConcursServicesJsonProxy - Got 19 events
+2025-05-14 10:36:34,951 [1] INFO  ConcursClient.service.ConcursServicesJsonProxy - Registering participant: Patrick for 1 events
+2025-05-14 10:36:34,972 [1] INFO  ConcursClient.service.ConcursServicesJsonProxy - Participant Patrick registered successfully
+2025-05-14 10:36:34,973 [1] INFO  ConcursClient.controller.EventsForm - Loading events with participant counts
+2025-05-14 10:36:34,973 [1] INFO  ConcursClient.service.ConcursServicesJsonProxy - Getting all events with participant counts
+2025-05-14 10:36:34,973 [1] INFO  ConcursClient.service.ConcursServicesJsonProxy - Got 0 events with participant counts
+2025-05-14 10:36:42,576 [1] INFO  ConcursClient.controller.MainForm - Application closing
+2025-05-14 10:36:42,578 [1] INFO  ConcursClient.service.ConcursServicesJsonProxy - Connection closed
+2025-05-14 10:36:42,578 [1] INFO  ConcursClient.controller.MainForm - Application closing
+2025-05-14 10:36:42,578 [1] INFO  ConcursClient.service.ConcursServicesJsonProxy - Connection closed
+2025-05-14 10:36:43,558 [1] INFO  ConcursClient.controller.MainForm - Application closing
+2025-05-14 10:36:43,562 [1] INFO  ConcursClient.service.ConcursServicesJsonProxy - Connection closed
+2025-05-14 10:36:43,562 [1] INFO  ConcursClient.controller.MainForm - Application closing
+2025-05-14 10:36:43,562 [1] INFO  ConcursClient.service.ConcursServicesJsonProxy - Connection closed
+2025-05-14 10:37:30,527 [1] INFO  ConcursClient.StartClient - Starting client application
+2025-05-14 10:37:30,536 [1] INFO  ConcursClient.StartClient - Connecting to server localhost:55555
+2025-05-14 10:37:36,183 [1] INFO  ConcursClient.service.ConcursServicesJsonProxy - Login attempt for user: patrick1
+2025-05-14 10:37:38,225 [1] INFO  ConcursClient.service.ConcursServicesJsonProxy - Connected to server localhost:55555
+2025-05-14 10:37:38,509 [1] INFO  ConcursClient.service.ConcursServicesJsonProxy - Login successful for user: patrick1
+2025-05-14 10:37:38,509 [1] INFO  ConcursClient.controller.LoginForm - Login successful for user: patrick1
+2025-05-14 10:38:00,573 [1] INFO  ConcursClient.controller.MainForm - Opening Events form
+2025-05-14 10:38:00,577 [1] INFO  ConcursClient.controller.EventsForm - Loading events with participant counts
+2025-05-14 10:38:00,577 [1] INFO  ConcursClient.service.ConcursServicesJsonProxy - Getting all events with participant counts
+2025-05-14 10:38:00,606 [1] INFO  ConcursClient.service.ConcursServicesJsonProxy - Got 19 events with participant counts
+2025-05-14 10:38:10,859 [12] INFO  ConcursClient.service.ConcursServicesJsonProxy - Received notification of type: NEW_REGISTRATION
+2025-05-14 10:38:10,860 [1] INFO  ConcursClient.controller.EventsForm - Loading events with participant counts
+2025-05-14 10:38:10,860 [1] INFO  ConcursClient.service.ConcursServicesJsonProxy - Getting all events with participant counts
+2025-05-14 10:38:10,865 [1] INFO  ConcursClient.service.ConcursServicesJsonProxy - Got 19 events with participant counts
+2025-05-14 10:38:16,136 [1] INFO  ConcursClient.controller.MainForm - Application closing
+2025-05-14 10:38:16,137 [1] INFO  ConcursClient.service.ConcursServicesJsonProxy - Connection closed
+2025-05-14 10:38:16,137 [1] INFO  ConcursClient.controller.MainForm - Application closing
+2025-05-14 10:38:16,138 [1] INFO  ConcursClient.service.ConcursServicesJsonProxy - Connection closed
+2025-05-14 10:48:56,770 [1] INFO  ConcursClient.StartClient - Starting client application
+2025-05-14 10:48:56,779 [1] INFO  ConcursClient.StartClient - Connecting to server localhost:55555
+2025-05-14 10:49:02,699 [1] INFO  ConcursClient.service.ConcursServicesJsonProxy - Login attempt for user: patrick1
+2025-05-14 10:49:04,753 [1] INFO  ConcursClient.service.ConcursServicesJsonProxy - Connected to server localhost:55555
+2025-05-14 10:49:05,056 [1] ERROR ConcursClient.service.ConcursServicesJsonProxy - Server returned error: Invalid username or password
+2025-05-14 10:49:05,056 [1] ERROR ConcursClient.service.ConcursServicesJsonProxy - Error sending request
+System.Exception: Server error: Invalid username or password
+   at ConcursClient.service.ConcursServicesJsonProxy.SendAndReceive(Request request) in C:\ANUL II\SEMESTRUL II\MPP\mpp-proiect-csharp-parnau-patrick\Laborator3\ConcursClient\service\ConcursServicesJsonProxy.cs:line 141
+2025-05-14 10:49:05,074 [1] ERROR ConcursClient.controller.LoginForm - Login failed for user: patrick1
+System.Exception: Error communicating with server: Server error: Invalid username or password
+ ---> System.Exception: Server error: Invalid username or password
+   at ConcursClient.service.ConcursServicesJsonProxy.SendAndReceive(Request request) in C:\ANUL II\SEMESTRUL II\MPP\mpp-proiect-csharp-parnau-patrick\Laborator3\ConcursClient\service\ConcursServicesJsonProxy.cs:line 141
+   --- End of inner exception stack trace ---
+   at ConcursClient.service.ConcursServicesJsonProxy.SendAndReceive(Request request) in C:\ANUL II\SEMESTRUL II\MPP\mpp-proiect-csharp-parnau-patrick\Laborator3\ConcursClient\service\ConcursServicesJsonProxy.cs:line 149
+   at ConcursClient.service.ConcursServicesJsonProxy.Login(String username, String password) in C:\ANUL II\SEMESTRUL II\MPP\mpp-proiect-csharp-parnau-patrick\Laborator3\ConcursClient\service\ConcursServicesJsonProxy.cs:line 198
+   at ConcursClient.controller.LoginForm.btnLogin_Click(Object sender, EventArgs e) in C:\ANUL II\SEMESTRUL II\MPP\mpp-proiect-csharp-parnau-patrick\Laborator3\ConcursClient\controller\LoginForm.cs:line 27
+2025-05-14 10:49:09,542 [1] INFO  ConcursClient.service.ConcursServicesJsonProxy - Login attempt for user: patrick1
+2025-05-14 10:49:09,549 [1] INFO  ConcursClient.service.ConcursServicesJsonProxy - Login successful for user: patrick1
+2025-05-14 10:49:09,549 [1] INFO  ConcursClient.controller.LoginForm - Login successful for user: patrick1
+2025-05-14 10:49:24,894 [1] INFO  ConcursClient.controller.MainForm - Opening Events form
+2025-05-14 10:49:24,898 [1] INFO  ConcursClient.controller.EventsForm - Loading events with participant counts
+2025-05-14 10:49:24,898 [1] INFO  ConcursClient.service.ConcursServicesJsonProxy - Getting all events with participant counts
+2025-05-14 10:49:24,915 [1] INFO  ConcursClient.service.ConcursServicesJsonProxy - Got 19 events with participant counts
+2025-05-14 10:49:35,694 [12] INFO  ConcursClient.service.ConcursServicesJsonProxy - Received notification of type: NEW_REGISTRATION
+2025-05-14 10:49:35,706 [1] INFO  ConcursClient.controller.EventsForm - Loading events with participant counts
+2025-05-14 10:49:35,706 [1] INFO  ConcursClient.service.ConcursServicesJsonProxy - Getting all events with participant counts
+2025-05-14 10:49:35,786 [1] INFO  ConcursClient.service.ConcursServicesJsonProxy - Got 19 events with participant counts
+2025-05-14 10:49:49,733 [12] INFO  ConcursClient.service.ConcursServicesJsonProxy - Received notification of type: NEW_REGISTRATION
+2025-05-14 10:49:49,733 [1] INFO  ConcursClient.controller.EventsForm - Loading events with participant counts
+2025-05-14 10:49:49,733 [1] INFO  ConcursClient.service.ConcursServicesJsonProxy - Getting all events with participant counts
+2025-05-14 10:49:49,740 [1] INFO  ConcursClient.service.ConcursServicesJsonProxy - Got 19 events with participant counts
+2025-05-14 10:50:02,196 [1] INFO  ConcursClient.controller.MainForm - Application closing
+2025-05-14 10:50:02,215 [1] INFO  ConcursClient.service.ConcursServicesJsonProxy - Connection closed
+2025-05-14 10:50:02,216 [1] INFO  ConcursClient.controller.MainForm - Application closing
+2025-05-14 10:50:02,216 [1] INFO  ConcursClient.service.ConcursServicesJsonProxy - Connection closed
+2025-05-20 15:37:58,505 [1] INFO  ConcursClient.StartClient - Starting client application
+2025-05-20 15:37:58,515 [1] INFO  ConcursClient.StartClient - Connecting to server localhost:55555
+2025-05-20 15:37:58,565 [1] INFO  ConcursClient.service.ConcursServicesJsonProxy - Connected to server localhost:55555
+2025-05-20 15:38:06,342 [1] INFO  ConcursClient.service.ConcursServicesJsonProxy - Login attempt for user: patrick
+2025-05-20 15:38:06,449 [1] ERROR ConcursNetworking.utils.JsonSerializerUtils - Failed to read message length, read only 0 bytes
+2025-05-20 15:38:06,449 [1] ERROR ConcursNetworking.utils.JsonSerializerUtils - Error reading object from stream
+System.IO.IOException: Failed to read message length
+   at ConcursNetworking.utils.JsonSerializerUtils.ReadFromStream[T](NetworkStream stream) in C:\ANUL II\SEMESTRUL II\MPP\mpp-proiect-csharp-parnau-patrick\Laborator3\ConcursNetworking\JsonSerializerUtils.cs:line 59
+2025-05-20 15:38:06,469 [1] ERROR ConcursClient.service.ConcursServicesJsonProxy - Error sending request
+System.IO.IOException: Failed to read message length
+   at ConcursNetworking.utils.JsonSerializerUtils.ReadFromStream[T](NetworkStream stream) in C:\ANUL II\SEMESTRUL II\MPP\mpp-proiect-csharp-parnau-patrick\Laborator3\ConcursNetworking\JsonSerializerUtils.cs:line 59
+   at ConcursClient.service.ConcursServicesJsonProxy.SendAndReceive(Request request) in C:\ANUL II\SEMESTRUL II\MPP\mpp-proiect-csharp-parnau-patrick\Laborator3\ConcursClient\service\ConcursServicesJsonProxy.cs:line 134
+2025-05-20 15:38:06,480 [1] ERROR ConcursClient.controller.LoginForm - Login failed for user: patrick
+System.Exception: Error communicating with server: Failed to read message length
+ ---> System.IO.IOException: Failed to read message length
+   at ConcursNetworking.utils.JsonSerializerUtils.ReadFromStream[T](NetworkStream stream) in C:\ANUL II\SEMESTRUL II\MPP\mpp-proiect-csharp-parnau-patrick\Laborator3\ConcursNetworking\JsonSerializerUtils.cs:line 59
+   at ConcursClient.service.ConcursServicesJsonProxy.SendAndReceive(Request request) in C:\ANUL II\SEMESTRUL II\MPP\mpp-proiect-csharp-parnau-patrick\Laborator3\ConcursClient\service\ConcursServicesJsonProxy.cs:line 134
+   --- End of inner exception stack trace ---
+   at ConcursClient.service.ConcursServicesJsonProxy.SendAndReceive(Request request) in C:\ANUL II\SEMESTRUL II\MPP\mpp-proiect-csharp-parnau-patrick\Laborator3\ConcursClient\service\ConcursServicesJsonProxy.cs:line 150
+   at ConcursClient.service.ConcursServicesJsonProxy.Login(String username, String password) in C:\ANUL II\SEMESTRUL II\MPP\mpp-proiect-csharp-parnau-patrick\Laborator3\ConcursClient\service\ConcursServicesJsonProxy.cs:line 199
+   at ConcursClient.controller.LoginForm.btnLogin_Click(Object sender, EventArgs e) in C:\ANUL II\SEMESTRUL II\MPP\mpp-proiect-csharp-parnau-patrick\Laborator3\ConcursClient\controller\LoginForm.cs:line 27
+2025-05-20 15:38:08,097 [1] INFO  ConcursClient.controller.LoginForm - Opening Sign-Up form
+2025-05-20 15:38:21,748 [1] INFO  ConcursClient.service.ConcursServicesJsonProxy - Registering new user: patrick123
+2025-05-20 15:38:21,749 [1] ERROR ConcursNetworking.utils.JsonSerializerUtils - Error sending object to stream
+System.IO.IOException: Unable to write data to the transport connection: An established connection was aborted by the software in your host machine..
+ ---> System.Net.Sockets.SocketException (10053): An established connection was aborted by the software in your host machine.
+   at System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 count)
+   --- End of inner exception stack trace ---
+   at System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 count)
+   at ConcursNetworking.utils.JsonSerializerUtils.SendToStream(NetworkStream stream, Object obj) in C:\ANUL II\SEMESTRUL II\MPP\mpp-proiect-csharp-parnau-patrick\Laborator3\ConcursNetworking\JsonSerializerUtils.cs:line 34
+2025-05-20 15:38:21,750 [1] ERROR ConcursClient.service.ConcursServicesJsonProxy - Error sending request
+System.IO.IOException: Unable to write data to the transport connection: An established connection was aborted by the software in your host machine..
+ ---> System.Net.Sockets.SocketException (10053): An established connection was aborted by the software in your host machine.
+   at System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 count)
+   --- End of inner exception stack trace ---
+   at System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 count)
+   at ConcursNetworking.utils.JsonSerializerUtils.SendToStream(NetworkStream stream, Object obj) in C:\ANUL II\SEMESTRUL II\MPP\mpp-proiect-csharp-parnau-patrick\Laborator3\ConcursNetworking\JsonSerializerUtils.cs:line 34
+   at ConcursClient.service.ConcursServicesJsonProxy.SendAndReceive(Request request) in C:\ANUL II\SEMESTRUL II\MPP\mpp-proiect-csharp-parnau-patrick\Laborator3\ConcursClient\service\ConcursServicesJsonProxy.cs:line 131
+2025-05-20 15:38:21,750 [1] ERROR ConcursClient.controller.SignUpForm - Error during user sign-up: Error communicating with server: Unable to write data to the transport connection: An established connection was aborted by the software in your host machine..
+System.Exception: Error communicating with server: Unable to write data to the transport connection: An established connection was aborted by the software in your host machine..
+ ---> System.IO.IOException: Unable to write data to the transport connection: An established connection was aborted by the software in your host machine..
+ ---> System.Net.Sockets.SocketException (10053): An established connection was aborted by the software in your host machine.
+   at System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 count)
+   --- End of inner exception stack trace ---
+   at System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 count)
+   at ConcursNetworking.utils.JsonSerializerUtils.SendToStream(NetworkStream stream, Object obj) in C:\ANUL II\SEMESTRUL II\MPP\mpp-proiect-csharp-parnau-patrick\Laborator3\ConcursNetworking\JsonSerializerUtils.cs:line 34
+   at ConcursClient.service.ConcursServicesJsonProxy.SendAndReceive(Request request) in C:\ANUL II\SEMESTRUL II\MPP\mpp-proiect-csharp-parnau-patrick\Laborator3\ConcursClient\service\ConcursServicesJsonProxy.cs:line 131
+   --- End of inner exception stack trace ---
+   at ConcursClient.service.ConcursServicesJsonProxy.SendAndReceive(Request request) in C:\ANUL II\SEMESTRUL II\MPP\mpp-proiect-csharp-parnau-patrick\Laborator3\ConcursClient\service\ConcursServicesJsonProxy.cs:line 150
+   at ConcursClient.service.ConcursServicesJsonProxy.RegisterUser(String username, String password, String officeName) in C:\ANUL II\SEMESTRUL II\MPP\mpp-proiect-csharp-parnau-patrick\Laborator3\ConcursClient\service\ConcursServicesJsonProxy.cs:line 245
+   at ConcursClient.controller.SignUpForm.btnSignUp_Click(Object sender, EventArgs e) in C:\ANUL II\SEMESTRUL II\MPP\mpp-proiect-csharp-parnau-patrick\Laborator3\ConcursClient\controller\SignUpForm.cs:line 51
+2025-05-20 18:27:58,121 [1] INFO  ConcursClient.StartClient - Starting client application
+2025-05-20 18:27:58,130 [1] INFO  ConcursClient.StartClient - Connecting to server localhost:55555
+2025-05-20 18:27:58,179 [1] INFO  ConcursClient.service.ConcursServicesJsonProxy - Connected to server localhost:55555
+2025-05-20 18:28:07,987 [1] INFO  ConcursClient.service.ConcursServicesJsonProxy - Login attempt for user: patrick
+2025-05-20 18:28:08,095 [1] ERROR ConcursNetworking.utils.JsonSerializerUtils - Failed to read message length, read only 0 bytes
+2025-05-20 18:28:08,096 [1] ERROR ConcursNetworking.utils.JsonSerializerUtils - Error reading object from stream
+System.IO.IOException: Failed to read message length
+   at ConcursNetworking.utils.JsonSerializerUtils.ReadFromStream[T](NetworkStream stream) in C:\ANUL II\SEMESTRUL II\MPP\mpp-proiect-csharp-parnau-patrick\Laborator3\ConcursNetworking\JsonSerializerUtils.cs:line 59
+2025-05-20 18:28:08,116 [1] ERROR ConcursClient.service.ConcursServicesJsonProxy - Error sending request
+System.IO.IOException: Failed to read message length
+   at ConcursNetworking.utils.JsonSerializerUtils.ReadFromStream[T](NetworkStream stream) in C:\ANUL II\SEMESTRUL II\MPP\mpp-proiect-csharp-parnau-patrick\Laborator3\ConcursNetworking\JsonSerializerUtils.cs:line 59
+   at ConcursClient.service.ConcursServicesJsonProxy.SendAndReceive(Request request) in C:\ANUL II\SEMESTRUL II\MPP\mpp-proiect-csharp-parnau-patrick\Laborator3\ConcursClient\service\ConcursServicesJsonProxy.cs:line 134
+2025-05-20 18:28:08,127 [1] ERROR ConcursClient.controller.LoginForm - Login failed for user: patrick
+System.Exception: Error communicating with server: Failed to read message length
+ ---> System.IO.IOException: Failed to read message length
+   at ConcursNetworking.utils.JsonSerializerUtils.ReadFromStream[T](NetworkStream stream) in C:\ANUL II\SEMESTRUL II\MPP\mpp-proiect-csharp-parnau-patrick\Laborator3\ConcursNetworking\JsonSerializerUtils.cs:line 59
+   at ConcursClient.service.ConcursServicesJsonProxy.SendAndReceive(Request request) in C:\ANUL II\SEMESTRUL II\MPP\mpp-proiect-csharp-parnau-patrick\Laborator3\ConcursClient\service\ConcursServicesJsonProxy.cs:line 134
+   --- End of inner exception stack trace ---
+   at ConcursClient.service.ConcursServicesJsonProxy.SendAndReceive(Request request) in C:\ANUL II\SEMESTRUL II\MPP\mpp-proiect-csharp-parnau-patrick\Laborator3\ConcursClient\service\ConcursServicesJsonProxy.cs:line 150
+   at ConcursClient.service.ConcursServicesJsonProxy.Login(String username, String password) in C:\ANUL II\SEMESTRUL II\MPP\mpp-proiect-csharp-parnau-patrick\Laborator3\ConcursClient\service\ConcursServicesJsonProxy.cs:line 201
+   at ConcursClient.controller.LoginForm.btnLogin_Click(Object sender, EventArgs e) in C:\ANUL II\SEMESTRUL II\MPP\mpp-proiect-csharp-parnau-patrick\Laborator3\ConcursClient\controller\LoginForm.cs:line 27
+2025-05-20 18:28:10,652 [1] INFO  ConcursClient.service.ConcursServicesJsonProxy - Login attempt for user: patrick1
+2025-05-20 18:28:10,654 [1] ERROR ConcursNetworking.utils.JsonSerializerUtils - Error sending object to stream
+System.IO.IOException: Unable to write data to the transport connection: An established connection was aborted by the software in your host machine..
+ ---> System.Net.Sockets.SocketException (10053): An established connection was aborted by the software in your host machine.
+   at System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 count)
+   --- End of inner exception stack trace ---
+   at System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 count)
+   at ConcursNetworking.utils.JsonSerializerUtils.SendToStream(NetworkStream stream, Object obj) in C:\ANUL II\SEMESTRUL II\MPP\mpp-proiect-csharp-parnau-patrick\Laborator3\ConcursNetworking\JsonSerializerUtils.cs:line 34
+2025-05-20 18:28:10,655 [1] ERROR ConcursClient.service.ConcursServicesJsonProxy - Error sending request
+System.IO.IOException: Unable to write data to the transport connection: An established connection was aborted by the software in your host machine..
+ ---> System.Net.Sockets.SocketException (10053): An established connection was aborted by the software in your host machine.
+   at System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 count)
+   --- End of inner exception stack trace ---
+   at System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 count)
+   at ConcursNetworking.utils.JsonSerializerUtils.SendToStream(NetworkStream stream, Object obj) in C:\ANUL II\SEMESTRUL II\MPP\mpp-proiect-csharp-parnau-patrick\Laborator3\ConcursNetworking\JsonSerializerUtils.cs:line 34
+   at ConcursClient.service.ConcursServicesJsonProxy.SendAndReceive(Request request) in C:\ANUL II\SEMESTRUL II\MPP\mpp-proiect-csharp-parnau-patrick\Laborator3\ConcursClient\service\ConcursServicesJsonProxy.cs:line 131
+2025-05-20 18:28:10,655 [1] ERROR ConcursClient.controller.LoginForm - Login failed for user: patrick1
+System.Exception: Error communicating with server: Unable to write data to the transport connection: An established connection was aborted by the software in your host machine..
+ ---> System.IO.IOException: Unable to write data to the transport connection: An established connection was aborted by the software in your host machine..
+ ---> System.Net.Sockets.SocketException (10053): An established connection was aborted by the software in your host machine.
+   at System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 count)
+   --- End of inner exception stack trace ---
+   at System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 count)
+   at ConcursNetworking.utils.JsonSerializerUtils.SendToStream(NetworkStream stream, Object obj) in C:\ANUL II\SEMESTRUL II\MPP\mpp-proiect-csharp-parnau-patrick\Laborator3\ConcursNetworking\JsonSerializerUtils.cs:line 34
+   at ConcursClient.service.ConcursServicesJsonProxy.SendAndReceive(Request request) in C:\ANUL II\SEMESTRUL II\MPP\mpp-proiect-csharp-parnau-patrick\Laborator3\ConcursClient\service\ConcursServicesJsonProxy.cs:line 131
+   --- End of inner exception stack trace ---
+   at ConcursClient.service.ConcursServicesJsonProxy.SendAndReceive(Request request) in C:\ANUL II\SEMESTRUL II\MPP\mpp-proiect-csharp-parnau-patrick\Laborator3\ConcursClient\service\ConcursServicesJsonProxy.cs:line 150
+   at ConcursClient.service.ConcursServicesJsonProxy.Login(String username, String password) in C:\ANUL II\SEMESTRUL II\MPP\mpp-proiect-csharp-parnau-patrick\Laborator3\ConcursClient\service\ConcursServicesJsonProxy.cs:line 201
+   at ConcursClient.controller.LoginForm.btnLogin_Click(Object sender, EventArgs e) in C:\ANUL II\SEMESTRUL II\MPP\mpp-proiect-csharp-parnau-patrick\Laborator3\ConcursClient\controller\LoginForm.cs:line 27
+2025-05-20 18:28:14,005 [1] INFO  ConcursClient.service.ConcursServicesJsonProxy - Login attempt for user: patrick1
+2025-05-20 18:28:14,006 [1] INFO  ConcursClient.service.ConcursServicesJsonProxy - Connected to server localhost:55555
+2025-05-20 18:28:14,006 [1] ERROR ConcursNetworking.utils.JsonSerializerUtils - Failed to read message length, read only 0 bytes
+2025-05-20 18:28:14,006 [1] ERROR ConcursNetworking.utils.JsonSerializerUtils - Error reading object from stream
+System.IO.IOException: Failed to read message length
+   at ConcursNetworking.utils.JsonSerializerUtils.ReadFromStream[T](NetworkStream stream) in C:\ANUL II\SEMESTRUL II\MPP\mpp-proiect-csharp-parnau-patrick\Laborator3\ConcursNetworking\JsonSerializerUtils.cs:line 59
+2025-05-20 18:28:14,007 [1] ERROR ConcursClient.service.ConcursServicesJsonProxy - Error sending request
+System.IO.IOException: Failed to read message length
+   at ConcursNetworking.utils.JsonSerializerUtils.ReadFromStream[T](NetworkStream stream) in C:\ANUL II\SEMESTRUL II\MPP\mpp-proiect-csharp-parnau-patrick\Laborator3\ConcursNetworking\JsonSerializerUtils.cs:line 59
+   at ConcursClient.service.ConcursServicesJsonProxy.SendAndReceive(Request request) in C:\ANUL II\SEMESTRUL II\MPP\mpp-proiect-csharp-parnau-patrick\Laborator3\ConcursClient\service\ConcursServicesJsonProxy.cs:line 134
+2025-05-20 18:28:14,007 [1] ERROR ConcursClient.controller.LoginForm - Login failed for user: patrick1
+System.Exception: Error communicating with server: Failed to read message length
+ ---> System.IO.IOException: Failed to read message length
+   at ConcursNetworking.utils.JsonSerializerUtils.ReadFromStream[T](NetworkStream stream) in C:\ANUL II\SEMESTRUL II\MPP\mpp-proiect-csharp-parnau-patrick\Laborator3\ConcursNetworking\JsonSerializerUtils.cs:line 59
+   at ConcursClient.service.ConcursServicesJsonProxy.SendAndReceive(Request request) in C:\ANUL II\SEMESTRUL II\MPP\mpp-proiect-csharp-parnau-patrick\Laborator3\ConcursClient\service\ConcursServicesJsonProxy.cs:line 134
+   --- End of inner exception stack trace ---
+   at ConcursClient.service.ConcursServicesJsonProxy.SendAndReceive(Request request) in C:\ANUL II\SEMESTRUL II\MPP\mpp-proiect-csharp-parnau-patrick\Laborator3\ConcursClient\service\ConcursServicesJsonProxy.cs:line 150
+   at ConcursClient.service.ConcursServicesJsonProxy.Login(String username, String password) in C:\ANUL II\SEMESTRUL II\MPP\mpp-proiect-csharp-parnau-patrick\Laborator3\ConcursClient\service\ConcursServicesJsonProxy.cs:line 201
+   at ConcursClient.controller.LoginForm.btnLogin_Click(Object sender, EventArgs e) in C:\ANUL II\SEMESTRUL II\MPP\mpp-proiect-csharp-parnau-patrick\Laborator3\ConcursClient\controller\LoginForm.cs:line 27
+2025-05-20 18:28:15,582 [1] INFO  ConcursClient.controller.LoginForm - Opening Sign-Up form
+2025-05-20 18:28:38,852 [1] INFO  ConcursClient.service.ConcursServicesJsonProxy - Registering new user: patrick123
+2025-05-20 18:28:38,852 [1] ERROR ConcursNetworking.utils.JsonSerializerUtils - Error sending object to stream
+System.IO.IOException: Unable to write data to the transport connection: An established connection was aborted by the software in your host machine..
+ ---> System.Net.Sockets.SocketException (10053): An established connection was aborted by the software in your host machine.
+   at System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 count)
+   --- End of inner exception stack trace ---
+   at System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 count)
+   at ConcursNetworking.utils.JsonSerializerUtils.SendToStream(NetworkStream stream, Object obj) in C:\ANUL II\SEMESTRUL II\MPP\mpp-proiect-csharp-parnau-patrick\Laborator3\ConcursNetworking\JsonSerializerUtils.cs:line 34
+2025-05-20 18:28:38,852 [1] ERROR ConcursClient.service.ConcursServicesJsonProxy - Error sending request
+System.IO.IOException: Unable to write data to the transport connection: An established connection was aborted by the software in your host machine..
+ ---> System.Net.Sockets.SocketException (10053): An established connection was aborted by the software in your host machine.
+   at System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 count)
+   --- End of inner exception stack trace ---
+   at System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 count)
+   at ConcursNetworking.utils.JsonSerializerUtils.SendToStream(NetworkStream stream, Object obj) in C:\ANUL II\SEMESTRUL II\MPP\mpp-proiect-csharp-parnau-patrick\Laborator3\ConcursNetworking\JsonSerializerUtils.cs:line 34
+   at ConcursClient.service.ConcursServicesJsonProxy.SendAndReceive(Request request) in C:\ANUL II\SEMESTRUL II\MPP\mpp-proiect-csharp-parnau-patrick\Laborator3\ConcursClient\service\ConcursServicesJsonProxy.cs:line 131
+2025-05-20 18:28:38,852 [1] ERROR ConcursClient.controller.SignUpForm - Error during user sign-up: Error communicating with server: Unable to write data to the transport connection: An established connection was aborted by the software in your host machine..
+System.Exception: Error communicating with server: Unable to write data to the transport connection: An established connection was aborted by the software in your host machine..
+ ---> System.IO.IOException: Unable to write data to the transport connection: An established connection was aborted by the software in your host machine..
+ ---> System.Net.Sockets.SocketException (10053): An established connection was aborted by the software in your host machine.
+   at System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 count)
+   --- End of inner exception stack trace ---
+   at System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 count)
+   at ConcursNetworking.utils.JsonSerializerUtils.SendToStream(NetworkStream stream, Object obj) in C:\ANUL II\SEMESTRUL II\MPP\mpp-proiect-csharp-parnau-patrick\Laborator3\ConcursNetworking\JsonSerializerUtils.cs:line 34
+   at ConcursClient.service.ConcursServicesJsonProxy.SendAndReceive(Request request) in C:\ANUL II\SEMESTRUL II\MPP\mpp-proiect-csharp-parnau-patrick\Laborator3\ConcursClient\service\ConcursServicesJsonProxy.cs:line 131
+   --- End of inner exception stack trace ---
+   at ConcursClient.service.ConcursServicesJsonProxy.SendAndReceive(Request request) in C:\ANUL II\SEMESTRUL II\MPP\mpp-proiect-csharp-parnau-patrick\Laborator3\ConcursClient\service\ConcursServicesJsonProxy.cs:line 150
+   at ConcursClient.service.ConcursServicesJsonProxy.RegisterUser(String username, String password, String officeName) in C:\ANUL II\SEMESTRUL II\MPP\mpp-proiect-csharp-parnau-patrick\Laborator3\ConcursClient\service\ConcursServicesJsonProxy.cs:line 247
+   at ConcursClient.controller.SignUpForm.btnSignUp_Click(Object sender, EventArgs e) in C:\ANUL II\SEMESTRUL II\MPP\mpp-proiect-csharp-parnau-patrick\Laborator3\ConcursClient\controller\SignUpForm.cs:line 51
+2025-05-20 18:32:34,938 [1] INFO  ConcursClient.StartClient - Starting client application
+2025-05-20 18:32:34,948 [1] INFO  ConcursClient.StartClient - Connecting to server localhost:55555
+2025-05-20 18:32:34,961 [1] INFO  ConcursClient.service.ConcursServicesJsonProxy - Connected to server localhost:55555
+2025-05-20 18:32:45,375 [1] INFO  ConcursClient.service.ConcursServicesJsonProxy - Login attempt for user: patrick
+2025-05-20 18:32:45,542 [1] ERROR ConcursNetworking.utils.JsonSerializerUtils - Failed to read message length, read only 0 bytes
+2025-05-20 18:32:45,542 [1] ERROR ConcursNetworking.utils.JsonSerializerUtils - IO error reading from stream: Failed to read message length
+2025-05-20 18:32:45,542 [1] ERROR ConcursClient.service.ConcursServicesJsonProxy - Error sending request
+System.IO.IOException: Failed to read message length
+   at ConcursNetworking.utils.JsonSerializerUtils.ReadFromStream[T](NetworkStream stream) in C:\ANUL II\SEMESTRUL II\MPP\mpp-proiect-csharp-parnau-patrick\Laborator3\ConcursNetworking\JsonSerializerUtils.cs:line 79
+   at ConcursClient.service.ConcursServicesJsonProxy.SendAndReceive(Request request) in C:\ANUL II\SEMESTRUL II\MPP\mpp-proiect-csharp-parnau-patrick\Laborator3\ConcursClient\service\ConcursServicesJsonProxy.cs:line 134
+2025-05-20 18:32:45,570 [1] ERROR ConcursClient.controller.LoginForm - Login failed for user: patrick
+System.Exception: Error communicating with server: Failed to read message length
+ ---> System.IO.IOException: Failed to read message length
+   at ConcursNetworking.utils.JsonSerializerUtils.ReadFromStream[T](NetworkStream stream) in C:\ANUL II\SEMESTRUL II\MPP\mpp-proiect-csharp-parnau-patrick\Laborator3\ConcursNetworking\JsonSerializerUtils.cs:line 79
+   at ConcursClient.service.ConcursServicesJsonProxy.SendAndReceive(Request request) in C:\ANUL II\SEMESTRUL II\MPP\mpp-proiect-csharp-parnau-patrick\Laborator3\ConcursClient\service\ConcursServicesJsonProxy.cs:line 134
+   --- End of inner exception stack trace ---
+   at ConcursClient.service.ConcursServicesJsonProxy.SendAndReceive(Request request) in C:\ANUL II\SEMESTRUL II\MPP\mpp-proiect-csharp-parnau-patrick\Laborator3\ConcursClient\service\ConcursServicesJsonProxy.cs:line 150
+   at ConcursClient.service.ConcursServicesJsonProxy.Login(String username, String password) in C:\ANUL II\SEMESTRUL II\MPP\mpp-proiect-csharp-parnau-patrick\Laborator3\ConcursClient\service\ConcursServicesJsonProxy.cs:line 201
+   at ConcursClient.controller.LoginForm.btnLogin_Click(Object sender, EventArgs e) in C:\ANUL II\SEMESTRUL II\MPP\mpp-proiect-csharp-parnau-patrick\Laborator3\ConcursClient\controller\LoginForm.cs:line 27
+2025-05-20 18:33:31,926 [1] INFO  ConcursClient.controller.LoginForm - Opening Sign-Up form
+2025-05-20 18:33:41,211 [1] INFO  ConcursClient.service.ConcursServicesJsonProxy - Registering new user: patrick123
+2025-05-20 18:33:41,212 [1] ERROR ConcursNetworking.utils.JsonSerializerUtils - Error sending object to stream
+System.IO.IOException: Unable to write data to the transport connection: An established connection was aborted by the software in your host machine..
+ ---> System.Net.Sockets.SocketException (10053): An established connection was aborted by the software in your host machine.
+   at System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 count)
+   --- End of inner exception stack trace ---
+   at System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 count)
+   at System.IO.BinaryWriter.Write(Byte[] buffer)
+   at ConcursNetworking.utils.JsonSerializerUtils.SendToStream(NetworkStream stream, Object obj) in C:\ANUL II\SEMESTRUL II\MPP\mpp-proiect-csharp-parnau-patrick\Laborator3\ConcursNetworking\JsonSerializerUtils.cs:line 52
+2025-05-20 18:33:41,214 [1] ERROR ConcursClient.service.ConcursServicesJsonProxy - Error sending request
+System.IO.IOException: Unable to write data to the transport connection: An established connection was aborted by the software in your host machine..
+ ---> System.Net.Sockets.SocketException (10053): An established connection was aborted by the software in your host machine.
+   at System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 count)
+   --- End of inner exception stack trace ---
+   at System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 count)
+   at System.IO.BinaryWriter.Write(Byte[] buffer)
+   at ConcursNetworking.utils.JsonSerializerUtils.SendToStream(NetworkStream stream, Object obj) in C:\ANUL II\SEMESTRUL II\MPP\mpp-proiect-csharp-parnau-patrick\Laborator3\ConcursNetworking\JsonSerializerUtils.cs:line 52
+   at ConcursClient.service.ConcursServicesJsonProxy.SendAndReceive(Request request) in C:\ANUL II\SEMESTRUL II\MPP\mpp-proiect-csharp-parnau-patrick\Laborator3\ConcursClient\service\ConcursServicesJsonProxy.cs:line 131
+2025-05-20 18:33:41,214 [1] ERROR ConcursClient.controller.SignUpForm - Error during user sign-up: Error communicating with server: Unable to write data to the transport connection: An established connection was aborted by the software in your host machine..
+System.Exception: Error communicating with server: Unable to write data to the transport connection: An established connection was aborted by the software in your host machine..
+ ---> System.IO.IOException: Unable to write data to the transport connection: An established connection was aborted by the software in your host machine..
+ ---> System.Net.Sockets.SocketException (10053): An established connection was aborted by the software in your host machine.
+   at System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 count)
+   --- End of inner exception stack trace ---
+   at System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 count)
+   at System.IO.BinaryWriter.Write(Byte[] buffer)
+   at ConcursNetworking.utils.JsonSerializerUtils.SendToStream(NetworkStream stream, Object obj) in C:\ANUL II\SEMESTRUL II\MPP\mpp-proiect-csharp-parnau-patrick\Laborator3\ConcursNetworking\JsonSerializerUtils.cs:line 52
+   at ConcursClient.service.ConcursServicesJsonProxy.SendAndReceive(Request request) in C:\ANUL II\SEMESTRUL II\MPP\mpp-proiect-csharp-parnau-patrick\Laborator3\ConcursClient\service\ConcursServicesJsonProxy.cs:line 131
+   --- End of inner exception stack trace ---
+   at ConcursClient.service.ConcursServicesJsonProxy.SendAndReceive(Request request) in C:\ANUL II\SEMESTRUL II\MPP\mpp-proiect-csharp-parnau-patrick\Laborator3\ConcursClient\service\ConcursServicesJsonProxy.cs:line 150
+   at ConcursClient.service.ConcursServicesJsonProxy.RegisterUser(String username, String password, String officeName) in C:\ANUL II\SEMESTRUL II\MPP\mpp-proiect-csharp-parnau-patrick\Laborator3\ConcursClient\service\ConcursServicesJsonProxy.cs:line 247
+   at ConcursClient.controller.SignUpForm.btnSignUp_Click(Object sender, EventArgs e) in C:\ANUL II\SEMESTRUL II\MPP\mpp-proiect-csharp-parnau-patrick\Laborator3\ConcursClient\controller\SignUpForm.cs:line 51
+2025-05-20 18:38:58,598 [1] INFO  ConcursClient.StartClient - Starting client application
+2025-05-20 18:38:58,607 [1] INFO  ConcursClient.StartClient - Connecting to server localhost:55555
+2025-05-20 18:38:58,652 [1] INFO  ConcursClient.service.ConcursServicesJsonProxy - Connecting to server localhost:55555
+2025-05-20 18:38:58,679 [1] INFO  ConcursNetworking.utils.JsonSerializerUtils - Successfully connected to localhost:55555
+2025-05-20 18:38:58,681 [1] INFO  ConcursClient.service.ConcursServicesJsonProxy - Connected to server localhost:55555
+2025-05-20 18:39:06,161 [1] INFO  ConcursClient.service.ConcursServicesJsonProxy - Login attempt for user: patrick
+2025-05-20 18:39:06,162 [1] INFO  ConcursClient.service.ConcursServicesJsonProxy - Sending request: LOGIN, Data type: UserDTO
+2025-05-20 18:39:06,292 [1] ERROR ConcursNetworking.utils.JsonSerializerUtils - Failed to read message length, read only 0 bytes
+2025-05-20 18:39:06,293 [1] ERROR ConcursNetworking.utils.JsonSerializerUtils - IO error reading from stream: Failed to read message length
+System.IO.IOException: Failed to read message length
+   at ConcursNetworking.utils.JsonSerializerUtils.ReadFromStream[T](NetworkStream stream) in C:\ANUL II\SEMESTRUL II\MPP\mpp-proiect-csharp-parnau-patrick\Laborator3\ConcursNetworking\JsonSerializerUtils.cs:line 77
+2025-05-20 18:39:06,309 [1] ERROR ConcursClient.service.ConcursServicesJsonProxy - Error sending request
+System.IO.IOException: Failed to read message length
+   at ConcursNetworking.utils.JsonSerializerUtils.ReadFromStream[T](NetworkStream stream) in C:\ANUL II\SEMESTRUL II\MPP\mpp-proiect-csharp-parnau-patrick\Laborator3\ConcursNetworking\JsonSerializerUtils.cs:line 77
+   at ConcursClient.service.ConcursServicesJsonProxy.SendAndReceive(Request request) in C:\ANUL II\SEMESTRUL II\MPP\mpp-proiect-csharp-parnau-patrick\Laborator3\ConcursClient\service\ConcursServicesJsonProxy.cs:line 142
+2025-05-20 18:39:06,318 [1] ERROR ConcursClient.controller.LoginForm - Login failed for user: patrick
+System.Exception: Error communicating with server: Failed to read message length
+ ---> System.IO.IOException: Failed to read message length
+   at ConcursNetworking.utils.JsonSerializerUtils.ReadFromStream[T](NetworkStream stream) in C:\ANUL II\SEMESTRUL II\MPP\mpp-proiect-csharp-parnau-patrick\Laborator3\ConcursNetworking\JsonSerializerUtils.cs:line 77
+   at ConcursClient.service.ConcursServicesJsonProxy.SendAndReceive(Request request) in C:\ANUL II\SEMESTRUL II\MPP\mpp-proiect-csharp-parnau-patrick\Laborator3\ConcursClient\service\ConcursServicesJsonProxy.cs:line 142
+   --- End of inner exception stack trace ---
+   at ConcursClient.service.ConcursServicesJsonProxy.SendAndReceive(Request request) in C:\ANUL II\SEMESTRUL II\MPP\mpp-proiect-csharp-parnau-patrick\Laborator3\ConcursClient\service\ConcursServicesJsonProxy.cs:line 158
+   at ConcursClient.service.ConcursServicesJsonProxy.Login(String username, String password) in C:\ANUL II\SEMESTRUL II\MPP\mpp-proiect-csharp-parnau-patrick\Laborator3\ConcursClient\service\ConcursServicesJsonProxy.cs:line 209
+   at ConcursClient.controller.LoginForm.btnLogin_Click(Object sender, EventArgs e) in C:\ANUL II\SEMESTRUL II\MPP\mpp-proiect-csharp-parnau-patrick\Laborator3\ConcursClient\controller\LoginForm.cs:line 27
+2025-05-21 05:25:57,982 [1] INFO  ConcursClient.StartClient - Starting client application
+2025-05-21 05:25:57,992 [1] INFO  ConcursClient.StartClient - Connecting to server localhost:55555
+2025-05-21 05:25:57,994 [1] INFO  ConcursClient.service.ConcursServicesGrpcProxy - Creating gRPC proxy to localhost:55555
+2025-05-21 05:25:58,030 [1] INFO  ConcursClient.service.ConcursServicesGrpcProxy - Initializing gRPC connection
+2025-05-21 05:25:58,033 [1] INFO  ConcursClient.service.ConcursServicesGrpcProxy - Starting notification listener
+2025-05-21 05:26:12,158 [1] INFO  ConcursClient.service.ConcursServicesGrpcProxy - Login attempt for user: patrick
+2025-05-21 05:26:12,311 [1] INFO  ConcursClient.service.ConcursServicesGrpcProxy - Login successful for user: patrick
+2025-05-21 05:26:12,312 [1] INFO  ConcursClient.controller.LoginForm - Login successful for user: patrick
+2025-05-21 05:26:16,600 [1] INFO  ConcursClient.controller.MainForm - Opening Events form
+2025-05-21 05:26:16,651 [1] INFO  ConcursClient.controller.EventsForm - Loading events with participant counts
+2025-05-21 05:26:16,652 [1] INFO  ConcursClient.service.ConcursServicesGrpcProxy - Getting all events with participant counts
+2025-05-21 05:26:16,673 [1] INFO  ConcursClient.service.ConcursServicesGrpcProxy - Got 19 events with participant counts
+2025-05-21 05:26:17,471 [1] INFO  ConcursClient.controller.MainForm - Opening Search form
+2025-05-21 05:26:17,473 [1] INFO  ConcursClient.controller.ParticipantSearchForm - Loading events for search form
+2025-05-21 05:26:17,474 [1] INFO  ConcursClient.service.ConcursServicesGrpcProxy - Getting all events
+2025-05-21 05:26:17,481 [1] INFO  ConcursClient.service.ConcursServicesGrpcProxy - Got 19 events
+2025-05-21 05:26:18,156 [1] INFO  ConcursClient.controller.MainForm - Opening Registration form
+2025-05-21 05:26:18,158 [1] INFO  ConcursClient.controller.RegisterForm - Loading events for registration form
+2025-05-21 05:26:18,158 [1] INFO  ConcursClient.service.ConcursServicesGrpcProxy - Getting all events
+2025-05-21 05:26:18,161 [1] INFO  ConcursClient.service.ConcursServicesGrpcProxy - Got 19 events
+2025-05-21 05:26:34,694 [1] INFO  ConcursClient.controller.ParticipantSearchForm - Searching participants for selected event
+2025-05-21 05:26:34,694 [1] INFO  ConcursClient.service.ConcursServicesGrpcProxy - Getting participants for event: 1
+2025-05-21 05:26:34,710 [1] INFO  ConcursClient.service.ConcursServicesGrpcProxy - Got 9 participants for event ID: 1
+2025-05-21 05:26:40,609 [1] INFO  ConcursClient.controller.MainForm - Opening Registration form
+2025-05-21 05:26:52,447 [1] INFO  ConcursClient.service.ConcursServicesGrpcProxy - Registering participant: Dorel for 1 events
+2025-05-21 05:26:52,474 [1] INFO  ConcursClient.service.ConcursServicesGrpcProxy - Participant Dorel registered successfully
+2025-05-21 05:26:52,475 [4] INFO  ConcursClient.service.ConcursServicesGrpcProxy - Received notification: NewRegistration
+2025-05-21 05:26:52,480 [1] INFO  ConcursClient.controller.EventsForm - Loading events with participant counts
+2025-05-21 05:26:52,480 [1] INFO  ConcursClient.service.ConcursServicesGrpcProxy - Getting all events with participant counts
+2025-05-21 05:26:52,484 [1] INFO  ConcursClient.service.ConcursServicesGrpcProxy - Got 19 events with participant counts
+2025-05-21 05:26:55,216 [1] INFO  ConcursClient.controller.MainForm - Registration successful - updating open forms
+2025-05-21 05:26:55,216 [1] INFO  ConcursClient.controller.EventsForm - Loading events with participant counts
+2025-05-21 05:26:55,216 [1] INFO  ConcursClient.service.ConcursServicesGrpcProxy - Getting all events with participant counts
+2025-05-21 05:26:55,220 [1] INFO  ConcursClient.service.ConcursServicesGrpcProxy - Got 19 events with participant counts
+2025-05-21 05:27:37,049 [4] INFO  ConcursClient.service.ConcursServicesGrpcProxy - Received notification: NewRegistration
+2025-05-21 05:27:37,049 [1] INFO  ConcursClient.controller.EventsForm - Loading events with participant counts
+2025-05-21 05:27:37,049 [1] INFO  ConcursClient.service.ConcursServicesGrpcProxy - Getting all events with participant counts
+2025-05-21 05:27:37,053 [1] INFO  ConcursClient.service.ConcursServicesGrpcProxy - Got 19 events with participant counts
+2025-05-21 05:28:41,824 [1] INFO  ConcursClient.controller.MainForm - Application closing
+2025-05-21 05:28:41,825 [1] INFO  ConcursClient.service.ConcursServicesGrpcProxy - Closing gRPC connection
+2025-05-21 05:28:41,839 [1] INFO  ConcursClient.controller.MainForm - Application closing
+2025-05-21 05:28:41,840 [1] INFO  ConcursClient.service.ConcursServicesGrpcProxy - Closing gRPC connection
+2025-05-21 05:28:41,844 [17] INFO  ConcursClient.service.ConcursServicesGrpcProxy - Notification listener cancelled
+2025-05-21 10:07:22,031 [1] INFO  ConcursClient.StartClient - Starting client application
+2025-05-21 10:07:22,042 [1] INFO  ConcursClient.StartClient - Connecting to server localhost:55555
+2025-05-21 10:07:22,055 [1] INFO  ConcursClient.service.ConcursServicesGrpcProxy - Creating gRPC proxy to localhost:55555
+2025-05-21 10:07:22,102 [1] INFO  ConcursClient.service.ConcursServicesGrpcProxy - Initializing gRPC connection
+2025-05-21 10:07:22,112 [1] INFO  ConcursClient.service.ConcursServicesGrpcProxy - Starting notification listener
+2025-05-21 10:07:29,572 [1] INFO  ConcursClient.service.ConcursServicesGrpcProxy - Login attempt for user: patrick
+2025-05-21 10:07:29,742 [1] INFO  ConcursClient.service.ConcursServicesGrpcProxy - Login successful for user: patrick
+2025-05-21 10:07:29,742 [1] INFO  ConcursClient.controller.LoginForm - Login successful for user: patrick
+2025-05-21 10:07:31,004 [1] INFO  ConcursClient.controller.MainForm - Opening Events form
+2025-05-21 10:07:31,055 [1] INFO  ConcursClient.controller.EventsForm - Loading events with participant counts
+2025-05-21 10:07:31,056 [1] INFO  ConcursClient.service.ConcursServicesGrpcProxy - Getting all events with participant counts
+2025-05-21 10:07:31,078 [1] INFO  ConcursClient.service.ConcursServicesGrpcProxy - Got 19 events with participant counts
+2025-05-21 10:07:32,431 [1] INFO  ConcursClient.controller.MainForm - Application closing
+2025-05-21 10:07:32,431 [1] INFO  ConcursClient.service.ConcursServicesGrpcProxy - Closing gRPC connection
+2025-05-21 10:07:32,485 [1] INFO  ConcursClient.controller.MainForm - Application closing
+2025-05-21 10:07:32,485 [1] INFO  ConcursClient.service.ConcursServicesGrpcProxy - Closing gRPC connection
+2025-05-21 10:07:32,488 [7] INFO  ConcursClient.service.ConcursServicesGrpcProxy - Notification listener cancelled
+2025-05-21 11:05:27,719 [1] INFO  ConcursClient.StartClient - Starting client application
+2025-05-21 11:05:27,728 [1] INFO  ConcursClient.StartClient - Connecting to server localhost:55555
+2025-05-21 11:05:27,729 [1] INFO  ConcursClient.service.ConcursServicesGrpcProxy - Creating gRPC proxy to localhost:55555
+2025-05-21 11:05:27,747 [1] INFO  ConcursClient.service.ConcursServicesGrpcProxy - Initializing gRPC connection
+2025-05-21 11:05:27,749 [1] INFO  ConcursClient.service.ConcursServicesGrpcProxy - Starting notification listener
+2025-05-21 11:05:33,232 [1] INFO  ConcursClient.service.ConcursServicesGrpcProxy - Login attempt for user: patrick
+2025-05-21 11:05:33,388 [1] INFO  ConcursClient.service.ConcursServicesGrpcProxy - Login successful for user: patrick
+2025-05-21 11:05:33,388 [1] INFO  ConcursClient.controller.LoginForm - Login successful for user: patrick
+2025-05-21 11:06:00,836 [1] INFO  ConcursClient.controller.MainForm - Opening Events form
+2025-05-21 11:06:00,841 [1] INFO  ConcursClient.controller.EventsForm - Loading events with participant counts
+2025-05-21 11:06:00,841 [1] INFO  ConcursClient.service.ConcursServicesGrpcProxy - Getting all events with participant counts
+2025-05-21 11:06:00,857 [1] INFO  ConcursClient.service.ConcursServicesGrpcProxy - Got 19 events with participant counts
+2025-05-21 11:06:10,207 [16] INFO  ConcursClient.service.ConcursServicesGrpcProxy - Received notification: NewRegistration
+2025-05-21 11:06:10,208 [1] INFO  ConcursClient.controller.EventsForm - Loading events with participant counts
+2025-05-21 11:06:10,208 [1] INFO  ConcursClient.service.ConcursServicesGrpcProxy - Getting all events with participant counts
+2025-05-21 11:06:10,214 [1] INFO  ConcursClient.service.ConcursServicesGrpcProxy - Got 19 events with participant counts
+2025-05-21 11:06:19,396 [1] INFO  ConcursClient.controller.MainForm - Application closing
+2025-05-21 11:06:19,396 [1] INFO  ConcursClient.service.ConcursServicesGrpcProxy - Closing gRPC connection
+2025-05-21 11:06:19,411 [1] INFO  ConcursClient.controller.MainForm - Application closing
+2025-05-21 11:06:19,411 [1] INFO  ConcursClient.service.ConcursServicesGrpcProxy - Closing gRPC connection
+2025-05-21 11:06:19,415 [12] INFO  ConcursClient.service.ConcursServicesGrpcProxy - Notification listener cancelled
+2025-05-28 11:57:32,023 [1] INFO  ConcursClient.StartClient - Starting client application
+2025-05-28 11:57:32,036 [1] INFO  ConcursClient.StartClient - Connecting to server localhost:55555
+2025-05-28 11:57:32,038 [1] INFO  ConcursClient.service.ConcursServicesGrpcProxy - Creating gRPC proxy to localhost:55555
+2025-05-28 11:57:32,060 [1] INFO  ConcursClient.service.ConcursServicesGrpcProxy - Initializing gRPC connection
+2025-05-28 11:57:32,062 [1] INFO  ConcursClient.service.ConcursServicesGrpcProxy - Starting notification listener
+2025-05-28 11:57:39,669 [1] INFO  ConcursClient.service.ConcursServicesGrpcProxy - Login attempt for user: patrick
+2025-05-28 11:57:39,912 [1] INFO  ConcursClient.service.ConcursServicesGrpcProxy - Login successful for user: patrick
+2025-05-28 11:57:39,912 [1] INFO  ConcursClient.controller.LoginForm - Login successful for user: patrick
+2025-05-28 11:57:40,823 [1] INFO  ConcursClient.controller.MainForm - Opening Events form
+2025-05-28 11:57:40,871 [1] INFO  ConcursClient.controller.EventsForm - Loading events with participant counts
+2025-05-28 11:57:40,872 [1] INFO  ConcursClient.service.ConcursServicesGrpcProxy - Getting all events with participant counts
+2025-05-28 11:57:40,894 [1] INFO  ConcursClient.service.ConcursServicesGrpcProxy - Got 19 events with participant counts
+2025-05-28 11:57:41,127 [1] INFO  ConcursClient.controller.MainForm - Opening Search form
+2025-05-28 11:57:41,130 [1] INFO  ConcursClient.controller.ParticipantSearchForm - Loading events for search form
+2025-05-28 11:57:41,130 [1] INFO  ConcursClient.service.ConcursServicesGrpcProxy - Getting all events
+2025-05-28 11:57:41,136 [1] INFO  ConcursClient.service.ConcursServicesGrpcProxy - Got 19 events
+2025-05-28 11:57:41,421 [1] INFO  ConcursClient.controller.MainForm - Opening Registration form
+2025-05-28 11:57:41,423 [1] INFO  ConcursClient.controller.RegisterForm - Loading events for registration form
+2025-05-28 11:57:41,423 [1] INFO  ConcursClient.service.ConcursServicesGrpcProxy - Getting all events
+2025-05-28 11:57:41,426 [1] INFO  ConcursClient.service.ConcursServicesGrpcProxy - Got 19 events
+2025-05-28 11:57:42,240 [1] INFO  ConcursClient.controller.MainForm - Application closing
+2025-05-28 11:57:42,241 [1] INFO  ConcursClient.service.ConcursServicesGrpcProxy - Closing gRPC connection
+2025-05-28 11:57:42,267 [1] INFO  ConcursClient.controller.MainForm - Application closing
+2025-05-28 11:57:42,267 [1] INFO  ConcursClient.service.ConcursServicesGrpcProxy - Closing gRPC connection
+2025-05-28 11:57:42,270 [4] INFO  ConcursClient.service.ConcursServicesGrpcProxy - Notification listener cancelled
