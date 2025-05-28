@@ -10,9 +10,12 @@ namespace ConcursClient.controller
     public partial class RegisterForm : Form
     {
         private static readonly ILog log = LogManager.GetLogger(typeof(RegisterForm));
-        private readonly ConcursServicesJsonProxy serviceProxy;
+        private readonly ConcursServicesGrpcProxy serviceProxy;
+        
+        // Add this event for successful registrations
+        public event EventHandler RegistrationSuccessful;
 
-        public RegisterForm(ConcursServicesJsonProxy serviceProxy)
+        public RegisterForm(ConcursServicesGrpcProxy serviceProxy)
         {
             InitializeComponent();
             this.serviceProxy = serviceProxy;
@@ -74,6 +77,9 @@ namespace ConcursClient.controller
                 
                 MessageBox.Show($"Participant {txtName.Text} has been registered successfully!", "Registration", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 
+                // Notify that registration was successful
+                RegistrationSuccessful?.Invoke(this, EventArgs.Empty);
+                
                 // Clear form for new registration
                 txtName.Text = "";
                 txtAge.Text = "";
@@ -89,6 +95,11 @@ namespace ConcursClient.controller
             }
         }
 
+        private void btnCancel_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
         // InitializeComponent method - UI elements definition
         private void InitializeComponent()
         {
@@ -99,6 +110,7 @@ namespace ConcursClient.controller
             this.lblEvents = new System.Windows.Forms.Label();
             this.checkedListEvents = new System.Windows.Forms.CheckedListBox();
             this.btnRegister = new System.Windows.Forms.Button();
+            this.btnCancel = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblName
@@ -160,11 +172,22 @@ namespace ConcursClient.controller
             this.btnRegister.UseVisualStyleBackColor = true;
             this.btnRegister.Click += new System.EventHandler(this.btnRegister_Click);
             // 
+            // btnCancel
+            // 
+            this.btnCancel.Location = new System.Drawing.Point(235, 350);
+            this.btnCancel.Name = "btnCancel";
+            this.btnCancel.Size = new System.Drawing.Size(90, 30);
+            this.btnCancel.TabIndex = 7;
+            this.btnCancel.Text = "Cancel";
+            this.btnCancel.UseVisualStyleBackColor = true;
+            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
+            // 
             // RegisterForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(349, 400);
+            this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.btnRegister);
             this.Controls.Add(this.checkedListEvents);
             this.Controls.Add(this.lblEvents);
@@ -185,5 +208,6 @@ namespace ConcursClient.controller
         private System.Windows.Forms.Label lblEvents;
         private System.Windows.Forms.CheckedListBox checkedListEvents;
         private System.Windows.Forms.Button btnRegister;
+        private System.Windows.Forms.Button btnCancel;
     }
 }

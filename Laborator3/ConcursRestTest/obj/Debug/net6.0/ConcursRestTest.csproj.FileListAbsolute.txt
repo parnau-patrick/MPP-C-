@@ -1,0 +1,15 @@
+C:\ANUL II\SEMESTRUL II\MPP\mpp-proiect-csharp-parnau-patrick\Laborator3\ConcursRestTest\bin\Debug\net6.0\ConcursRestTest.exe
+C:\ANUL II\SEMESTRUL II\MPP\mpp-proiect-csharp-parnau-patrick\Laborator3\ConcursRestTest\bin\Debug\net6.0\ConcursRestTest.deps.json
+C:\ANUL II\SEMESTRUL II\MPP\mpp-proiect-csharp-parnau-patrick\Laborator3\ConcursRestTest\bin\Debug\net6.0\ConcursRestTest.runtimeconfig.json
+C:\ANUL II\SEMESTRUL II\MPP\mpp-proiect-csharp-parnau-patrick\Laborator3\ConcursRestTest\bin\Debug\net6.0\ConcursRestTest.dll
+C:\ANUL II\SEMESTRUL II\MPP\mpp-proiect-csharp-parnau-patrick\Laborator3\ConcursRestTest\bin\Debug\net6.0\ConcursRestTest.pdb
+C:\ANUL II\SEMESTRUL II\MPP\mpp-proiect-csharp-parnau-patrick\Laborator3\ConcursRestTest\obj\Debug\net6.0\ConcursRestTest.GeneratedMSBuildEditorConfig.editorconfig
+C:\ANUL II\SEMESTRUL II\MPP\mpp-proiect-csharp-parnau-patrick\Laborator3\ConcursRestTest\obj\Debug\net6.0\ConcursRestTest.AssemblyInfoInputs.cache
+C:\ANUL II\SEMESTRUL II\MPP\mpp-proiect-csharp-parnau-patrick\Laborator3\ConcursRestTest\obj\Debug\net6.0\ConcursRestTest.AssemblyInfo.cs
+C:\ANUL II\SEMESTRUL II\MPP\mpp-proiect-csharp-parnau-patrick\Laborator3\ConcursRestTest\obj\Debug\net6.0\ConcursRestTest.csproj.CoreCompileInputs.cache
+C:\ANUL II\SEMESTRUL II\MPP\mpp-proiect-csharp-parnau-patrick\Laborator3\ConcursRestTest\obj\Debug\net6.0\ConcursRestTest.sourcelink.json
+C:\ANUL II\SEMESTRUL II\MPP\mpp-proiect-csharp-parnau-patrick\Laborator3\ConcursRestTest\obj\Debug\net6.0\ConcursRestTest.dll
+C:\ANUL II\SEMESTRUL II\MPP\mpp-proiect-csharp-parnau-patrick\Laborator3\ConcursRestTest\obj\Debug\net6.0\refint\ConcursRestTest.dll
+C:\ANUL II\SEMESTRUL II\MPP\mpp-proiect-csharp-parnau-patrick\Laborator3\ConcursRestTest\obj\Debug\net6.0\ConcursRestTest.pdb
+C:\ANUL II\SEMESTRUL II\MPP\mpp-proiect-csharp-parnau-patrick\Laborator3\ConcursRestTest\obj\Debug\net6.0\ConcursRestTest.genruntimeconfig.cache
+C:\ANUL II\SEMESTRUL II\MPP\mpp-proiect-csharp-parnau-patrick\Laborator3\ConcursRestTest\obj\Debug\net6.0\ref\ConcursRestTest.dll

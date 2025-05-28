@@ -9,9 +9,9 @@ namespace ConcursClient.controller
     public partial class LoginForm : Form
     {
         private static readonly ILog log = LogManager.GetLogger(typeof(LoginForm));
-        private readonly ConcursServicesJsonProxy serviceProxy;
+        private readonly ConcursServicesGrpcProxy serviceProxy;
 
-        public LoginForm(ConcursServicesJsonProxy serviceProxy)
+        public LoginForm(ConcursServicesGrpcProxy serviceProxy)
         {
             InitializeComponent();
             this.serviceProxy = serviceProxy;
@@ -34,6 +34,10 @@ namespace ConcursClient.controller
                     mainForm.FormClosed += (s, args) => Close();
                     mainForm.Show();
                     this.Hide();
+                }
+                else
+                {
+                    MessageBox.Show("Invalid username or password.", "Login Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
             catch (Exception ex)

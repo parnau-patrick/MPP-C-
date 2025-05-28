@@ -1,10 +1,8 @@
-﻿using System;
-using ConcursModel.domain;
-using Newtonsoft.Json;
+﻿using Newtonsoft.Json;
 
 namespace ConcursNetworking.dto
 {
-    [Serializable]
+    [JsonObject(MemberSerialization.OptIn)]
     public class UserDTO
     {
         [JsonProperty("id")]
@@ -19,18 +17,12 @@ namespace ConcursNetworking.dto
         [JsonProperty("officeName")]
         public string OfficeName { get; set; }
 
-        public UserDTO()
-        {
-            Username = string.Empty;
-            Password = string.Empty;
-            OfficeName = string.Empty;
-        }
+        public UserDTO() { }
 
         public UserDTO(string username, string password)
         {
             Username = username;
             Password = password;
-            OfficeName = string.Empty;
         }
 
         public UserDTO(string username, string password, string officeName)
@@ -38,14 +30,6 @@ namespace ConcursNetworking.dto
             Username = username;
             Password = password;
             OfficeName = officeName;
-        }
-
-        public UserDTO(User user)
-        {
-            Id = user.Id;
-            Username = user.Username;
-            Password = user.Password;
-            OfficeName = user.OfficeName;
         }
     }
 }

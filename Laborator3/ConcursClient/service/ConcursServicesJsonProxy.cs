@@ -24,6 +24,7 @@ namespace ConcursClient.service
         private readonly List<IObserver> observers = new List<IObserver>();
         private volatile bool connected;
         private readonly object lockObject = new object();
+        private Thread responseReaderThread;
         
         public ConcursServicesJsonProxy(string host, int port)
         {
@@ -49,16 +50,24 @@ namespace ConcursClient.service
             }
         }
         
-        private void InitializeConnection()
+        public void InitializeConnection()
         {
             try
             {
+                log.Info($"Connecting to server {host}:{port}");
+                
+                // Test connection first to avoid timeout delays
+                if (!JsonSerializerUtils.TestConnection(host, port))
+                {
+                    throw new Exception($"Could not connect to server {host}:{port}");
+                }
+                
                 connection = new TcpClient(host, port);
                 stream = connection.GetStream();
                 connected = true;
                 
                 // Start a background thread to listen for server notifications
-                Thread responseReaderThread = new Thread(ResponseReader);
+                responseReaderThread = new Thread(ResponseReader);
                 responseReaderThread.IsBackground = true;
                 responseReaderThread.Start();
                 
@@ -124,7 +133,7 @@ namespace ConcursClient.service
                     }
                     
                     // Log request details
-                    log.Debug($"Sending request: {request.Type}, Data type: {request.Data?.GetType().Name ?? "null"}");
+                    log.Info($"Sending request: {request.Type}, Data type: {request.Data?.GetType().Name ?? "null"}");
                     
                     // Send request to server
                     JsonSerializerUtils.SendToStream(stream, request);
@@ -132,7 +141,7 @@ namespace ConcursClient.service
                     // Receive response from server
                     Response response = JsonSerializerUtils.ReadFromStream<Response>(stream);
                     
-                    log.Debug($"Received response: {response.Type}, Data type: {response.Data?.GetType().Name ?? "null"}");
+                    log.Info($"Received response: {response.Type}");
                     
                     if (response.Type == ResponseType.ERROR)
                     {
@@ -188,6 +197,8 @@ namespace ConcursClient.service
             }
         }
         
+        // ========== PascalCase Methods (C# convention) ==========
+        
         public User Login(string username, string password)
         {
             log.Info($"Login attempt for user: {username}");
@@ -202,20 +213,22 @@ namespace ConcursClient.service
             
             try
             {
-                if (response.Data is UserDTO)
+                // Convert the response data to User
+                if (response.Data is User)
                 {
-                    user = DTOUtils.GetFromDTO(response.Data as UserDTO);
+                    user = (User)response.Data;
                 }
                 else if (response.Data is JObject)
                 {
-                    var userDtoObj = (response.Data as JObject).ToObject<UserDTO>();
-                    user = DTOUtils.GetFromDTO(userDtoObj);
+                    // Convert JObject to User
+                    var userObj = (JObject)response.Data;
+                    user = userObj.ToObject<User>();
                 }
                 else
                 {
-                    var json = JsonConvert.SerializeObject(response.Data, JsonSerializerUtils.SerializerSettings);
-                    var responseUserDto = JsonConvert.DeserializeObject<UserDTO>(json, JsonSerializerUtils.SerializerSettings);
-                    user = DTOUtils.GetFromDTO(responseUserDto);
+                    // Serialize and deserialize to handle type conversion
+                    var json = JsonConvert.SerializeObject(response.Data);
+                    user = JsonConvert.DeserializeObject<User>(json);
                 }
                 
                 if (user == null)
@@ -249,20 +262,22 @@ namespace ConcursClient.service
             
             try
             {
-                if (response.Data is UserDTO)
+                // Convert the response data to User
+                if (response.Data is User)
                 {
-                    user = DTOUtils.GetFromDTO(response.Data as UserDTO);
+                    user = (User)response.Data;
                 }
                 else if (response.Data is JObject)
                 {
-                    var userDtoObj = (response.Data as JObject).ToObject<UserDTO>();
-                    user = DTOUtils.GetFromDTO(userDtoObj);
+                    // Convert JObject to User
+                    var userObj = (JObject)response.Data;
+                    user = userObj.ToObject<User>();
                 }
                 else
                 {
-                    var json = JsonConvert.SerializeObject(response.Data, JsonSerializerUtils.SerializerSettings);
-                    var responseUserDto = JsonConvert.DeserializeObject<UserDTO>(json, JsonSerializerUtils.SerializerSettings);
-                    user = DTOUtils.GetFromDTO(responseUserDto);
+                    // Serialize and deserialize to handle type conversion
+                    var json = JsonConvert.SerializeObject(response.Data);
+                    user = JsonConvert.DeserializeObject<User>(json);
                 }
                 
                 if (user == null)
@@ -294,16 +309,16 @@ namespace ConcursClient.service
             
             try
             {
-                var eventDtoList = JsonConvert.DeserializeObject<List<EventDTO>>(
-                    JsonConvert.SerializeObject(response.Data, JsonSerializerUtils.SerializerSettings),
-                    JsonSerializerUtils.SerializerSettings);
-                
-                if (eventDtoList != null)
+                // Convert the response data to List<Event>
+                if (response.Data is List<Event>)
                 {
-                    foreach (var eventDto in eventDtoList)
-                    {
-                        events.Add(DTOUtils.GetFromDTO(eventDto));
-                    }
+                    events = (List<Event>)response.Data;
+                }
+                else
+                {
+                    // Serialize and deserialize to handle type conversion
+                    var json = JsonConvert.SerializeObject(response.Data);
+                    events = JsonConvert.DeserializeObject<List<Event>>(json);
                 }
                 
                 log.Info($"Got {events.Count} events");
@@ -329,13 +344,16 @@ namespace ConcursClient.service
             
             try
             {
-                var result = JsonConvert.DeserializeObject<List<EventDTO>>(
-                    JsonConvert.SerializeObject(response.Data, JsonSerializerUtils.SerializerSettings),
-                    JsonSerializerUtils.SerializerSettings);
-                
-                if (result != null)
+                // Convert the response data to List<EventDTO>
+                if (response.Data is List<EventDTO>)
                 {
-                    eventDtos = result;
+                    eventDtos = (List<EventDTO>)response.Data;
+                }
+                else
+                {
+                    // Serialize and deserialize to handle type conversion
+                    var json = JsonConvert.SerializeObject(response.Data);
+                    eventDtos = JsonConvert.DeserializeObject<List<EventDTO>>(json);
                 }
                 
                 log.Info($"Got {eventDtos.Count} events with participant counts");
@@ -361,13 +379,16 @@ namespace ConcursClient.service
             
             try
             {
-                var result = JsonConvert.DeserializeObject<List<ParticipantEventDTO>>(
-                    JsonConvert.SerializeObject(response.Data, JsonSerializerUtils.SerializerSettings),
-                    JsonSerializerUtils.SerializerSettings);
-                
-                if (result != null)
+                // Convert the response data to List<ParticipantEventDTO>
+                if (response.Data is List<ParticipantEventDTO>)
                 {
-                    participantDtos = result;
+                    participantDtos = (List<ParticipantEventDTO>)response.Data;
+                }
+                else
+                {
+                    // Serialize and deserialize to handle type conversion
+                    var json = JsonConvert.SerializeObject(response.Data);
+                    participantDtos = JsonConvert.DeserializeObject<List<ParticipantEventDTO>>(json);
                 }
                 
                 log.Info($"Got {participantDtos.Count} participants for event {eventId}");
@@ -393,7 +414,7 @@ namespace ConcursClient.service
             log.Info($"Participant {name} registered successfully");
         }
         
-        public List<ParticipantDTO> GetAllParticipants()
+        public List<Participant> GetAllParticipants()
         {
             log.Info("Getting all participants");
             
@@ -401,20 +422,23 @@ namespace ConcursClient.service
             Response response = SendAndReceive(request);
             
             // Extract participant DTOs from response
-            List<ParticipantDTO> participantDtos = new List<ParticipantDTO>();
+            List<Participant> participants = new List<Participant>();
             
             try
             {
-                var result = JsonConvert.DeserializeObject<List<ParticipantDTO>>(
-                    JsonConvert.SerializeObject(response.Data, JsonSerializerUtils.SerializerSettings),
-                    JsonSerializerUtils.SerializerSettings);
-                
-                if (result != null)
+                // Convert the response data to List<Participant>
+                if (response.Data is List<Participant>)
                 {
-                    participantDtos = result;
+                    participants = (List<Participant>)response.Data;
+                }
+                else
+                {
+                    // Serialize and deserialize to handle type conversion
+                    var json = JsonConvert.SerializeObject(response.Data);
+                    participants = JsonConvert.DeserializeObject<List<Participant>>(json);
                 }
                 
-                log.Info($"Got {participantDtos.Count} participants");
+                log.Info($"Got {participants.Count} participants");
             }
             catch (Exception ex)
             {
@@ -422,7 +446,44 @@ namespace ConcursClient.service
                 throw new Exception("Error processing get all participants response: " + ex.Message, ex);
             }
             
-            return participantDtos;
+            return participants;
+        }
+        
+        // ========== camelCase Methods (Java compatibility) ==========
+        
+        public List<Event> getAllEvents()
+        {
+            return GetAllEvents();
+        }
+        
+        public void registerParticipant(string name, int age, List<int> eventIds)
+        {
+            RegisterParticipant(name, age, eventIds);
+        }
+        
+        public User login(string username, string password)
+        {
+            return Login(username, password);
+        }
+        
+        public List<EventDTO> getAllEventsWithParticipantCounts()
+        {
+            return GetAllEventsWithParticipantCounts();
+        }
+        
+        public List<ParticipantEventDTO> getParticipantsByEvent(int eventId)
+        {
+            return GetParticipantsByEvent(eventId);
+        }
+        
+        public User registerUser(string username, string password, string officeName)
+        {
+            return RegisterUser(username, password, officeName);
+        }
+        
+        public List<Participant> getAllParticipants()
+        {
+            return GetAllParticipants();
         }
     }
 }

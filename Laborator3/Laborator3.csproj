@@ -1,0 +1,67 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>net9.0-windows</TargetFramework>
+        <UseWindowsForms>true</UseWindowsForms>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="BCrypt.Net" Version="0.1.0" />
+      <PackageReference Include="log4net" Version="3.0.4" />
+      <PackageReference Include="System.Data.SQLite" Version="1.0.119" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="repository\" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Compile Update="ConcursPersistence\utils\DBUtils.cs">
+        <Link>ConcursPersistance\utils\DBUtils.cs</Link>
+      </Compile>
+      <Compile Update="ConcursPersistence\utils\PasswordUtils.cs">
+        <Link>ConcursPersistance\utils\PasswordUtils.cs</Link>
+      </Compile>
+      <Compile Update="ConcursPersistence\repository\Interface\IUserRepository.cs">
+        <Link>ConcursPersistance\repository\Interface\IUserRepository.cs</Link>
+      </Compile>
+      <Compile Update="ConcursPersistence\repository\Interface\IEventRepository.cs">
+        <Link>ConcursPersistance\repository\Interface\IEventRepository.cs</Link>
+      </Compile>
+      <Compile Update="ConcursPersistence\repository\Interface\IInscriereRepository.cs">
+        <Link>ConcursPersistance\repository\Interface\IInscriereRepository.cs</Link>
+      </Compile>
+      <Compile Update="ConcursPersistence\repository\Interface\IParticipantRepository.cs">
+        <Link>ConcursPersistance\repository\Interface\IParticipantRepository.cs</Link>
+      </Compile>
+      <Compile Update="ConcursPersistence\repository\Interface\IRepository.cs">
+        <Link>ConcursPersistance\repository\Interface\IRepository.cs</Link>
+      </Compile>
+      <Compile Update="ConcursPersistence\repository\impl\UserRepositoryImpl.cs">
+        <Link>ConcursPersistance\repository\impl\UserRepositoryImpl.cs</Link>
+      </Compile>
+      <Compile Update="ConcursPersistence\repository\impl\EventRepositoryImpl.cs">
+        <Link>ConcursPersistance\repository\impl\EventRepositoryImpl.cs</Link>
+      </Compile>
+      <Compile Update="ConcursPersistence\repository\impl\InscriereRepository.cs">
+        <Link>ConcursPersistance\repository\impl\InscriereRepository.cs</Link>
+      </Compile>
+      <Compile Update="ConcursPersistence\repository\impl\ParticipantRepositoryImpl.cs">
+        <Link>ConcursPersistance\repository\impl\ParticipantRepositoryImpl.cs</Link>
+      </Compile>
+      <Compile Update="ConcursPersistence\exception\RepositoryException.cs">
+        <Link>ConcursPersistance\exception\RepositoryException.cs</Link>
+      </Compile>
+      <Compile Update="ConcursPersistence\Connection\ConnFactory.cs">
+        <Link>ConcursPersistance\Connection\ConnFactory.cs</Link>
+      </Compile>
+      <Compile Update="ConcursPersistence\Connection\SqlLiteConn.cs">
+        <Link>ConcursPersistance\Connection\SqlLiteConn.cs</Link>
+      </Compile>
+    </ItemGroup>
+
+</Project>

@@ -7,16 +7,9 @@ namespace ConcursNetworking.dto
     [Serializable]
     public class ParticipantEventDTO
     {
-        [JsonProperty("id")]
         public int Id { get; set; }
-        
-        [JsonProperty("name")]
         public string Name { get; set; }
-        
-        [JsonProperty("age")]
         public int Age { get; set; }
-        
-        [JsonProperty("eventsCount")]
         public int EventsCount { get; set; }
 
         public ParticipantEventDTO()

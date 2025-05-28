@@ -2,10 +2,10 @@
 {
     public enum ResponseType
     {
-        OK,
-        ERROR,
-        NEW_EVENT,
-        NEW_PARTICIPANT,
+        OK, 
+        ERROR, 
+        NEW_EVENT, 
+        NEW_PARTICIPANT, 
         NEW_REGISTRATION
     }
 }

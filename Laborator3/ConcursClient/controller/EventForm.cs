@@ -12,9 +12,9 @@ namespace ConcursClient.controller
     public partial class EventsForm : Form, IObserver
     {
         private static readonly ILog log = LogManager.GetLogger(typeof(EventsForm));
-        private readonly ConcursServicesJsonProxy serviceProxy;
+        private readonly ConcursServicesGrpcProxy serviceProxy;
 
-        public EventsForm(ConcursServicesJsonProxy serviceProxy)
+        public EventsForm(ConcursServicesGrpcProxy serviceProxy)
         {
             InitializeComponent();
             this.serviceProxy = serviceProxy;

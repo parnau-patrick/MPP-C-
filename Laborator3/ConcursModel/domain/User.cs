@@ -1,12 +1,19 @@
 ﻿using System;
+using Newtonsoft.Json;
 
 namespace ConcursModel.domain
 {
     [Serializable]
+    [JsonObject(MemberSerialization.OptIn)]
     public class User : Entity<int>
     {
+        [JsonProperty("username")]
         public string Username { get; set; }
+        
+        [JsonProperty("password")]
         public string Password { get; set; }
+        
+        [JsonProperty("officeName")]
         public string OfficeName { get; set; }
 
         public User()

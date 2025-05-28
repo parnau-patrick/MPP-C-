@@ -1,10 +1,9 @@
-﻿using System;
+﻿using Newtonsoft.Json;
 using System.Collections.Generic;
-using Newtonsoft.Json;
 
 namespace ConcursNetworking.dto
 {
-    [Serializable]
+    [JsonObject(MemberSerialization.OptIn)]
     public class RegistrationDTO
     {
         [JsonProperty("participantName")]
@@ -16,9 +15,8 @@ namespace ConcursNetworking.dto
         [JsonProperty("eventIds")]
         public List<int> EventIds { get; set; }
 
-        public RegistrationDTO()
+        public RegistrationDTO() 
         {
-            ParticipantName = string.Empty;
             EventIds = new List<int>();
         }
 

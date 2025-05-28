@@ -5,20 +5,31 @@ using ConcursModel.domain;
 using ConcursClient.service;
 using ConcursNetworking.dto;
 using log4net;
+using ConcursModel.domain.observer;
 
 namespace ConcursClient.controller
 {
-    public partial class ParticipantSearchForm : Form
+    public partial class ParticipantSearchForm : Form, IObserver
     {
         private static readonly ILog log = LogManager.GetLogger(typeof(ParticipantSearchForm));
-        private readonly ConcursServicesJsonProxy serviceProxy;
+        private readonly ConcursServicesGrpcProxy serviceProxy;
 
-        public ParticipantSearchForm(ConcursServicesJsonProxy serviceProxy)
+        public ParticipantSearchForm(ConcursServicesGrpcProxy serviceProxy)
         {
             InitializeComponent();
             this.serviceProxy = serviceProxy;
             
+            // Register as an observer
+            serviceProxy.AddObserver(this);
+            this.FormClosed += ParticipantSearchForm_FormClosed;
+            
             LoadEvents();
+        }
+
+        private void ParticipantSearchForm_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            // Unregister as observer when form closes
+            serviceProxy.RemoveObserver(this);
         }
 
         private void LoadEvents()
@@ -26,15 +37,25 @@ namespace ConcursClient.controller
             log.Info("Loading events for search form");
             try
             {
+                // Remember currently selected event
+                Event selectedEvent = cmbEvents.SelectedItem as Event;
+                int selectedEventId = selectedEvent?.Id ?? 0;
+                
                 var events = serviceProxy.GetAllEvents();
                 cmbEvents.Items.Clear();
                 
                 foreach (var evt in events)
                 {
                     cmbEvents.Items.Add(evt);
+                    
+                    // Re-select the previously selected event if it still exists
+                    if (evt.Id == selectedEventId)
+                    {
+                        cmbEvents.SelectedItem = evt;
+                    }
                 }
                 
-                if (cmbEvents.Items.Count > 0)
+                if (cmbEvents.SelectedItem == null && cmbEvents.Items.Count > 0)
                 {
                     cmbEvents.SelectedIndex = 0;
                 }
@@ -79,6 +100,36 @@ namespace ConcursClient.controller
             {
                 log.Error("Error searching participants", ex);
                 MessageBox.Show("Error searching participants: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+        
+        // Implement the Update method from IObserver interface
+        public void Update()
+        {
+            // This method will be called when a new participant is registered
+            if (this.InvokeRequired)
+            {
+                this.BeginInvoke(new MethodInvoker(delegate {
+                    log.Info("Updating ParticipantSearchForm due to data change notification");
+                    LoadEvents();
+                    
+                    // If an event is already selected, refresh the search results
+                    if (cmbEvents.SelectedItem != null)
+                    {
+                        btnSearch_Click(this, EventArgs.Empty);
+                    }
+                }));
+            }
+            else
+            {
+                log.Info("Updating ParticipantSearchForm due to data change notification");
+                LoadEvents();
+                
+                // If an event is already selected, refresh the search results
+                if (cmbEvents.SelectedItem != null)
+                {
+                    btnSearch_Click(this, EventArgs.Empty);
+                }
             }
         }
 

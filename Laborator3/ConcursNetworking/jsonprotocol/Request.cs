@@ -1,22 +1,20 @@
-﻿using System;
-using Newtonsoft.Json;
+﻿using Newtonsoft.Json;
 
 namespace ConcursNetworking.jsonprotocol
 {
-    [Serializable]
+    [JsonObject(MemberSerialization.OptIn)]
     public class Request
     {
         [JsonProperty("type")]
-        public RequestType Type
-        {
-            get; set;
-        }
+        public RequestType Type { get; set; }
+        
         [JsonProperty("data")]
-        public object? Data { get; set; }
+        public object Data { get; set; }
 
+        // Default constructor for JSON deserialization
         public Request() { }
 
-        public Request(RequestType type, object? data)
+        public Request(RequestType type, object data)
         {
             Type = type;
             Data = data;
@@ -28,4 +26,3 @@ namespace ConcursNetworking.jsonprotocol
         }
     }
 }
-        

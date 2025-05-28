@@ -1,11 +1,16 @@
 ﻿using System;
+using Newtonsoft.Json;
 
 namespace ConcursModel.domain
 {
     [Serializable]
+    [JsonObject(MemberSerialization.OptIn)]
     public class Event : Entity<int>
     {
+        [JsonProperty("distance")]
         public string Distance { get; set; }
+        
+        [JsonProperty("style")]
         public string Style { get; set; }
 
         public Event() 

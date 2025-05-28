@@ -1,10 +1,13 @@
 ﻿using System;
+using Newtonsoft.Json;
 
 namespace ConcursModel.domain
 {
     [Serializable]
+    [JsonObject(MemberSerialization.OptIn)]
     public abstract class Entity<ID>
     {
+        [JsonProperty("id")]
         public ID Id { get; set; }
 
         public override string ToString()

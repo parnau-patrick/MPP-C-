@@ -1,0 +1,127 @@
+﻿syntax = "proto3";
+
+option java_multiple_files = true;
+option java_package = "org.example.network.grpcprotocol";
+option java_outer_classname = "ConcursProto";
+option csharp_namespace = "ConcursClient.Grpc";
+
+package concurs;
+
+// Service definition
+service ConcursService {
+  // Authentication
+  rpc Login(LoginRequest) returns (LoginResponse) {}
+  rpc RegisterUser(RegisterUserRequest) returns (UserResponse) {}
+
+  // Events
+  rpc GetAllEvents(EmptyRequest) returns (EventsResponse) {}
+  rpc GetEventsWithParticipantCounts(EmptyRequest) returns (EventsWithCountsResponse) {}
+
+  // Participants
+  rpc GetAllParticipants(EmptyRequest) returns (ParticipantsResponse) {}
+  rpc GetParticipantsByEvent(EventIdRequest) returns (ParticipantsWithCountsResponse) {}
+
+  // Registration
+  rpc RegisterParticipant(RegisterParticipantRequest) returns (EmptyResponse) {}
+
+  // Notification system (Observer pattern)
+  rpc Subscribe(EmptyRequest) returns (stream NotificationResponse) {}
+}
+
+// Empty message for requests that don't need parameters
+message EmptyRequest {}
+
+// Empty response for methods that don't return data
+message EmptyResponse {}
+
+// Login
+message LoginRequest {
+  string username = 1;
+  string password = 2;
+}
+
+message LoginResponse {
+  bool success = 1;
+  User user = 2;
+}
+
+// User registration
+message RegisterUserRequest {
+  string username = 1;
+  string password = 2;
+  string office_name = 3;
+}
+
+message UserResponse {
+  User user = 1;
+}
+
+// Events
+message EventIdRequest {
+  int32 id = 1;
+}
+
+message Event {
+  int32 id = 1;
+  string distance = 2;
+  string style = 3;
+}
+
+message EventWithCount {
+  Event event = 1;
+  int32 participants_count = 2;
+}
+
+message EventsResponse {
+  repeated Event events = 1;
+}
+
+message EventsWithCountsResponse {
+  repeated EventWithCount events = 1;
+}
+
+// Participants
+message Participant {
+  int32 id = 1;
+  string name = 2;
+  int32 age = 3;
+}
+
+message ParticipantWithEventCount {
+  Participant participant = 1;
+  int32 events_count = 2;
+}
+
+message ParticipantsResponse {
+  repeated Participant participants = 1;
+}
+
+message ParticipantsWithCountsResponse {
+  repeated ParticipantWithEventCount participants = 1;
+}
+
+// Registration
+message RegisterParticipantRequest {
+  string name = 1;
+  int32 age = 2;
+  repeated int32 event_ids = 3;
+}
+
+// User data
+message User {
+  int32 id = 1;
+  string username = 2;
+  string password = 3;
+  string office_name = 4;
+}
+
+// Notification system
+message NotificationResponse {
+  enum NotificationType {
+    NEW_EVENT = 0;
+    NEW_PARTICIPANT = 1;
+    NEW_REGISTRATION = 2;
+  }
+
+  NotificationType type = 1;
+}

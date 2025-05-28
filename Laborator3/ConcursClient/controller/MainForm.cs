@@ -10,14 +10,14 @@ namespace ConcursClient.controller
     {
         private static readonly ILog log = LogManager.GetLogger(typeof(MainForm));
         
-        private readonly ConcursServicesJsonProxy serviceProxy;
+        private readonly ConcursServicesGrpcProxy serviceProxy;
         private readonly User currentUser;
         
         private EventsForm eventsForm;
         private ParticipantSearchForm searchForm;
         private RegisterForm registerForm;
 
-        public MainForm(ConcursServicesJsonProxy serviceProxy, User currentUser)
+        public MainForm(ConcursServicesGrpcProxy serviceProxy, User currentUser)
         {
             InitializeComponent();
             
@@ -70,10 +70,31 @@ namespace ConcursClient.controller
                 registerForm = new RegisterForm(serviceProxy);
                 registerForm.MdiParent = this;
                 registerForm.FormClosed += (s, args) => registerForm = null;
+                
+                // Add registration successful event handler
+                registerForm.RegistrationSuccessful += RegisterForm_RegistrationSuccessful;
             }
             
             registerForm.Show();
             registerForm.BringToFront();
+        }
+        
+        // Add this new method to handle registration successful event
+        private void RegisterForm_RegistrationSuccessful(object sender, EventArgs e)
+        {
+            log.Info("Registration successful - updating open forms");
+            
+            // Refresh events form if it's open
+            if (eventsForm != null && !eventsForm.IsDisposed)
+            {
+                eventsForm.Update(); // This calls the Update method from IObserver
+            }
+            
+            // Refresh search form if it's open
+            if (searchForm != null && !searchForm.IsDisposed)
+            {
+                searchForm.Update(); // This now works because ParticipantSearchForm implements IObserver
+            }
         }
 
         private void btnLogout_Click(object sender, EventArgs e)

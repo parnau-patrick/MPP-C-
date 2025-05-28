@@ -9,7 +9,7 @@ namespace ConcursClient.controller
     public partial class SignUpForm : Form
     {
         private static readonly ILog log = LogManager.GetLogger(typeof(SignUpForm));
-        private readonly ConcursServicesJsonProxy serviceProxy;
+        private readonly ConcursServicesGrpcProxy serviceProxy;
 
         public event EventHandler<UserEventArgs> SignUpSuccessful;
 
@@ -18,7 +18,7 @@ namespace ConcursClient.controller
             public User User { get; set; }
         }
 
-        public SignUpForm(ConcursServicesJsonProxy serviceProxy)
+        public SignUpForm(ConcursServicesGrpcProxy serviceProxy)
         {
             InitializeComponent();
             this.serviceProxy = serviceProxy;
